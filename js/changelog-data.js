@@ -6,6 +6,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-08T15:55:00-03:00",
+    module: { es: "Capacitación", pt: "Capacitação" },
+    moduleHref: "propuestas/capacitacion.html",
+    title: {
+      es: "Propuesta: capacitación gamificada para colaboradores",
+      pt: "Proposta: capacitação gamificada para colaboradores",
+    },
+    status: "proposal",
+    details: {
+      es: [
+        "Plataforma con login, pruebas de procesos y resultados inmediatos",
+        "Evolución por funcionario y plan de carrera en la empresa",
+        "Integración de pruebas Zona de Desarrollo de Genialidad (ZDG)",
+      ],
+      pt: [
+        "Plataforma com login, provas de processos e resultados imediatos",
+        "Evolução por funcionário e plano de carreira na empresa",
+        "Integração de provas Zona de Desenvolvimento de Genialidade (ZDG)",
+      ],
+    },
+  },
+  {
     at: "2026-08-08T15:46:00-03:00",
     module: { es: "Bitácora", pt: "Bitácora" },
     moduleHref: "index.html",

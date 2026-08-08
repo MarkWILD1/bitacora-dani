@@ -40,6 +40,7 @@ Para registrar uno nuevo: agregá un objeto al **principio** de `js/changelog-da
 | `propuestas/delivery.html` | Feed Delivery |
 | `propuestas/caja.html` | Feed Caja y contabilidad |
 | `propuestas/franquicias.html` | Propuesta — sistema de franquicias |
+| `propuestas/capacitacion.html` | Propuesta — capacitación gamificada + ZDG |
 | `propuestas/_plantilla.html` | Plantilla para nuevas propuestas |
 | `css/styles.css` | Tipografía y paleta Dani compartida |
 | `js/i18n.js` | Diccionario ES/PT y selector de idioma |

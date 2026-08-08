@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
-<html lang="es" data-page="caja">
+<!DOCTYPE html>
+<html lang="es" data-page="cap">
 <head>
   <meta charset="UTF-8" />
   <script>(function(){try{var l=localStorage.getItem("bitacora-dani-lang");if(l==="pt"||l==="es")document.documentElement.lang=l;}catch(e){}})();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Detalle Caja — Dani's Hot Dog" />
-  <title>Caja — Dani's Hot Dog</title>
+  <meta name="description" content="Propuesta Capacitación gamificada — Dani's Hot Dog" />
+  <title>Capacitación — Dani's Hot Dog</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -78,7 +78,7 @@
               </a>
             </li>
             <li>
-              <a class="sidebar__link" href="caja.html" aria-current="page" title="Caja" data-i18n-attr="title:nav.caja">
+              <a class="sidebar__link" href="caja.html" title="Caja" data-i18n-attr="title:nav.caja">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <rect x="3" y="6" width="18" height="14" rx="2" /><path d="M3 10h18M8 14h4" />
                 </svg>
@@ -100,7 +100,7 @@
               </a>
             </li>
             <li>
-              <a class="sidebar__link" href="capacitacion.html" title="Capacitación" data-i18n-attr="title:nav.capacitacion">
+              <a class="sidebar__link" href="capacitacion.html" aria-current="page" title="Capacitación" data-i18n-attr="title:nav.capacitacion">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M12 3 2 8l10 5 10-5-10-5z" />
                   <path d="M6 10.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-5.5" />
@@ -131,7 +131,7 @@
             <path d="M4 7h16M4 12h16M4 17h16" />
           </svg>
         </button>
-        <span class="app__bar-title" data-i18n="caja.bar">Caja</span>
+        <span class="app__bar-title" data-i18n="cap.bar">Capacitación</span>
       </header>
 
       <div class="wrap">
@@ -140,14 +140,43 @@
         </header>
 
         <main class="card">
-          <p class="kicker" data-i18n="index.kicker">Seguimiento operativo</p>
-          <h1 class="display" id="pageTitle" data-i18n="caja.h1">Caja y contabilidad</h1>
-          <p class="meta" data-i18n="module.feedMeta">
-            Los últimos cambios de este módulo aparecen arriba, apilados por fecha y hora de implementación.
-          </p>
-          <div id="changelog" class="changelog" data-module="caja" aria-live="polite" aria-label="Historial de implementaciones" data-i18n-attr="aria-label:index.changelogAria">
-            <p class="empty-slot" data-i18n="index.changelogLoading">Cargando actualizaciones…</p>
-          </div>
+      <p class="kicker"><span data-i18n="common.propuesta">Propuesta</span> · <span class="badge badge--proposal">Propuesta</span></p>
+      <h1 class="display" id="pageTitle" data-i18n="cap.h1">Capacitación gamificada</h1>
+      <p class="meta" data-i18n="cap.meta">
+        Plataforma con login para colaboradores: pruebas sobre procesos de la empresa, resultados inmediatos, evolución por funcionario y plan de carrera — con integración de la Zona de Desarrollo de Genialidad (ZDG).
+      </p>
+      <h2 data-i18n="common.estado">Estado</h2>
+      <p class="lead" data-i18n="cap.estadoLead">Documentado como propuesta. Existe base en el proyecto ZDG (cuestionario de genialidad con informe PDF) para integrar al módulo de desarrollo personal.</p>
+      <h2 data-i18n="common.alcancePropuesto">Alcance propuesto</h2>
+      <ul class="item-list">
+        <li><span data-i18n="cap.i1">Login de colaboradores y acceso seguro a la plataforma</span><span class="badge badge--proposal">Propuesta</span></li>
+        <li><span data-i18n="cap.i2">Pruebas gamificadas sobre procesos instaurados en la empresa</span><span class="badge badge--proposal">Propuesta</span></li>
+        <li><span data-i18n="cap.i3">Resultados inmediatos al completar cada prueba</span><span class="badge badge--proposal">Propuesta</span></li>
+        <li><span data-i18n="cap.i4">Historial y evolución por funcionario (scores, hitos, niveles)</span><span class="badge badge--proposal">Propuesta</span></li>
+        <li><span data-i18n="cap.i5">Plan de carrera: trazado de cómo puede evolucionar en la empresa</span><span class="badge badge--proposal">Propuesta</span></li>
+        <li><span data-i18n="cap.i6">Integración de pruebas Zona de Desarrollo de Genialidad (ZDG)</span><span class="badge badge--proposal">Propuesta</span></li>
+        <li><span data-i18n="cap.i7">Panel para líderes: avance del equipo y brechas de conocimiento</span><span class="badge badge--proposal">Propuesta</span></li>
+      </ul>
+      <h2 data-i18n="cap.pilares">Pilares de la plataforma</h2>
+      <div class="two-col">
+        <div class="panel">
+          <h3 data-i18n="cap.panel1.h">Procesos operativos</h3>
+          <ul>
+            <li data-i18n="cap.panel1.i1">Quizzes sobre flujos PDV, cocina, delivery y caja</li>
+            <li data-i18n="cap.panel1.i2">Feedback inmediato correcto / incorrecto</li>
+            <li data-i18n="cap.panel1.i3">Progreso por rol (mostrador, cocina, líder)</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3 data-i18n="cap.panel2.h">Zona de Genialidad (ZDG)</h3>
+          <ul>
+            <li data-i18n="cap.panel2.i1">Cuestionario de mapa de las 4 zonas de desempeño</li>
+            <li data-i18n="cap.panel2.i2">Informe personal y seguimiento en el tiempo</li>
+            <li data-i18n="cap.panel2.i3">Alineación con plan de carrera y roles</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note" data-i18n-html="cap.note"><strong>Siguiente paso:</strong> definir roles de acceso, banco de preguntas por proceso y cómo se vincula el resultado ZDG al plan de carrera de cada colaborador.</div>
         </main>
       </div>
 
@@ -163,9 +192,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-  <script src="../js/changelog-data.js"></script>
   <script src="../js/i18n.js" defer></script>
-  <script src="../js/changelog.js" defer></script>
   <script src="../js/sidebar.js" defer></script>
   <script src="../js/motion.js" defer></script>
 </body>

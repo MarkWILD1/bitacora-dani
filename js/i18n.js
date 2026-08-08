@@ -13,6 +13,7 @@
       "nav.kds": "KDS - Kitchen",
       "nav.caja": "Caja",
       "nav.franquicias": "Franquicias",
+      "nav.capacitacion": "Capacitación",
       "brand.name": "Bitácora Dani",
       "brand.footer": "Hub de seguimiento de implementaciones del sistema Dani's Hot Dog.",
       "aria.closeMenu": "Cerrar menú",
@@ -218,6 +219,33 @@
       "fran.note":
         "<strong>Siguiente paso:</strong> definir matriz de roles y qué datos consolidados ve el dueño de la red.",
 
+      "cap.title": "Capacitación — Dani's Hot Dog",
+      "cap.desc": "Propuesta Capacitación gamificada — Dani's Hot Dog",
+      "cap.bar": "Capacitación",
+      "cap.h1": "Capacitación gamificada",
+      "cap.meta":
+        "Plataforma con login para colaboradores: pruebas sobre procesos de la empresa, resultados inmediatos, evolución por funcionario y plan de carrera — con integración de la Zona de Desarrollo de Genialidad (ZDG).",
+      "cap.estadoLead":
+        "Documentado como propuesta. Existe base en el proyecto ZDG (cuestionario de genialidad con informe PDF) para integrar al módulo de desarrollo personal.",
+      "cap.i1": "Login de colaboradores y acceso seguro a la plataforma",
+      "cap.i2": "Pruebas gamificadas sobre procesos instaurados en la empresa",
+      "cap.i3": "Resultados inmediatos al completar cada prueba",
+      "cap.i4": "Historial y evolución por funcionario (scores, hitos, niveles)",
+      "cap.i5": "Plan de carrera: trazado de cómo puede evolucionar en la empresa",
+      "cap.i6": "Integración de pruebas Zona de Desarrollo de Genialidad (ZDG)",
+      "cap.i7": "Panel para líderes: avance del equipo y brechas de conocimiento",
+      "cap.pilares": "Pilares de la plataforma",
+      "cap.panel1.h": "Procesos operativos",
+      "cap.panel1.i1": "Quizzes sobre flujos PDV, cocina, delivery y caja",
+      "cap.panel1.i2": "Feedback inmediato correcto / incorrecto",
+      "cap.panel1.i3": "Progreso por rol (mostrador, cocina, líder)",
+      "cap.panel2.h": "Zona de Genialidad (ZDG)",
+      "cap.panel2.i1": "Cuestionario de mapa de las 4 zonas de desempeño",
+      "cap.panel2.i2": "Informe personal y seguimiento en el tiempo",
+      "cap.panel2.i3": "Alineación con plan de carrera y roles",
+      "cap.note":
+        "<strong>Siguiente paso:</strong> definir roles de acceso, banco de preguntas por proceso y cómo se vincula el resultado ZDG al plan de carrera de cada colaborador.",
+
       "tpl.title": "Propuesta — Dani's Hot Dog",
       "tpl.desc": "Propuesta — Dani's Hot Dog",
       "tpl.bar": "Nueva propuesta",
@@ -242,6 +270,7 @@
       "nav.kds": "KDS - Kitchen",
       "nav.caja": "Caixa",
       "nav.franquicias": "Franquias",
+      "nav.capacitacion": "Capacitação",
       "brand.name": "Bitácora Dani",
       "brand.footer": "Hub de acompanhamento das implementações do sistema Dani's Hot Dog.",
       "aria.closeMenu": "Fechar menu",
@@ -446,6 +475,33 @@
       "fran.panel2.i3": "Taxa BRL→UYU por loja",
       "fran.note":
         "<strong>Próximo passo:</strong> definir matriz de papéis e quais dados consolidados o dono da rede vê.",
+
+      "cap.title": "Capacitação — Dani's Hot Dog",
+      "cap.desc": "Proposta Capacitação gamificada — Dani's Hot Dog",
+      "cap.bar": "Capacitação",
+      "cap.h1": "Capacitação gamificada",
+      "cap.meta":
+        "Plataforma com login para colaboradores: provas sobre processos da empresa, resultados imediatos, evolução por funcionário e plano de carreira — com integração da Zona de Desenvolvimento de Genialidade (ZDG).",
+      "cap.estadoLead":
+        "Documentado como proposta. Existe base no projeto ZDG (questionário de genialidade com relatório PDF) para integrar ao módulo de desenvolvimento pessoal.",
+      "cap.i1": "Login de colaboradores e acesso seguro à plataforma",
+      "cap.i2": "Provas gamificadas sobre processos instaurados na empresa",
+      "cap.i3": "Resultados imediatos ao concluir cada prova",
+      "cap.i4": "Histórico e evolução por funcionário (scores, marcos, níveis)",
+      "cap.i5": "Plano de carreira: traçado de como pode evoluir na empresa",
+      "cap.i6": "Integração de provas Zona de Desenvolvimento de Genialidade (ZDG)",
+      "cap.i7": "Painel para líderes: avanço da equipe e lacunas de conhecimento",
+      "cap.pilares": "Pilares da plataforma",
+      "cap.panel1.h": "Processos operacionais",
+      "cap.panel1.i1": "Quizzes sobre fluxos PDV, cozinha, delivery e caixa",
+      "cap.panel1.i2": "Feedback imediato correto / incorreto",
+      "cap.panel1.i3": "Progresso por papel (balcão, cozinha, líder)",
+      "cap.panel2.h": "Zona de Genialidade (ZDG)",
+      "cap.panel2.i1": "Questionário do mapa das 4 zonas de desempenho",
+      "cap.panel2.i2": "Relatório pessoal e acompanhamento no tempo",
+      "cap.panel2.i3": "Alinhamento com plano de carreira e papéis",
+      "cap.note":
+        "<strong>Próximo passo:</strong> definir papéis de acesso, banco de perguntas por processo e como o resultado ZDG se vincula ao plano de carreira de cada colaborador.",
 
       "tpl.title": "Proposta — Dani's Hot Dog",
       "tpl.desc": "Proposta — Dani's Hot Dog",
