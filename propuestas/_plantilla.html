@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Propuesta — Dani's Hot Dog" />
+  <title>Nueva propuesta — Dani's Hot Dog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css?v=1" />
+</head>
+<body class="app">
+  <div class="app__shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navegación">
+      <div class="sidebar__header">
+        <div class="sidebar__actions">
+          <button type="button" class="sidebar__icon-btn sidebar__close" data-sidebar-close aria-label="Cerrar menú">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+          </button>
+          <button type="button" class="sidebar__icon-btn sidebar__collapse" data-sidebar-collapse aria-expanded="true" aria-label="Colapsar menú">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M15 18 9 12l6-6" />
+            </svg>
+          </button>
+        </div>
+        <a class="sidebar__brand" href="../index.html">
+          <img src="../assets/logo-dani.png" width="72" height="72" alt="" />
+          <span class="sidebar__brand-text">Bitácora Dani</span>
+        </a>
+      </div>
+
+      <nav class="sidebar__groups" aria-label="Secciones">
+        <div class="sidebar__group sidebar__group--updates">
+          <p class="sidebar__group-label">Actualizaciones</p>
+          <ul class="sidebar__nav">
+            <li>
+              <a class="sidebar__link" href="../index.html" aria-current="page" title="Resumen">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" /><rect x="9" y="3" width="6" height="4" rx="1" /><path d="M9 12h6M9 16h4" />
+                </svg>
+                <span class="sidebar__label">Resumen</span>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__link" href="pdv.html" title="PDV">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="14" rx="2" /><path d="M8 21h8M12 18v3" />
+                </svg>
+                <span class="sidebar__label">PDV</span>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__link" href="superadmin.html" title="SuperAdmin">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 3 4 7v5c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V7l-8-4z" /><path d="M9 12l2 2 4-4" />
+                </svg>
+                <span class="sidebar__label">SuperAdmin</span>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__link" href="kitchen.html" title="Kitchen">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M4 7h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7z" /><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                </svg>
+                <span class="sidebar__label">Kitchen</span>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__link" href="delivery.html" title="Delivery">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M3 7h11v10H3z" /><path d="M14 10h4l3 3v4h-7v-7z" /><circle cx="7" cy="19" r="2" /><circle cx="18" cy="19" r="2" />
+                </svg>
+                <span class="sidebar__label">Delivery</span>
+              </a>
+            </li>
+            <li>
+              <a class="sidebar__link" href="caja.html" title="Caja">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="6" width="18" height="14" rx="2" /><path d="M3 10h18M8 14h4" />
+                </svg>
+                <span class="sidebar__label">Caja</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar__group sidebar__group--proposals">
+          <p class="sidebar__group-label">Propuestas</p>
+          <ul class="sidebar__nav">
+            <li>
+              <a class="sidebar__link" href="franquicias.html" title="Franquicias">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M3 21h18M5 21V8l7-4 7 4v13" /><path d="M9 21v-6h6v6" />
+                </svg>
+                <span class="sidebar__label">Franquicias</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <p class="sidebar__footer">Hub de seguimiento de implementaciones del sistema Dani's Hot Dog.</p>
+    </aside>
+
+    <button type="button" class="sidebar-backdrop" id="sidebar-backdrop" hidden aria-label="Cerrar menú"></button>
+
+    <div class="app__main">
+      <header class="app__bar">
+        <button type="button" class="sidebar__icon-btn" data-sidebar-open aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menú">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+        <span class="app__bar-title">Nueva propuesta</span>
+      </header>
+
+      <div class="wrap">
+        <header class="doc-header">
+          <img src="../assets/dh/logo-knockout-trim.png" width="320" height="120" alt="Dani's Hot Dog" />
+        </header>
+
+        <main class="card">
+      <p class="kicker">Propuesta · <span class="badge badge--proposal">Propuesta</span></p>
+      <h1 class="display" id="pageTitle">Título de la propuesta</h1>
+      <p class="meta">
+        Resumen breve: qué problema resuelve, para quién es y qué se entregará.
+      </p>
+      <!--
+        Cómo usar esta plantilla:
+        1. Copiá este archivo con un nombre nuevo, por ejemplo: nombre.html
+        2. Completá título, resumen, estado, alcance e inversión.
+        3. Agregá el ítem en la sección Propuestas de la sidebar (todas las páginas).
+        4. Si corresponde, sumá una card en index.html.
+      -->
+      <h2>Estado</h2>
+      <p><span class="badge badge--proposal">Propuesta</span> — documentado, aún no iniciado.</p>
+
+      <h2>Alcance</h2>
+      <ul>
+        <li>Ítem incluido 1</li>
+        <li>Ítem incluido 2</li>
+        <li>Ítem incluido 3</li>
+      </ul>
+
+      <h2>Fuera de alcance</h2>
+      <ul>
+        <li>Ítem excluido</li>
+      </ul>
+
+      <h2>Inversión</h2>
+      <p class="price">A definir</p>
+      <p class="lead">Condiciones, plazos o notas comerciales.</p>
+
+      <div class="note"><strong>Nota:</strong> Completar antes de compartir con el cliente.</div>
+        </main>
+      </div>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <p class="site-footer__brand">Bitácora · Dani's Hot Dog</p>
+          <p class="site-footer__copy">Hub de seguimiento de implementaciones y propuestas.</p>
+          <p class="site-footer__credit">Desarrollado por Marcos Mello</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="../js/sidebar.js" defer></script>
+  <script src="../js/motion.js" defer></script>
+</body>
+</html>
