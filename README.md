@@ -2,6 +2,8 @@
 
 Sitio HTML estático para seguir el estado de las implementaciones del sistema Dani's Hot Dog (PDV, SuperAdmin, Kitchen, Delivery, caja) y las propuestas asociadas.
 
+Idioma: selector **ES / PT** en el menú lateral (preferencia guardada en el navegador).
+
 ## Cómo abrir en local
 
 Abrí `index.html` en el navegador (doble clic o arrastrar el archivo a Chrome/Edge/Firefox). No requiere instalación ni servidor.
@@ -19,11 +21,19 @@ git push -u origin main
 
 Luego activá Pages desde la rama `main` (root). URL esperada: https://markwild1.github.io/bitacora-dani/
 
+## Feed cronológico
+
+Los cambios se muestran **más recientes arriba**, con fecha y hora.
+
+Para registrar uno nuevo: agregá un objeto al **principio** de `js/changelog-data.js` (`at` en ISO `-03:00`).
+
 ## Contenido
 
 | Archivo | Uso |
 |---------|-----|
-| `index.html` | Bitácora de implementaciones |
+| `index.html` | Hub + feed cronológico |
+| `js/changelog-data.js` | Entradas del feed (apilar arriba) |
+| `js/changelog.js` | Render del feed |
 | `propuestas/pdv.html` | Detalle PDV / Dashboard |
 | `propuestas/superadmin.html` | Detalle SuperAdmin |
 | `propuestas/kitchen.html` | Detalle Kitchen (KDS) |
@@ -32,6 +42,7 @@ Luego activá Pages desde la rama `main` (root). URL esperada: https://markwild1
 | `propuestas/franquicias.html` | Propuesta — sistema de franquicias |
 | `propuestas/_plantilla.html` | Plantilla para nuevas propuestas |
 | `css/styles.css` | Tipografía y paleta Dani compartida |
+| `js/i18n.js` | Diccionario ES/PT y selector de idioma |
 | `assets/` | Logos de la marca |
 
 ## Estados
