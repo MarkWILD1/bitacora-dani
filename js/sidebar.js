@@ -15,14 +15,19 @@
     return MQ_DESKTOP.matches;
   }
 
+  function collapseLabel(collapsed) {
+    const i18n = window.BitacoraI18n;
+    if (i18n) {
+      return i18n.t(collapsed ? "aria.expandMenu" : "aria.collapseMenu");
+    }
+    return collapsed ? "Expandir menú" : "Colapsar menú";
+  }
+
   function setCollapsed(collapsed) {
     body.classList.toggle("sidebar-collapsed", collapsed);
     if (collapseBtn) {
       collapseBtn.setAttribute("aria-expanded", String(!collapsed));
-      collapseBtn.setAttribute(
-        "aria-label",
-        collapsed ? "Expandir menú" : "Colapsar menú"
-      );
+      collapseBtn.setAttribute("aria-label", collapseLabel(collapsed));
     }
     try {
       localStorage.setItem(STORAGE_KEY, collapsed ? "1" : "0");
@@ -77,4 +82,11 @@
 
   MQ_DESKTOP.addEventListener("change", initCollapsed);
   initCollapsed();
+
+  document.addEventListener("bitacora:langchange", () => {
+    if (collapseBtn) {
+      const collapsed = body.classList.contains("sidebar-collapsed");
+      collapseBtn.setAttribute("aria-label", collapseLabel(collapsed));
+    }
+  });
 })();

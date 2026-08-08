@@ -1,21 +1,22 @@
 ﻿<!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-page="caja">
 <head>
   <meta charset="UTF-8" />
+  <script>(function(){try{var l=localStorage.getItem("bitacora-dani-lang");if(l==="pt"||l==="es")document.documentElement.lang=l;}catch(e){}})();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Detalle Caja — Dani's Hot Dog" />
   <title>Caja — Dani's Hot Dog</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/styles.css?v=1" />
+  <link rel="stylesheet" href="../css/styles.css?v=2" />
 </head>
 <body class="app">
   <div class="app__shell">
-    <aside class="sidebar" id="sidebar" aria-label="Navegación">
+    <aside class="sidebar" id="sidebar" aria-label="Navegación" data-i18n-attr="aria-label:nav.aria">
       <div class="sidebar__header">
         <div class="sidebar__actions">
-          <button type="button" class="sidebar__icon-btn sidebar__close" data-sidebar-close aria-label="Cerrar menú">
+          <button type="button" class="sidebar__icon-btn sidebar__close" data-sidebar-close aria-label="Cerrar menú" data-i18n-attr="aria-label:aria.closeMenu">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M18 6 6 18M6 6l12 12" />
             </svg>
@@ -28,20 +29,20 @@
         </div>
         <a class="sidebar__brand" href="../index.html">
           <img src="../assets/logo-dani.png" width="72" height="72" alt="" />
-          <span class="sidebar__brand-text">Bitácora Dani</span>
+          <span class="sidebar__brand-text" data-i18n="brand.name">Bitácora Dani</span>
         </a>
       </div>
 
-      <nav class="sidebar__groups" aria-label="Secciones">
+      <nav class="sidebar__groups" aria-label="Secciones" data-i18n-attr="aria-label:nav.sections">
         <div class="sidebar__group sidebar__group--updates">
-          <p class="sidebar__group-label">Actualizaciones</p>
+          <p class="sidebar__group-label" data-i18n="nav.updates">Actualizaciones</p>
           <ul class="sidebar__nav">
             <li>
-              <a class="sidebar__link" href="../index.html" title="Resumen">
+              <a class="sidebar__link" href="../index.html" title="Resumen" data-i18n-attr="title:nav.summary">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" /><rect x="9" y="3" width="6" height="4" rx="1" /><path d="M9 12h6M9 16h4" />
                 </svg>
-                <span class="sidebar__label">Resumen</span>
+                <span class="sidebar__label" data-i18n="nav.summary">Resumen</span>
               </a>
             </li>
             <li>
@@ -77,44 +78,50 @@
               </a>
             </li>
             <li>
-              <a class="sidebar__link" href="caja.html" aria-current="page" title="Caja">
+              <a class="sidebar__link" href="caja.html" aria-current="page" title="Caja" data-i18n-attr="title:nav.caja">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <rect x="3" y="6" width="18" height="14" rx="2" /><path d="M3 10h18M8 14h4" />
                 </svg>
-                <span class="sidebar__label">Caja</span>
+                <span class="sidebar__label" data-i18n="nav.caja">Caja</span>
               </a>
             </li>
           </ul>
         </div>
 
         <div class="sidebar__group sidebar__group--proposals">
-          <p class="sidebar__group-label">Propuestas</p>
+          <p class="sidebar__group-label" data-i18n="nav.proposals">Propuestas</p>
           <ul class="sidebar__nav">
             <li>
-              <a class="sidebar__link" href="franquicias.html" title="Franquicias">
+              <a class="sidebar__link" href="franquicias.html" title="Franquicias" data-i18n-attr="title:nav.franquicias">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M3 21h18M5 21V8l7-4 7 4v13" /><path d="M9 21v-6h6v6" />
                 </svg>
-                <span class="sidebar__label">Franquicias</span>
+                <span class="sidebar__label" data-i18n="nav.franquicias">Franquicias</span>
               </a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <p class="sidebar__footer">Hub de seguimiento de implementaciones del sistema Dani's Hot Dog.</p>
+      
+      <div class="lang-switch" data-lang-switch role="group" aria-label="Idioma" data-i18n-attr="aria-label:lang.label">
+        <button type="button" class="lang-switch__btn" data-set-lang="es" aria-pressed="true">ES</button>
+        <button type="button" class="lang-switch__btn" data-set-lang="pt" aria-pressed="false">PT</button>
+      </div>
+
+      <p class="sidebar__footer" data-i18n="brand.footer">Hub de seguimiento de implementaciones del sistema Dani's Hot Dog.</p>
     </aside>
 
-    <button type="button" class="sidebar-backdrop" id="sidebar-backdrop" hidden aria-label="Cerrar menú"></button>
+    <button type="button" class="sidebar-backdrop" id="sidebar-backdrop" hidden aria-label="Cerrar menú" data-i18n-attr="aria-label:aria.closeMenu"></button>
 
     <div class="app__main">
       <header class="app__bar">
-        <button type="button" class="sidebar__icon-btn" data-sidebar-open aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menú">
+        <button type="button" class="sidebar__icon-btn" data-sidebar-open aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menú" data-i18n-attr="aria-label:aria.openMenu">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path d="M4 7h16M4 12h16M4 17h16" />
           </svg>
         </button>
-        <span class="app__bar-title">Caja</span>
+        <span class="app__bar-title" data-i18n="caja.bar">Caja</span>
       </header>
 
       <div class="wrap">
@@ -123,30 +130,30 @@
         </header>
 
         <main class="card">
-      <p class="kicker">Módulo · <span class="badge badge--done">Hecho</span></p>
-      <h1 class="display" id="pageTitle">Caja y contabilidad</h1>
-      <p class="meta">
+      <p class="kicker"><span data-i18n="common.modulo">Módulo</span> · <span class="badge badge--done">Hecho</span></p>
+      <h1 class="display" id="pageTitle" data-i18n="caja.h1">Caja y contabilidad</h1>
+      <p class="meta" data-i18n="caja.meta">
         Control de turno: apertura, movimientos, sangría/reforço, cierre dual, auditoría y reportes.
       </p>
-      <h2>Alcance entregado</h2>
+      <h2 data-i18n="common.alcanceEntregado">Alcance entregado</h2>
       <ul class="item-list">
-        <li><span>Apertura con troco 0 o informado (R$ / $U)</span><span class="badge badge--done">Hecho</span></li>
-        <li><span>Sangría y reforço con ticket ESC/POS al registrar</span><span class="badge badge--done">Hecho</span></li>
-        <li><span>Cierre: totales duales, cartões/PIX, sangrías, reforços, créd. correntista</span><span class="badge badge--done">Hecho</span></li>
-        <li><span>PDF de cierre de caja descargable desde SuperAdmin</span><span class="badge badge--done">Hecho</span></li>
-        <li><span>Turno: comandas con ítems, movimientos (efectivo/tarjeta/PIX), auditoría con notas</span><span class="badge badge--done">Hecho</span></li>
-        <li><span>Reinicio de numeración de pedidos a las 00:00</span><span class="badge badge--done">Hecho</span></li>
-        <li><span>NF + stock + código de proveedor</span><span class="badge badge--done">Hecho</span></li>
+        <li><span data-i18n="caja.i1">Apertura con troco 0 o informado (R$ / $U)</span><span class="badge badge--done">Hecho</span></li>
+        <li><span data-i18n="caja.i2">Sangría y reforço con ticket ESC/POS al registrar</span><span class="badge badge--done">Hecho</span></li>
+        <li><span data-i18n="caja.i3">Cierre: totales duales, cartões/PIX, sangrías, reforços, créd. correntista</span><span class="badge badge--done">Hecho</span></li>
+        <li><span data-i18n="caja.i4">PDF de cierre de caja descargable desde SuperAdmin</span><span class="badge badge--done">Hecho</span></li>
+        <li><span data-i18n="caja.i5">Turno: comandas con ítems, movimientos (efectivo/tarjeta/PIX), auditoría con notas</span><span class="badge badge--done">Hecho</span></li>
+        <li><span data-i18n="caja.i6">Reinicio de numeración de pedidos a las 00:00</span><span class="badge badge--done">Hecho</span></li>
+        <li><span data-i18n="caja.i7">NF + stock + código de proveedor</span><span class="badge badge--done">Hecho</span></li>
       </ul>
-      <div class="note"><strong>Pendiente operativo:</strong> nomenclatura final de algunos totales del cierre y tarjetas UY vs BR en pasarela — ver TODOs abiertos del sistema.</div>
+      <div class="note" data-i18n-html="caja.note"><strong>Pendiente operativo:</strong> nomenclatura final de algunos totales del cierre y tarjetas UY vs BR en pasarela — ver TODOs abiertos del sistema.</div>
         </main>
       </div>
 
       <footer class="site-footer">
         <div class="site-footer__inner">
-          <p class="site-footer__brand">Bitácora · Dani's Hot Dog</p>
-          <p class="site-footer__copy">Hub de seguimiento de implementaciones y propuestas.</p>
-          <p class="site-footer__credit">Desarrollado por Marcos Mello</p>
+          <p class="site-footer__brand" data-i18n="footer.brand">Bitácora · Dani's Hot Dog</p>
+          <p class="site-footer__copy" data-i18n="footer.copy">Hub de seguimiento de implementaciones y propuestas.</p>
+          <p class="site-footer__credit" data-i18n="footer.credit">Desarrollado por Marcos Mello</p>
         </div>
       </footer>
     </div>
@@ -154,6 +161,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="../js/i18n.js" defer></script>
   <script src="../js/sidebar.js" defer></script>
   <script src="../js/motion.js" defer></script>
 </body>

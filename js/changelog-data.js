@@ -6,6 +6,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-08T13:54:00-03:00",
+    module: { es: "Bitácora", pt: "Bitácora" },
+    moduleHref: "index.html",
+    title: {
+      es: "Selector de idioma ES / PT en toda la bitácora",
+      pt: "Seletor de idioma ES / PT em toda a bitácora",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Botón ES/PT en el menú lateral (también con menú colapsado)",
+        "Traducción de navegación, badges, footers y páginas de detalle",
+        "Preferencia guardada en el navegador y aplicada al feed cronológico",
+      ],
+      pt: [
+        "Botão ES/PT no menu lateral (também com menu recolhido)",
+        "Tradução da navegação, badges, footers e páginas de detalhe",
+        "Preferência salva no navegador e aplicada ao feed cronológico",
+      ],
+    },
+  },
+  {
     at: "2026-08-08T13:45:00-03:00",
     module: { es: "Caja", pt: "Caixa" },
     moduleHref: "propuestas/caja.html",
