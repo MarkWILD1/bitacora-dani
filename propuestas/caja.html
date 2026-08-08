@@ -130,22 +130,14 @@
         </header>
 
         <main class="card">
-      <p class="kicker"><span data-i18n="common.modulo">Módulo</span> · <span class="badge badge--done">Hecho</span></p>
-      <h1 class="display" id="pageTitle" data-i18n="caja.h1">Caja y contabilidad</h1>
-      <p class="meta" data-i18n="caja.meta">
-        Control de turno: apertura, movimientos, sangría/reforço, cierre dual, auditoría y reportes.
-      </p>
-      <h2 data-i18n="common.alcanceEntregado">Alcance entregado</h2>
-      <ul class="item-list">
-        <li><span data-i18n="caja.i1">Apertura con troco 0 o informado (R$ / $U)</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="caja.i2">Sangría y reforço con ticket ESC/POS al registrar</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="caja.i3">Cierre: totales duales, cartões/PIX, sangrías, reforços, créd. correntista</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="caja.i4">PDF de cierre de caja descargable desde SuperAdmin</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="caja.i5">Turno: comandas con ítems, movimientos (efectivo/tarjeta/PIX), auditoría con notas</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="caja.i6">Reinicio de numeración de pedidos a las 00:00</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="caja.i7">NF + stock + código de proveedor</span><span class="badge badge--done">Hecho</span></li>
-      </ul>
-      <div class="note" data-i18n-html="caja.note"><strong>Pendiente operativo:</strong> nomenclatura final de algunos totales del cierre y tarjetas UY vs BR en pasarela — ver TODOs abiertos del sistema.</div>
+          <p class="kicker" data-i18n="index.kicker">Seguimiento operativo</p>
+          <h1 class="display" id="pageTitle" data-i18n="caja.h1">Caja y contabilidad</h1>
+          <p class="meta" data-i18n="module.feedMeta">
+            Los últimos cambios de este módulo aparecen arriba, apilados por fecha y hora de implementación.
+          </p>
+          <div id="changelog" class="changelog" data-module="caja" aria-live="polite" aria-label="Historial de implementaciones" data-i18n-attr="aria-label:index.changelogAria">
+            <p class="empty-slot" data-i18n="index.changelogLoading">Cargando actualizaciones…</p>
+          </div>
         </main>
       </div>
 
@@ -161,7 +153,9 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="../js/changelog-data.js"></script>
   <script src="../js/i18n.js" defer></script>
+  <script src="../js/changelog.js" defer></script>
   <script src="../js/sidebar.js" defer></script>
   <script src="../js/motion.js" defer></script>
 </body>

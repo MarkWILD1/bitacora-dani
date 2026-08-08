@@ -6,6 +6,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-08T15:46:00-03:00",
+    module: { es: "Bitácora", pt: "Bitácora" },
+    moduleHref: "index.html",
+    title: {
+      es: "Mismo formato de Resumen en todos los módulos",
+      pt: "Mesmo formato de Resumo em todos os módulos",
+    },
+    status: "done",
+    details: {
+      es: [
+        "PDV, SuperAdmin, KDS - Kitchen, Delivery y Caja usan el feed cronológico",
+        "Cada frente filtra solo sus implementaciones, de más reciente a más antigua",
+      ],
+      pt: [
+        "PDV, SuperAdmin, KDS - Kitchen, Delivery e Caixa usam o feed cronológico",
+        "Cada frente filtra só as suas implementações, da mais recente à mais antiga",
+      ],
+    },
+  },
+  {
     at: "2026-08-08T15:26:00-03:00",
     module: { es: "Bitácora", pt: "Bitácora" },
     moduleHref: "index.html",
@@ -346,6 +366,36 @@ window.BITACORA_CHANGELOG = [
       pt: [
         "Landing alinhada ao danishotdog; fluxo de dogs, extras e upsell",
         "Reforço no PDV; nomenclatura dual de fechamento de caixa",
+      ],
+    },
+  },
+  {
+    at: "2026-07-10T12:00:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Alcance base del KDS",
+      pt: "Escopo base do KDS",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Cola de pedidos con pager / mesa visibles",
+        "Marcar listo y revertir con confirmación",
+        "Temporizador de preparación; tiempo visible en SuperAdmin",
+        "Cancelación remueve pedido del KDS al instante",
+        "Colores de clases alineados con PDV",
+        "Aislamiento Matriz / Siñeriz (sin cruce de pedidos)",
+        "Observación de preparo editable según ingredientes elegidos",
+      ],
+      pt: [
+        "Fila de pedidos com pager / mesa visíveis",
+        "Marcar pronto e reverter com confirmação",
+        "Temporizador de preparo; tempo visível no SuperAdmin",
+        "Cancelamento remove o pedido do KDS na hora",
+        "Cores de classes alinhadas com o PDV",
+        "Isolamento Matriz / Siñeriz (sem cruzamento de pedidos)",
+        "Observação de preparo editável conforme ingredientes escolhidos",
       ],
     },
   },

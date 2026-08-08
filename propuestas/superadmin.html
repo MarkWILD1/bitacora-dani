@@ -130,25 +130,14 @@
         </header>
 
         <main class="card">
-      <p class="kicker"><span data-i18n="common.modulo">Módulo</span> · <span class="badge badge--done">Hecho</span></p>
-      <h1 class="display" id="pageTitle" data-i18n="sa.h1">SuperAdmin</h1>
-      <p class="meta" data-i18n="sa.meta">
-        Panel de retaguardia multi-tienda: catálogo, costos, stock, reportes, usuarios y configuración operativa.
-      </p>
-      <h2 data-i18n="common.alcanceEntregado">Alcance entregado</h2>
-      <ul class="item-list">
-        <li><span data-i18n="sa.i1">Login con elección / creación de tienda</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="sa.i2">Productos, clases, combos, promos y códigos autoincrementales</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="sa.i3">Ficha técnica con drag-and-drop, CMOD, markup y extras</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="sa.i4">Materia prima (compra kg / venta grama), intermediarios, usos y consumos</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="sa.i5">Descartes con fecha, motivo y cantidad; historial de alteraciones</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="sa.i6">Clientes (CPF opcional + RUT), motoboys, bonificaciones editables</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="sa.i7">Relatorio de ventas, ventas por vendedor, filtros y gráficas</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="sa.i8">Gastos fijos/variables con status PAGO / A VENCER / VENCIDO</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="sa.i9">Notas fiscales, proveedores con código y vínculo a stock</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="sa.i10">Tasa BRL→UYU por tienda; landing/delivery configurables</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="sa.i11">Asistente IA; sidebar con despliegue a la derecha; i18n PT/ES</span><span class="badge badge--done">Hecho</span></li>
-      </ul>
+          <p class="kicker" data-i18n="index.kicker">Seguimiento operativo</p>
+          <h1 class="display" id="pageTitle" data-i18n="sa.h1">SuperAdmin</h1>
+          <p class="meta" data-i18n="module.feedMeta">
+            Los últimos cambios de este módulo aparecen arriba, apilados por fecha y hora de implementación.
+          </p>
+          <div id="changelog" class="changelog" data-module="superadmin" aria-live="polite" aria-label="Historial de implementaciones" data-i18n-attr="aria-label:index.changelogAria">
+            <p class="empty-slot" data-i18n="index.changelogLoading">Cargando actualizaciones…</p>
+          </div>
         </main>
       </div>
 
@@ -164,7 +153,9 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="../js/changelog-data.js"></script>
   <script src="../js/i18n.js" defer></script>
+  <script src="../js/changelog.js" defer></script>
   <script src="../js/sidebar.js" defer></script>
   <script src="../js/motion.js" defer></script>
 </body>

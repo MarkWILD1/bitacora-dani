@@ -34,11 +34,11 @@ Para registrar uno nuevo: agregá un objeto al **principio** de `js/changelog-da
 | `index.html` | Hub + feed cronológico |
 | `js/changelog-data.js` | Entradas del feed (apilar arriba) |
 | `js/changelog.js` | Render del feed |
-| `propuestas/pdv.html` | Detalle PDV / Dashboard |
-| `propuestas/superadmin.html` | Detalle SuperAdmin |
-| `propuestas/kitchen.html` | Detalle KDS - Kitchen |
-| `propuestas/delivery.html` | Detalle Delivery |
-| `propuestas/caja.html` | Detalle Caja y contabilidad |
+| `propuestas/pdv.html` | Feed PDV (mismo formato que Resumen) |
+| `propuestas/superadmin.html` | Feed SuperAdmin |
+| `propuestas/kitchen.html` | Feed KDS - Kitchen |
+| `propuestas/delivery.html` | Feed Delivery |
+| `propuestas/caja.html` | Feed Caja y contabilidad |
 | `propuestas/franquicias.html` | Propuesta — sistema de franquicias |
 | `propuestas/_plantilla.html` | Plantilla para nuevas propuestas |
 | `css/styles.css` | Tipografía y paleta Dani compartida |

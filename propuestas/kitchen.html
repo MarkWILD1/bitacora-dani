@@ -130,21 +130,14 @@
         </header>
 
         <main class="card">
-      <p class="kicker"><span data-i18n="common.modulo">Módulo</span> · <span class="badge badge--done">Hecho</span></p>
-      <h1 class="display" id="pageTitle" data-i18n="kds.h1">KDS - Kitchen</h1>
-      <p class="meta" data-i18n="kds.meta">
-        Pantalla de cocina en tiempo real para preparación, aviso por pager y control de estados.
-      </p>
-      <h2 data-i18n="common.alcanceEntregado">Alcance entregado</h2>
-      <ul class="item-list">
-        <li><span data-i18n="kds.i1">Cola de pedidos con pager / mesa visibles</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="kds.i2">Marcar listo y revertir con confirmación</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="kds.i3">Temporizador de preparación; tiempo visible en SuperAdmin</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="kds.i4">Cancelación remueve pedido del KDS al instante</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="kds.i5">Colores de clases alineados con PDV</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="kds.i6">Aislamiento Matriz / Siñeriz (sin cruce de pedidos)</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="kds.i7">Observación de preparo editable según ingredientes elegidos</span><span class="badge badge--done">Hecho</span></li>
-      </ul>
+          <p class="kicker" data-i18n="index.kicker">Seguimiento operativo</p>
+          <h1 class="display" id="pageTitle" data-i18n="kds.h1">KDS - Kitchen</h1>
+          <p class="meta" data-i18n="module.feedMeta">
+            Los últimos cambios de este módulo aparecen arriba, apilados por fecha y hora de implementación.
+          </p>
+          <div id="changelog" class="changelog" data-module="kitchen" aria-live="polite" aria-label="Historial de implementaciones" data-i18n-attr="aria-label:index.changelogAria">
+            <p class="empty-slot" data-i18n="index.changelogLoading">Cargando actualizaciones…</p>
+          </div>
         </main>
       </div>
 
@@ -160,7 +153,9 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="../js/changelog-data.js"></script>
   <script src="../js/i18n.js" defer></script>
+  <script src="../js/changelog.js" defer></script>
   <script src="../js/sidebar.js" defer></script>
   <script src="../js/motion.js" defer></script>
 </body>

@@ -1,5 +1,6 @@
 /**
  * Renderiza el feed cronológico (más reciente arriba).
+ * Soporta filtro por módulo: <div id="changelog" data-module="pdv">
  * Re-renderiza al cambiar idioma (bitacora:langchange).
  */
 (function () {
@@ -17,6 +18,15 @@
     progress: "badge--progress",
     proposal: "badge--proposal",
     out: "badge--out",
+  };
+
+  const MODULE_ALIASES = {
+    pdv: ["pdv"],
+    superadmin: ["superadmin", "sa"],
+    kitchen: ["kitchen", "kds"],
+    delivery: ["delivery", "del"],
+    caja: ["caja"],
+    franquicias: ["franquicias", "franquias"],
   };
 
   function getLang() {
@@ -80,16 +90,75 @@
     return { date, time };
   }
 
+  function inPropuestasFolder() {
+    return /(?:^|\/)propuestas(?:\/|$)/i.test(window.location.pathname);
+  }
+
+  function resolveHref(href) {
+    if (!href) return "";
+    if (/^https?:\/\//i.test(href)) return href;
+    if (!inPropuestasFolder()) return href;
+    if (href === "index.html" || href.startsWith("index.html?")) {
+      return "../" + href;
+    }
+    if (href.startsWith("propuestas/")) {
+      return href.slice("propuestas/".length);
+    }
+    return href;
+  }
+
+  function normalizeToken(value) {
+    return String(value || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]+/g, "");
+  }
+
+  function entryTokens(entry) {
+    const tokens = new Set();
+    const href = entry.moduleHref || "";
+    const file = href.split("/").pop() || "";
+    const base = file.replace(/\.html$/i, "");
+    if (base) tokens.add(normalizeToken(base));
+
+    const mod = entry.module;
+    if (typeof mod === "string") {
+      tokens.add(normalizeToken(mod));
+    } else if (mod && typeof mod === "object") {
+      if (mod.es) tokens.add(normalizeToken(mod.es));
+      if (mod.pt) tokens.add(normalizeToken(mod.pt));
+    }
+
+    // Aliases: "KDS - Kitchen" → kds, kitchen
+    const label = pick(mod, "es") + " " + pick(mod, "pt");
+    if (/kds/i.test(label) || /kitchen/i.test(label)) {
+      tokens.add("kds");
+      tokens.add("kitchen");
+    }
+    return tokens;
+  }
+
+  function matchesModule(entry, filter) {
+    if (!filter) return true;
+    const wanted = MODULE_ALIASES[filter] || [filter];
+    const wantedNorm = wanted.map(normalizeToken);
+    const tokens = entryTokens(entry);
+    return wantedNorm.some((w) => tokens.has(w));
+  }
+
   function render() {
     const root = document.getElementById("changelog");
     if (!root) return;
 
     const lang = getLang();
-    const entries = Array.isArray(window.BITACORA_CHANGELOG)
+    const filter = (root.getAttribute("data-module") || "").trim().toLowerCase();
+    const all = Array.isArray(window.BITACORA_CHANGELOG)
       ? window.BITACORA_CHANGELOG.slice()
       : [];
-
-    entries.sort((a, b) => new Date(b.at) - new Date(a.at));
+    const entries = all
+      .filter((entry) => matchesModule(entry, filter))
+      .sort((a, b) => new Date(b.at) - new Date(a.at));
 
     if (!entries.length) {
       root.innerHTML =
@@ -118,8 +187,9 @@
         : "";
 
       const moduleLabel = pick(entry.module, lang) || "Sistema";
-      const moduleLink = entry.moduleHref
-        ? `<a class="changelog-entry__module" href="${escapeHtml(entry.moduleHref)}">${escapeHtml(moduleLabel)}</a>`
+      const href = resolveHref(entry.moduleHref);
+      const moduleLink = href
+        ? `<a class="changelog-entry__module" href="${escapeHtml(href)}">${escapeHtml(moduleLabel)}</a>`
         : `<span class="changelog-entry__module">${escapeHtml(moduleLabel)}</span>`;
 
       const summary = pick(entry.summary, lang);

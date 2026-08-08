@@ -47,6 +47,8 @@
       "index.changelogEmpty": "Aún no hay implementaciones registradas. Las nuevas se apilan aquí arriba.",
       "index.modulesHeading": "Por módulo",
       "index.modulesLead": "Resumen y alcance de cada frente del sistema.",
+      "module.feedMeta":
+        "Los últimos cambios de este módulo aparecen arriba, apilados por fecha y hora de implementación.",
       "index.pdv.title": "PDV / Dashboard",
       "index.pdv.lead":
         "Punto de venta táctil para mostrador, con flujo de dogs, combos, pagos duales y delivery interno.",
@@ -274,6 +276,8 @@
       "index.changelogEmpty": "Ainda não há implementações registradas. As novas são empilhadas aqui no topo.",
       "index.modulesHeading": "Por módulo",
       "index.modulesLead": "Resumo e escopo de cada frente do sistema.",
+      "module.feedMeta":
+        "As últimas mudanças deste módulo aparecem no topo, empilhadas por data e hora de implementação.",
       "index.pdv.title": "PDV / Dashboard",
       "index.pdv.lead":
         "Ponto de venda tátil para balcão, com fluxo de dogs, combos, pagamentos duais e delivery interno.",

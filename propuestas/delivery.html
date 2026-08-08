@@ -130,32 +130,17 @@
         </header>
 
         <main class="card">
-      <p class="kicker"><span data-i18n="common.modulo">Módulo</span> · <span class="badge badge--done">Hecho</span></p>
-      <h1 class="display" id="pageTitle" data-i18n="del.h1">Delivery</h1>
-      <p class="meta" data-i18n="del.meta">
-        Canal online: landing, pedido, portal del cliente, motoboys y liquidación en PDV sin ingreso a caja hasta el settlement.
-      </p>
-      <h2 data-i18n="del.flow">Flujo del cliente</h2>
-      <div class="flow">
-        <div class="flow-step"><span class="flow-step__num">1</span><h3 data-i18n="del.f1.h">Elegir tienda</h3><p data-i18n="del.f1.p">Gate de tienda antes del menú.</p></div>
-        <div class="flow-step"><span class="flow-step__num">2</span><h3 data-i18n="del.f2.h">Armar pedido</h3><p data-i18n="del.f2.p">Clases, dogs, extras y upsell.</p></div>
-        <div class="flow-step"><span class="flow-step__num">3</span><h3 data-i18n="del.f3.h">Pagar / confirmar</h3><p data-i18n="del.f3.p">Datos, notas y entrega o mostrador.</p></div>
-        <div class="flow-step"><span class="flow-step__num">4</span><h3 data-i18n="del.f4.h">Rastrear</h3><p data-i18n="del.f4.p">Portal y banner de pedido en curso.</p></div>
-      </div>
-      <h2 data-i18n="common.alcanceEntregado">Alcance entregado</h2>
-      <ul class="item-list">
-        <li><span data-i18n="del.i1">Landing alineada a danishotdog.vercel.app / danishotdog.com</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="del.i2">Pedido con personalización tipo PDV + animación de carrito</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="del.i3">Login sin pedido obligatorio; portal con historial y cashback</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="del.i4">Rastreo de pedidos no entregados; banner sin romper topbar roja</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="del.i5">Print conferencia al ingresar; Siñeriz en $U; sin caja hasta liquidar PDV</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="del.i6">Board SuperAdmin tipo Anota.ai; solo delivery + pedidos marcados</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="del.i7">App entregadores: celular + PIN; edición de motoboys con PIN visible</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="del.i8">Entrega no balcão integrada al botón Delivery del PDV</span><span class="badge badge--done">Hecho</span></li>
-      </ul>
-      <div class="button-row">
-        <a class="button" href="https://danishotdog.com" target="_blank" rel="noopener noreferrer" data-i18n="common.verSitioPublico">Ver sitio público</a>
-      </div>
+          <p class="kicker" data-i18n="index.kicker">Seguimiento operativo</p>
+          <h1 class="display" id="pageTitle" data-i18n="del.h1">Delivery</h1>
+          <p class="meta" data-i18n="module.feedMeta">
+            Los últimos cambios de este módulo aparecen arriba, apilados por fecha y hora de implementación.
+          </p>
+          <div id="changelog" class="changelog" data-module="delivery" aria-live="polite" aria-label="Historial de implementaciones" data-i18n-attr="aria-label:index.changelogAria">
+            <p class="empty-slot" data-i18n="index.changelogLoading">Cargando actualizaciones…</p>
+          </div>
+          <div class="button-row">
+            <a class="button" href="https://danishotdog.com" target="_blank" rel="noopener noreferrer" data-i18n="common.verSitioPublico">Ver sitio público</a>
+          </div>
         </main>
       </div>
 
@@ -171,7 +156,9 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="../js/changelog-data.js"></script>
   <script src="../js/i18n.js" defer></script>
+  <script src="../js/changelog.js" defer></script>
   <script src="../js/sidebar.js" defer></script>
   <script src="../js/motion.js" defer></script>
 </body>

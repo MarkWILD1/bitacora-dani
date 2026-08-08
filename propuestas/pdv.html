@@ -130,25 +130,14 @@
         </header>
 
         <main class="card">
-      <p class="kicker"><span data-i18n="common.modulo">Módulo</span> · <span class="badge badge--done">Hecho</span></p>
-      <h1 class="display" id="pageTitle" data-i18n="pdv.h1">PDV / Dashboard</h1>
-      <p class="meta" data-i18n="pdv.meta">
-        Punto de venta para mostrador: productos, personalización de dogs, pagos duales, delivery interno y autorización de operaciones sensibles.
-      </p>
-      <h2 data-i18n="common.alcanceEntregado">Alcance entregado</h2>
-      <ul class="item-list">
-        <li><span data-i18n="pdv.i1">Flujo editable de confección (salsicha → ingredientes → coberturas → extras)</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="pdv.i2">Opción «sin cobertura» obligatoria; ítems (no solo ingredientes)</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="pdv.i3">Combos con flujo de ingredientes del dog incluido</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="pdv.i4">Pago Pesos / Reales, split pay, PIX en reales con conversión</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="pdv.i5">Pager obligatorio; mesa/comanda; histórico del día</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="pdv.i6">Bonificaciones, descuentos (absoluto / %), autorización gerente</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="pdv.i7">Cancelar pedido/ítem con justificación e impacto en KDS</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="pdv.i8">Aba Delivery + retirada en mostrador; badge/parpadeo de listos</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="pdv.i9">Layout PDV 15" sin scroll; carrito compacto</span><span class="badge badge--done">Hecho</span></li>
-        <li><span data-i18n="pdv.i10">UI en mayúsculas; inputs con casing real</span><span class="badge badge--done">Hecho</span></li>
-      </ul>
-      <div class="note" data-i18n-html="pdv.note"><strong>Tiendas:</strong> Matriz opera catálogo en R$; Siñeriz en $U. El carrito puede mostrar dual cuando aplica tasa de cambio.</div>
+          <p class="kicker" data-i18n="index.kicker">Seguimiento operativo</p>
+          <h1 class="display" id="pageTitle" data-i18n="pdv.h1">PDV / Dashboard</h1>
+          <p class="meta" data-i18n="module.feedMeta">
+            Los últimos cambios de este módulo aparecen arriba, apilados por fecha y hora de implementación.
+          </p>
+          <div id="changelog" class="changelog" data-module="pdv" aria-live="polite" aria-label="Historial de implementaciones" data-i18n-attr="aria-label:index.changelogAria">
+            <p class="empty-slot" data-i18n="index.changelogLoading">Cargando actualizaciones…</p>
+          </div>
         </main>
       </div>
 
@@ -164,7 +153,9 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="../js/changelog-data.js"></script>
   <script src="../js/i18n.js" defer></script>
+  <script src="../js/changelog.js" defer></script>
   <script src="../js/sidebar.js" defer></script>
   <script src="../js/motion.js" defer></script>
 </body>
