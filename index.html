@@ -1,21 +1,22 @@
-<!DOCTYPE html>
-<html lang="es">
+﻿<!DOCTYPE html>
+<html lang="es" data-page="index">
 <head>
   <meta charset="UTF-8" />
+  <script>(function(){try{var l=localStorage.getItem("bitacora-dani-lang");if(l==="pt"||l==="es")document.documentElement.lang=l;}catch(e){}})();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Hub de actualizaciones e implementaciones — Dani's Hot Dog" />
   <title>Actualizaciones — Dani's Hot Dog</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=1" />
+  <link rel="stylesheet" href="css/styles.css?v=3" />
 </head>
 <body class="app">
   <div class="app__shell">
-    <aside class="sidebar" id="sidebar" aria-label="Navegación">
+    <aside class="sidebar" id="sidebar" aria-label="Navegación" data-i18n-attr="aria-label:nav.aria">
       <div class="sidebar__header">
         <div class="sidebar__actions">
-          <button type="button" class="sidebar__icon-btn sidebar__close" data-sidebar-close aria-label="Cerrar menú">
+          <button type="button" class="sidebar__icon-btn sidebar__close" data-sidebar-close aria-label="Cerrar menú" data-i18n-attr="aria-label:aria.closeMenu">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path d="M18 6 6 18M6 6l12 12" />
             </svg>
@@ -28,22 +29,22 @@
         </div>
         <a class="sidebar__brand" href="index.html">
           <img src="assets/logo-dani.png" width="72" height="72" alt="" />
-          <span class="sidebar__brand-text">Bitácora Dani</span>
+          <span class="sidebar__brand-text" data-i18n="brand.name">Bitácora Dani</span>
         </a>
       </div>
 
-      <nav class="sidebar__groups" aria-label="Secciones">
+      <nav class="sidebar__groups" aria-label="Secciones" data-i18n-attr="aria-label:nav.sections">
         <div class="sidebar__group sidebar__group--updates">
-          <p class="sidebar__group-label">Actualizaciones</p>
+          <p class="sidebar__group-label" data-i18n="nav.updates">Actualizaciones</p>
           <ul class="sidebar__nav">
             <li>
-              <a class="sidebar__link" href="index.html" aria-current="page" title="Resumen">
+              <a class="sidebar__link" href="index.html" aria-current="page" title="Resumen" data-i18n-attr="title:nav.summary">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
                   <rect x="9" y="3" width="6" height="4" rx="1" />
                   <path d="M9 12h6M9 16h4" />
                 </svg>
-                <span class="sidebar__label">Resumen</span>
+                <span class="sidebar__label" data-i18n="nav.summary">Resumen</span>
               </a>
             </li>
             <li>
@@ -85,46 +86,52 @@
               </a>
             </li>
             <li>
-              <a class="sidebar__link" href="propuestas/caja.html" title="Caja">
+              <a class="sidebar__link" href="propuestas/caja.html" title="Caja" data-i18n-attr="title:nav.caja">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <rect x="3" y="6" width="18" height="14" rx="2" />
                   <path d="M3 10h18M8 14h4" />
                 </svg>
-                <span class="sidebar__label">Caja</span>
+                <span class="sidebar__label" data-i18n="nav.caja">Caja</span>
               </a>
             </li>
           </ul>
         </div>
 
         <div class="sidebar__group sidebar__group--proposals">
-          <p class="sidebar__group-label">Propuestas</p>
+          <p class="sidebar__group-label" data-i18n="nav.proposals">Propuestas</p>
           <ul class="sidebar__nav">
             <li>
-              <a class="sidebar__link" href="propuestas/franquicias.html" title="Franquicias">
+              <a class="sidebar__link" href="propuestas/franquicias.html" title="Franquicias" data-i18n-attr="title:nav.franquicias">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M3 21h18M5 21V8l7-4 7 4v13" />
                   <path d="M9 21v-6h6v6" />
                 </svg>
-                <span class="sidebar__label">Franquicias</span>
+                <span class="sidebar__label" data-i18n="nav.franquicias">Franquicias</span>
               </a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <p class="sidebar__footer">Hub de seguimiento de implementaciones del sistema Dani's Hot Dog.</p>
+      
+      <div class="lang-switch" data-lang-switch role="group" aria-label="Idioma" data-i18n-attr="aria-label:lang.label">
+        <button type="button" class="lang-switch__btn" data-set-lang="es" aria-pressed="true">ES</button>
+        <button type="button" class="lang-switch__btn" data-set-lang="pt" aria-pressed="false">PT</button>
+      </div>
+
+      <p class="sidebar__footer" data-i18n="brand.footer">Hub de seguimiento de implementaciones del sistema Dani's Hot Dog.</p>
     </aside>
 
-    <button type="button" class="sidebar-backdrop" id="sidebar-backdrop" hidden aria-label="Cerrar menú"></button>
+    <button type="button" class="sidebar-backdrop" id="sidebar-backdrop" hidden aria-label="Cerrar menú" data-i18n-attr="aria-label:aria.closeMenu"></button>
 
     <div class="app__main">
       <header class="app__bar">
-        <button type="button" class="sidebar__icon-btn" data-sidebar-open aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menú">
+        <button type="button" class="sidebar__icon-btn" data-sidebar-open aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menú" data-i18n-attr="aria-label:aria.openMenu">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path d="M4 7h16M4 12h16M4 17h16" />
           </svg>
         </button>
-        <span class="app__bar-title">Actualizaciones</span>
+        <span class="app__bar-title" data-i18n="index.bar">Actualizaciones</span>
       </header>
 
       <div class="wrap">
@@ -133,225 +140,35 @@
         </header>
 
         <main class="card">
-          <p class="kicker">Seguimiento operativo</p>
-          <h1 class="display" id="pageTitle">Actualizaciones</h1>
-          <p class="meta">
-            Bitácora de implementaciones del sistema Dani's Hot Dog (Matriz y Siñeriz).
-            Aquí se resume lo ya entregado en PDV, SuperAdmin, Kitchen, Delivery, caja y
-            plataformas relacionadas. Las iniciativas nuevas están en <strong>Propuestas</strong>.
+          <p class="kicker" data-i18n="index.kicker">Seguimiento operativo</p>
+          <h1 class="display" id="pageTitle" data-i18n="index.h1">Actualizaciones</h1>
+          <p class="meta" data-i18n-html="index.meta">
+            Los últimos cambios aparecen arriba, apilados por fecha y hora de implementación.
+            El detalle por módulo sigue en el menú lateral y en los enlaces de abajo.
           </p>
 
-          <div class="project-grid">
-            <section class="project-card" aria-labelledby="pdv-title">
-              <h2 id="pdv-title">PDV / Dashboard</h2>
-              <p class="lead">Punto de venta táctil para mostrador, con flujo de dogs, combos, pagos duales y delivery interno.</p>
-              <ul class="item-list">
-                <li>
-                  <span>Flujo de venta personalizable (salsicha, ingredientes, coberturas, extras)</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Pago en Pesos ($U) y Reales (R$), split pay y redondeo</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Número de pager obligatorio en pago; aparece en Kitchen</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Bonificaciones colaboradores/clientes y descuentos de venta</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Cancelación con justificación + impresión / retiro de KDS</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Gestión de delivery en PDV + retirada en mostrador</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>UI en mayúsculas (inputs conservan casing real)</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-              </ul>
-              <div class="button-row">
-                <a class="button button--ghost" href="propuestas/pdv.html">Ver detalle</a>
-              </div>
-            </section>
+          <div id="changelog" class="changelog" aria-live="polite" aria-label="Historial de implementaciones" data-i18n-attr="aria-label:index.changelogAria">
+            <p class="empty-slot" data-i18n="index.changelogLoading">Cargando actualizaciones…</p>
+          </div>
 
-            <section class="project-card" aria-labelledby="sa-title">
-              <h2 id="sa-title">SuperAdmin</h2>
-              <p class="lead">Retaguardia multi-tienda: catálogo, materia prima, reportes, usuarios y configuración.</p>
-              <ul class="item-list">
-                <li>
-                  <span>Selector de tienda / creación de tienda al ingresar</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Catálogo, combos, promos, clases y ficha técnica</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Materia prima, ítems intermediarios, usos y consumos, descartes</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Relatorio de ventas, contabilidad y gastos fijos/variables</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Clientes, motoboys, bonificaciones y permisos de operadores</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Monedas por tienda (Matriz R$ / Siñeriz $U) y tasa BRL→UYU</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Asistente IA de interpretación / proyección</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-              </ul>
-              <div class="button-row">
-                <a class="button button--ghost" href="propuestas/superadmin.html">Ver detalle</a>
-              </div>
-            </section>
-
-            <section class="project-card" aria-labelledby="kds-title">
-              <h2 id="kds-title">Kitchen (KDS)</h2>
-              <p class="lead">Pantalla de cocina con pedidos en tiempo real, pager y control de estados.</p>
-              <ul class="item-list">
-                <li>
-                  <span>Pedidos con número de pager / mesa visibles</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Volver pedido marcado como listo (confirmación)</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Temporizador de preparación por pedido</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Cancelación desde historial remueve pedido del KDS</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Aislamiento Matriz / Siñeriz en producción</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-              </ul>
-              <div class="button-row">
-                <a class="button button--ghost" href="propuestas/kitchen.html">Ver detalle</a>
-              </div>
-            </section>
-
-            <section class="project-card" aria-labelledby="del-title">
-              <h2 id="del-title">Delivery</h2>
-              <p class="lead">Landing pública, pedido online, portal del cliente, motoboys y liquidación en PDV.</p>
-              <ul class="item-list">
-                <li>
-                  <span>Landing idéntica a danishotdog (hero, menú, cashback)</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Flujo de pedido con personalización de dogs + upsell</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Portal de cliente: pedidos, cashback, edición de datos</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Rastreo de pedido en curso desde portal y landing</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Ticket conferencia Siñeriz en $U; liquidación en PDV</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Plataforma entregadores (login celular + PIN)</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Entrega en mostrador integrada al botón Delivery del PDV</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-              </ul>
-              <div class="button-row">
-                <a class="button" href="https://danishotdog.com" target="_blank" rel="noopener noreferrer">Ver sitio</a>
-                <a class="button button--ghost" href="propuestas/delivery.html">Ver detalle</a>
-              </div>
-            </section>
-
-            <section class="project-card" aria-labelledby="caja-title">
-              <h2 id="caja-title">Caja y contabilidad</h2>
-              <p class="lead">Apertura, sangría, reforço, cierre dual, auditoría y reportes por tienda.</p>
-              <ul class="item-list">
-                <li>
-                  <span>Apertura con valor 0; troco inicial R$ / $U</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Sangría y reforço con impresión inmediata del ticket</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Cierre con nomenclatura dual y PDF descargable</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Turno: comandas, movimientos, auditoría con observaciones</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Notas fiscales vinculadas a stock y proveedores</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Gastos fijos/variables con status automático por color</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-              </ul>
-              <div class="button-row">
-                <a class="button button--ghost" href="propuestas/caja.html">Ver detalle</a>
-              </div>
-            </section>
-
-            <section class="project-card" aria-labelledby="desk-title">
-              <h2 id="desk-title">Desktop y puentes</h2>
-              <p class="lead">App Electron local, impresora ESC/POS y bootstrap de tienda.</p>
-              <ul class="item-list">
-                <li>
-                  <span>Migración a Electron + TypeScript (desktop local)</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Puente de impresión: conferencia, cancelación, caja</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Aislamiento de impresora por tienda en producción</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-                <li>
-                  <span>Tests de formato de tickets (delivery / cash movement)</span>
-                  <span class="badge badge--done">Hecho</span>
-                </li>
-              </ul>
-            </section>
+          <h2 data-i18n="index.modulesHeading">Por módulo</h2>
+          <p class="lead" data-i18n="index.modulesLead">Resumen y alcance de cada frente del sistema.</p>
+          <div class="module-links">
+            <a class="button button--ghost" href="propuestas/pdv.html">PDV</a>
+            <a class="button button--ghost" href="propuestas/superadmin.html">SuperAdmin</a>
+            <a class="button button--ghost" href="propuestas/kitchen.html">Kitchen</a>
+            <a class="button button--ghost" href="propuestas/delivery.html">Delivery</a>
+            <a class="button button--ghost" href="propuestas/caja.html" data-i18n="nav.caja">Caja</a>
+            <a class="button" href="https://danishotdog.com" target="_blank" rel="noopener noreferrer" data-i18n="common.verSitio">Ver sitio</a>
           </div>
         </main>
       </div>
 
       <footer class="site-footer">
         <div class="site-footer__inner">
-          <p class="site-footer__brand">Bitácora · Dani's Hot Dog</p>
-          <p class="site-footer__copy">Hub de seguimiento de implementaciones y propuestas.</p>
-          <p class="site-footer__credit">Desarrollado por Marcos Mello</p>
+          <p class="site-footer__brand" data-i18n="footer.brand">Bitácora · Dani's Hot Dog</p>
+          <p class="site-footer__copy" data-i18n="footer.copy">Hub de seguimiento de implementaciones y propuestas.</p>
+          <p class="site-footer__credit" data-i18n="footer.credit">Desarrollado por Marcos Mello</p>
         </div>
       </footer>
     </div>
@@ -359,6 +176,9 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/changelog-data.js"></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/changelog.js" defer></script>
   <script src="js/sidebar.js" defer></script>
   <script src="js/motion.js" defer></script>
 </body>

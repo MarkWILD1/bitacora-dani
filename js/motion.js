@@ -35,13 +35,25 @@
     children.forEach((el) => {
       if (el === title) return;
 
-      if (!pastIntro && (el.matches("h2") || el.matches(".project-grid"))) {
+      if (
+        !pastIntro &&
+        (el.matches("h2") || el.matches(".project-grid") || el.matches(".changelog"))
+      ) {
         pastIntro = true;
       }
 
       if (!pastIntro) {
         el.classList.add("reveal");
         intro.push(el);
+        return;
+      }
+
+      if (el.matches(".changelog")) {
+        current = null;
+        el.querySelectorAll(".changelog-entry").forEach((entry) => {
+          entry.classList.add("reveal");
+          sections.push([entry]);
+        });
         return;
       }
 
@@ -97,8 +109,8 @@
     title.style.opacity = "1";
   }
 
-  function init() {
-    const { title, intro, sections } = prepareMotion();
+  function runMotion(prepared) {
+    const { title, intro, sections } = prepared;
     const gsap = window.gsap;
 
     if (prefersReduced || !gsap || !window.ScrollTrigger) {
@@ -155,6 +167,23 @@
     });
 
     ScrollTrigger.refresh();
+  }
+
+  function init() {
+    const changelog = document.getElementById("changelog");
+    const start = () => runMotion(prepareMotion());
+
+    if (changelog && !changelog.querySelector(".changelog-entry")) {
+      const onReady = () => {
+        changelog.removeEventListener("changelog:ready", onReady);
+        start();
+      };
+      changelog.addEventListener("changelog:ready", onReady);
+      window.setTimeout(start, 400);
+      return;
+    }
+
+    start();
   }
 
   if (document.readyState === "loading") {
