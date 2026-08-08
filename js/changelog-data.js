@@ -6,6 +6,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-08T15:26:00-03:00",
+    module: { es: "Bitácora", pt: "Bitácora" },
+    moduleHref: "index.html",
+    title: {
+      es: "Renombrar Kitchen a KDS - Kitchen",
+      pt: "Renomear Kitchen para KDS - Kitchen",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Menú lateral y enlaces de módulo usan KDS - Kitchen",
+        "Título y barra de la página de detalle actualizados",
+      ],
+      pt: [
+        "Menu lateral e links de módulo usam KDS - Kitchen",
+        "Título e barra da página de detalhe atualizados",
+      ],
+    },
+  },
+  {
     at: "2026-08-08T13:54:00-03:00",
     module: { es: "Bitácora", pt: "Bitácora" },
     moduleHref: "index.html",
@@ -138,19 +158,19 @@ window.BITACORA_CHANGELOG = [
     module: { es: "Sistema", pt: "Sistema" },
     moduleHref: "index.html",
     title: {
-      es: "Pase Matriz: SuperAdmin, POS y Kitchen alineados",
-      pt: "Passe Matriz: SuperAdmin, POS e Kitchen alinhados",
+      es: "Pase Matriz: SuperAdmin, POS y KDS - Kitchen alineados",
+      pt: "Passe Matriz: SuperAdmin, POS e KDS - Kitchen alinhados",
     },
     status: "done",
     details: {
       es: [
         "Catálogo y costos Matriz en R$; carrito dual R$ + $U",
-        "Kitchen: pager solo en Matriz; cancel remueve del KDS",
+        "KDS - Kitchen: pager solo en Matriz; cancel remueve del KDS",
         "Aislamiento de materia prima Matriz vs Siñeriz",
       ],
       pt: [
         "Catálogo e custos Matriz em R$; carrinho dual R$ + $U",
-        "Kitchen: pager só na Matriz; cancel remove do KDS",
+        "KDS - Kitchen: pager só na Matriz; cancel remove do KDS",
         "Isolamento de matéria-prima Matriz vs Siñeriz",
       ],
     },
