@@ -6,6 +6,19 @@ Sitio HTML estático para seguir el estado de las implementaciones del sistema D
 
 Abrí `index.html` en el navegador (doble clic o arrastrar el archivo a Chrome/Edge/Firefox). No requiere instalación ni servidor.
 
+Ruta: `d:\bitacora-dani\index.html`
+
+## Publicar (GitHub Pages)
+
+Cuando exista el remoto `MarkWILD1/bitacora-dani`:
+
+```powershell
+cd d:\bitacora-dani
+git push -u origin main
+```
+
+Luego activá Pages desde la rama `main` (root). URL esperada: https://markwild1.github.io/bitacora-dani/
+
 ## Contenido
 
 | Archivo | Uso |
