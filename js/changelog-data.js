@@ -1,8 +1,9 @@
 /**
  * Bitácora Dani — feed cronológico.
  * REGLA: las entradas nuevas van AL PRINCIPIO del array (más reciente arriba).
- * `at` = fecha/hora ISO con zona -03:00 (Uruguay).
+ * t = fecha/hora ISO con zona -03:00 (Uruguay).
  * Textos: string (es) o { es, pt }.
+ * Fuente histórica: TODO.md de danis-hotdog-system (fechas de aplicación del bloque).
  */
 window.BITACORA_CHANGELOG = [
   {
@@ -18,12 +19,12 @@ window.BITACORA_CHANGELOG = [
       es: [
         "Plataforma con login, pruebas de procesos y resultados inmediatos",
         "Evolución por funcionario y plan de carrera en la empresa",
-        "Integración de pruebas Zona de Desarrollo de Genialidad (ZDG)",
+        "Integración de pruebas Zona de Desarrollo de Genialidad (ZDG)"
       ],
       pt: [
         "Plataforma com login, provas de processos e resultados imediatos",
         "Evolução por funcionário e plano de carreira na empresa",
-        "Integração de provas Zona de Desenvolvimento de Genialidade (ZDG)",
+        "Integração de provas Zona de Desenvolvimento de Genialidade (ZDG)"
       ],
     },
   },
@@ -39,11 +40,11 @@ window.BITACORA_CHANGELOG = [
     details: {
       es: [
         "PDV, SuperAdmin, KDS - Kitchen, Delivery y Caja usan el feed cronológico",
-        "Cada frente filtra solo sus implementaciones, de más reciente a más antigua",
+        "Cada frente filtra solo sus implementaciones, de más reciente a más antigua"
       ],
       pt: [
         "PDV, SuperAdmin, KDS - Kitchen, Delivery e Caixa usam o feed cronológico",
-        "Cada frente filtra só as suas implementações, da mais recente à mais antiga",
+        "Cada frente filtra só as suas implementações, da mais recente à mais antiga"
       ],
     },
   },
@@ -59,11 +60,11 @@ window.BITACORA_CHANGELOG = [
     details: {
       es: [
         "Menú lateral y enlaces de módulo usan KDS - Kitchen",
-        "Título y barra de la página de detalle actualizados",
+        "Título y barra de la página de detalle actualizados"
       ],
       pt: [
         "Menu lateral e links de módulo usam KDS - Kitchen",
-        "Título e barra da página de detalhe atualizados",
+        "Título e barra da página de detalhe atualizados"
       ],
     },
   },
@@ -80,12 +81,12 @@ window.BITACORA_CHANGELOG = [
       es: [
         "Botón ES/PT en el menú lateral (también con menú colapsado)",
         "Traducción de navegación, badges, footers y páginas de detalle",
-        "Preferencia guardada en el navegador y aplicada al feed cronológico",
+        "Preferencia guardada en el navegador y aplicada al feed cronológico"
       ],
       pt: [
         "Botão ES/PT no menu lateral (também com menu recolhido)",
         "Tradução da navegação, badges, footers e páginas de detalhe",
-        "Preferência salva no navegador e aplicada ao feed cronológico",
+        "Preferência salva no navegador e aplicada ao feed cronológico"
       ],
     },
   },
@@ -102,12 +103,12 @@ window.BITACORA_CHANGELOG = [
       es: [
         "Al registrar sangría o reforço se imprime ticket ESC/POS en el puente de la tienda",
         "Ticket con turno, atendente, fecha/hora, valor, obs, saldo y firma",
-        "Test de formato en receipt-printer-bridge",
+        "Test de formato en receipt-printer-bridge"
       ],
       pt: [
         "Ao registrar sangria ou reforço imprime ticket ESC/POS na ponte da loja",
         "Ticket com turno, atendente, data/hora, valor, obs, saldo e assinatura",
-        "Teste de formato no receipt-printer-bridge",
+        "Teste de formato no receipt-printer-bridge"
       ],
     },
   },
@@ -124,12 +125,12 @@ window.BITACORA_CHANGELOG = [
       es: [
         "Labels, botones y copy de UI en mayúsculas",
         "Inputs, contraseñas y PIN conservan el casing real del usuario",
-        "Clase preserve-case en login, usuarios y entregadores",
+        "Clase preserve-case en login, usuarios y entregadores"
       ],
       pt: [
         "Labels, botões e copy da UI em maiúsculas",
         "Inputs, senhas e PIN conservam o casing real do usuário",
-        "Classe preserve-case no login, usuários e entregadores",
+        "Classe preserve-case no login, usuários e entregadores"
       ],
     },
   },
@@ -145,11 +146,11 @@ window.BITACORA_CHANGELOG = [
     details: {
       es: [
         "El banner ya no empuja la topbar ni deja franja cream sin rojo",
-        "Banner fijo dentro del hero, debajo de la topbar",
+        "Banner fijo dentro del hero, debajo de la topbar"
       ],
       pt: [
         "O banner não empurra mais a topbar nem deixa faixa cream sem vermelho",
-        "Banner fixo dentro do hero, abaixo da topbar",
+        "Banner fixo dentro do hero, abaixo da topbar"
       ],
     },
   },
@@ -165,11 +166,11 @@ window.BITACORA_CHANGELOG = [
     details: {
       es: [
         "Setting independiente por tienda con fallback global",
-        "Usada en PDV, delivery, caja, PagBank y desktop",
+        "Usada en PDV, delivery, caja, PagBank y desktop"
       ],
       pt: [
         "Setting independente por loja com fallback global",
-        "Usada no PDV, delivery, caixa, PagBank e desktop",
+        "Usada no PDV, delivery, caixa, PagBank e desktop"
       ],
     },
   },
@@ -186,12 +187,12 @@ window.BITACORA_CHANGELOG = [
       es: [
         "Pedidos listos van al botón Delivery del PDV (badge + parpadeo)",
         "Login entregadores con celular + PIN; layout motoboys en 2 columnas",
-        "PIN visible al editar; backfill de PINs legibles",
+        "PIN visible al editar; backfill de PINs legibles"
       ],
       pt: [
         "Pedidos prontos vão ao botão Delivery do PDV (badge + pisca)",
         "Login entregadores com celular + PIN; layout motoboys em 2 colunas",
-        "PIN visível ao editar; backfill de PINs legíveis",
+        "PIN visível ao editar; backfill de PINs legíveis"
       ],
     },
   },
@@ -208,12 +209,12 @@ window.BITACORA_CHANGELOG = [
       es: [
         "Catálogo y costos Matriz en R$; carrito dual R$ + $U",
         "KDS - Kitchen: pager solo en Matriz; cancel remueve del KDS",
-        "Aislamiento de materia prima Matriz vs Siñeriz",
+        "Aislamiento de materia prima Matriz vs Siñeriz"
       ],
       pt: [
         "Catálogo e custos Matriz em R$; carrinho dual R$ + $U",
         "KDS - Kitchen: pager só na Matriz; cancel remove do KDS",
-        "Isolamento de matéria-prima Matriz vs Siñeriz",
+        "Isolamento de matéria-prima Matriz vs Siñeriz"
       ],
     },
   },
@@ -230,12 +231,12 @@ window.BITACORA_CHANGELOG = [
       es: [
         "Sección Pedidos en curso en /portal con botón Rastrear",
         "Reabrir monitoreo con ?track= y persistencia local",
-        "Normalización de celular en backend para el lookup",
+        "Normalización de celular en backend para el lookup"
       ],
       pt: [
         "Seção Pedidos em andamento em /portal com botão Rastrear",
         "Reabrir monitoramento com ?track= e persistência local",
-        "Normalização de celular no backend para o lookup",
+        "Normalização de celular no backend para o lookup"
       ],
     },
   },
@@ -251,11 +252,11 @@ window.BITACORA_CHANGELOG = [
     details: {
       es: [
         "Print al ingresar pedido delivery; sin ingreso a caja hasta liquidar en PDV",
-        "Moneda nativa por tienda en el relay de impresión",
+        "Moneda nativa por tienda en el relay de impresión"
       ],
       pt: [
         "Print ao entrar pedido delivery; sem entrada em caixa até liquidar no PDV",
-        "Moeda nativa por loja no relay de impressão",
+        "Moeda nativa por loja no relay de impressão"
       ],
     },
   },
@@ -273,11 +274,13 @@ window.BITACORA_CHANGELOG = [
         "Reducir panel delivery en Dashboard; fix botón agregar al carrito",
         "Salida de materia prima en tab distinto",
         "Ingredientes nuevos visibles en flujo POS; carga ficha técnica",
+        "Cancelar pedido enviado al KDS; encuadrar imágenes delivery"
       ],
       pt: [
         "Reduzir painel delivery no Dashboard; fix botão adicionar ao carrinho",
         "Saída de matéria-prima em aba distinta",
         "Ingredientes novos visíveis no fluxo POS; carga da ficha técnica",
+        "Cancelar pedido enviado ao KDS; enquadrar imagens delivery"
       ],
     },
   },
@@ -293,11 +296,11 @@ window.BITACORA_CHANGELOG = [
     details: {
       es: [
         "Botón para salvar y descargar PDF del cierre",
-        "Proveedores con código automático vinculable a NF y materia prima",
+        "Proveedores con código automático vinculable a NF y materia prima"
       ],
       pt: [
         "Botão para salvar e baixar PDF do fechamento",
-        "Fornecedores com código automático vinculável a NF e matéria-prima",
+        "Fornecedores com código automático vinculável a NF e matéria-prima"
       ],
     },
   },
@@ -311,8 +314,12 @@ window.BITACORA_CHANGELOG = [
     },
     status: "done",
     details: {
-      es: ["Relación NF ↔ stock al registrar movimientos de compra"],
-      pt: ["Relação NF ↔ estoque ao registrar movimentos de compra"],
+      es: [
+        "Relación NF ↔ stock al registrar movimientos de compra"
+      ],
+      pt: [
+        "Relação NF ↔ estoque ao registrar movimentos de compra"
+      ],
     },
   },
   {
@@ -327,11 +334,11 @@ window.BITACORA_CHANGELOG = [
     details: {
       es: [
         "Al agregar stock, valores negativos pasan a la cantidad ingresada",
-        "Historial de alteraciones alineado con el movimiento real",
+        "Historial de alteraciones alineado con el movimiento real"
       ],
       pt: [
         "Ao adicionar estoque, valores negativos passam à quantidade informada",
-        "Histórico de alterações alinhado ao movimento real",
+        "Histórico de alterações alinhado ao movimento real"
       ],
     },
   },
@@ -345,8 +352,12 @@ window.BITACORA_CHANGELOG = [
     },
     status: "done",
     details: {
-      es: ["App desktop local para operación de tienda"],
-      pt: ["App desktop local para operação da loja"],
+      es: [
+        "App desktop local para operación de tienda"
+      ],
+      pt: [
+        "App desktop local para operação da loja"
+      ],
     },
   },
   {
@@ -362,12 +373,12 @@ window.BITACORA_CHANGELOG = [
       es: [
         "Login sin pedido obligatorio; historial y edición de datos",
         "Notas antes de confirmar; entrega no balcão desde delivery",
-        "Asistente IA en SuperAdmin",
+        "Asistente IA en SuperAdmin (intérprete y proyección)"
       ],
       pt: [
         "Login sem pedido obrigatório; histórico e edição de dados",
         "Notas antes de confirmar; entrega no balcão pelo delivery",
-        "Assistente IA no SuperAdmin",
+        "Assistente IA no SuperAdmin (intérprete e projeção)"
       ],
     },
   },
@@ -382,43 +393,981 @@ window.BITACORA_CHANGELOG = [
     status: "done",
     details: {
       es: [
-        "Landing alineada a danishotdog; flujo de dogs, extras y upsell",
-        "Reforço en PDV; nomenclatura dual de fechamento de caja",
+        "Landing idéntica a danishotdog; flujo de dogs, extras y upsell «Pide también»",
+        "Layout de productos; conteo de extras; Instagram post manual"
       ],
       pt: [
-        "Landing alinhada ao danishotdog; fluxo de dogs, extras e upsell",
-        "Reforço no PDV; nomenclatura dual de fechamento de caixa",
+        "Landing idêntica ao danishotdog; fluxo de dogs, extras e upsell «Pide también»",
+        "Layout de produtos; contagem de extras; Instagram post manual"
       ],
     },
   },
   {
-    at: "2026-07-10T12:00:00-03:00",
-    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
-    moduleHref: "propuestas/kitchen.html",
+    at: "2026-06-27T12:00:00-03:00",
+    module: { es: "Caja", pt: "Caixa" },
+    moduleHref: "propuestas/caja.html",
     title: {
-      es: "Alcance base del KDS",
-      pt: "Escopo base do KDS",
+      es: "Reforço y nomenclatura dual de fechamento",
+      pt: "Reforço e nomenclatura dual de fechamento",
     },
     status: "done",
     details: {
       es: [
-        "Cola de pedidos con pager / mesa visibles",
-        "Marcar listo y revertir con confirmación",
-        "Temporizador de preparación; tiempo visible en SuperAdmin",
-        "Cancelación remueve pedido del KDS al instante",
-        "Colores de clases alineados con PDV",
-        "Aislamiento Matriz / Siñeriz (sin cruce de pedidos)",
-        "Observación de preparo editable según ingredientes elegidos",
+        "Botón Reforço en PDV",
+        "Cierre: totales R$ / $ / cartões+PIX, sangrías, reforços, troco inicial, crédito correntista",
+        "Test completo del sistema; refactor SuperAdminDashboard compilando"
       ],
       pt: [
-        "Fila de pedidos com pager / mesa visíveis",
-        "Marcar pronto e reverter com confirmação",
-        "Temporizador de preparo; tempo visível no SuperAdmin",
-        "Cancelamento remove o pedido do KDS na hora",
-        "Cores de classes alinhadas com o PDV",
-        "Isolamento Matriz / Siñeriz (sem cruzamento de pedidos)",
-        "Observação de preparo editável conforme ingredientes escolhidos",
+        "Botão Reforço no PDV",
+        "Fechamento: totais R$ / $ / cartões+PIX, sangrias, reforços, troco inicial, crédito correntista",
+        "Teste completo do sistema; refactor SuperAdminDashboard compilando"
       ],
     },
   },
+  {
+    at: "2026-06-16T18:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Pendiente: editar valores de Relatorio de contas por mes",
+      pt: "Pendente: editar valores do Relatório de contas por mês",
+    },
+    status: "progress",
+    details: {
+      es: [
+        "Pantalla debe mostrar el mes actual",
+        "Al marcar un mes como pago no debe marcar los demás",
+        "Nomenclatura: venta total en reales/pesos/tarjetas; troco inicial en vez de reforços mezclados"
+      ],
+      pt: [
+        "Tela deve mostrar o mês atual",
+        "Ao marcar um mês como pago não deve marcar os demais",
+        "Nomenclatura: venda total em reais/pesos/cartões; troco inicial em vez de reforços misturados"
+      ],
+    },
+  },
+  {
+    at: "2026-06-16T16:00:00-03:00",
+    module: "PDV",
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Split pay, movimientos de caja e historial de pedidos",
+      pt: "Split pay, movimentos de caixa e histórico de pedidos",
+    },
+    status: "done",
+    details: {
+      es: [
+        "PIX siempre en reales (conversión); Siñeriz permite split pesos + reales",
+        "Comandas: número de pedido alineado con KDS",
+        "Movimientos: cash, card y PIX; opción de cambiar forma de pago",
+        "Carrito muestra ítems que el cliente no quiere; historial completo (pager, delivery, dirección)",
+        "Cancelación con justificación remueve del KDS; descuentos correctos en impresión",
+        "Reinicio de numeración de pedidos a las 00:00 (no a las 21:00)",
+        "Layout delivery tipo danishotdog.vercel; clases en sidebar; animación al agregar al carrito",
+        "Bonificaciones: botón para abonar deuda + historial imprimible con filtro de fechas"
+      ],
+      pt: [
+        "PIX sempre em reais (conversão); Siñeriz permite split pesos + reais",
+        "Comandas: número do pedido alinhado com KDS",
+        "Movimentos: cash, card e PIX; opção de mudar forma de pagamento",
+        "Carrinho mostra itens que o cliente não quer; histórico completo (pager, delivery, endereço)",
+        "Cancelamento com justificativa remove do KDS; descontos corretos na impressão",
+        "Reinício da numeração de pedidos às 00:00 (não às 21:00)",
+        "Layout delivery tipo danishotdog.vercel; classes na sidebar; animação ao adicionar ao carrinho",
+        "Bonificações: botão para abater dívida + histórico imprimível com filtro de datas"
+      ],
+    },
+  },
+  {
+    at: "2026-06-10T12:00:00-03:00",
+    module: "Delivery",
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Pendiente: campos obligatorios y flujo editable del menú delivery",
+      pt: "Pendente: campos obrigatórios e fluxo editável do menu delivery",
+    },
+    status: "progress",
+    details: {
+      es: [
+        "Número de casa como campo aparte y obligatorio (además de nome, celular, rua)",
+        "Flujo: elegir tienda → más pedidos / clases / combos editables desde SuperAdmin → Delivery",
+        "Corregir costo mostrado en ítems (ej. capuccino)"
+      ],
+      pt: [
+        "Número da casa como campo separado e obrigatório (além de nome, celular, rua)",
+        "Fluxo: escolher loja → mais pedidos / classes / combos editáveis no SuperAdmin → Delivery",
+        "Corrigir custo exibido em itens (ex. capuccino)"
+      ],
+    },
+  },
+  {
+    at: "2026-06-09T14:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Auditoría de ventas: tortas pedidas vs marcadas",
+      pt: "Auditoria de vendas: tortas pedidas vs marcadas",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Revisión mié–dom: 171 pedidas vs 142 marcadas — ajuste de conteo en sistema"
+      ],
+      pt: [
+        "Revisão qua–dom: 171 pedidas vs 142 marcadas — ajuste de contagem no sistema"
+      ],
+    },
+  },
+  {
+    at: "2026-06-02T15:00:00-03:00",
+    module: "PDV",
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Combos, persistencia y sangrías en cierre",
+      pt: "Combos, persistência e sangrias no fechamento",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Precio de dog suelto ya no hereda precio de combo previo",
+        "Combos creados persisten tras refrescar",
+        "Sangrías incluidas en operaciones y cierre de caja"
+      ],
+      pt: [
+        "Preço do dog avulso não herda mais preço de combo anterior",
+        "Combos criados persistem após atualizar",
+        "Sangrias incluídas nas operações e no fechamento de caixa"
+      ],
+    },
+  },
+  {
+    at: "2026-05-29T14:00:00-03:00",
+    module: "Delivery",
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Delivery operativo + editar/eliminar motoboys",
+      pt: "Delivery operacional + editar/excluir motoboys",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Delivery en funcionamiento",
+        "Alta, edición y baja de motoboys"
+      ],
+      pt: [
+        "Delivery em funcionamento",
+        "Alta, edição e exclusão de motoboys"
+      ],
+    },
+  },
+  {
+    at: "2026-05-27T14:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Auditoría exhaustiva de Materia prima",
+      pt: "Auditoria exaustiva de Matéria-prima",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Revisión, corrección e implementación de acciones exhaustivas en MP"
+      ],
+      pt: [
+        "Revisão, correção e implementação de ações exaustivas em MP"
+      ],
+    },
+  },
+  {
+    at: "2026-05-26T12:00:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Imprimir al cancelar pedido",
+      pt: "Imprimir ao cancelar pedido",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Impresión de comprobante cuando se cancela un pedido"
+      ],
+      pt: [
+        "Impressão de comprovante quando um pedido é cancelado"
+      ],
+    },
+  },
+  {
+    at: "2026-05-24T16:00:00-03:00",
+    module: "PDV",
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Impresora por tienda, combos en flujo y password colaboradores",
+      pt: "Impressora por loja, combos no fluxo e senha de colaboradores",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Cierre en Matriz ya no imprime en Siñeriz; impresora de producción operativa",
+        "SuperAdmin puede ver contraseña de colaboradores",
+        "Combo con dog abre flujo de ingredientes del hotdog"
+      ],
+      pt: [
+        "Fechamento na Matriz não imprime mais em Siñeriz; impressora de produção operacional",
+        "SuperAdmin pode ver senha de colaboradores",
+        "Combo com dog abre fluxo de ingredientes do hotdog"
+      ],
+    },
+  },
+  {
+    at: "2026-05-24T12:00:00-03:00",
+    module: "PDV",
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Pendiente: elegir gaseosa normal/zero en Dashboard",
+      pt: "Pendente: escolher refrigerante normal/zero no Dashboard",
+    },
+    status: "proposal",
+    details: {
+      es: [
+        "Opción normal o zero y activación para mostrar en el PDV"
+      ],
+      pt: [
+        "Opção normal ou zero e ativação para mostrar no PDV"
+      ],
+    },
+  },
+  {
+    at: "2026-05-23T14:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Descarte también en Productos con stock por unidad",
+      pt: "Descarte também em Produtos com estoque por unidade",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Misma mecánica que Materia prima, solo en productos con stock en unidades"
+      ],
+      pt: [
+        "Mesma mecânica da Matéria-prima, só em produtos com estoque em unidades"
+      ],
+    },
+  },
+  {
+    at: "2026-05-22T14:00:00-03:00",
+    module: "PDV",
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Nº de pedido en ticket y redondeo de precios",
+      pt: "Nº do pedido no ticket e arredondamento de preços",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Número de pedido aparece en el ticket impreso",
+        "Redondeo corregido (ej. 108 → 110 cuando corresponde)"
+      ],
+      pt: [
+        "Número do pedido aparece no ticket impresso",
+        "Arredondamento corrigido (ex. 108 → 110 quando corresponde)"
+      ],
+    },
+  },
+  {
+    at: "2026-05-19T16:00:00-03:00",
+    module: "PDV",
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Flujo POS editable por producto + aislamiento Matriz/Siñeriz",
+      pt: "Fluxo POS editável por produto + isolamento Matriz/Siñeriz",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Cada paso del flujo se abre y edita por producto",
+        "Productos de Matriz ya no aparecen en Siñeriz",
+        "Descarte en Materia prima: día/hora, motivo y gramos"
+      ],
+      pt: [
+        "Cada passo do fluxo abre e edita por produto",
+        "Produtos da Matriz não aparecem mais em Siñeriz",
+        "Descarte em Matéria-prima: dia/hora, motivo e gramas"
+      ],
+    },
+  },
+  {
+    at: "2026-05-19T12:00:00-03:00",
+    module: "Delivery",
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Pendiente: editar precios del menú digital (plataformas)",
+      pt: "Pendente: editar preços do cardápio digital (plataformas)",
+    },
+    status: "progress",
+    details: {
+      es: [
+        "Valores de plataformas de delivery distintos al catálogo interno"
+      ],
+      pt: [
+        "Valores das plataformas de delivery diferentes do catálogo interno"
+      ],
+    },
+  },
+  {
+    at: "2026-05-16T14:00:00-03:00",
+    module: "Delivery",
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Listos para entregar: solo delivery (PDV + página Delivery)",
+      pt: "Prontos para entregar: só delivery (PDV + página Delivery)",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Solo pedidos marcados delivery en Dashboard o creados desde Delivery",
+        "No se listan todos los productos de cocina"
+      ],
+      pt: [
+        "Só pedidos marcados delivery no Dashboard ou criados pelo Delivery",
+        "Não se listam todos os produtos da cozinha"
+      ],
+    },
+  },
+  {
+    at: "2026-05-15T14:00:00-03:00",
+    module: "Delivery",
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Board Delivery tipo Anota.ai con volver al SuperAdmin",
+      pt: "Board Delivery tipo Anota.ai com voltar ao SuperAdmin",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Control detallado de pedidos en salida a delivery",
+        "Página propia con botón volver al header SuperAdmin"
+      ],
+      pt: [
+        "Controle detalhado de pedidos em saída para delivery",
+        "Página própria com botão voltar ao header SuperAdmin"
+      ],
+    },
+  },
+  {
+    at: "2026-05-14T16:00:00-03:00",
+    module: { es: "Caja", pt: "Caixa" },
+    moduleHref: "propuestas/caja.html",
+    title: {
+      es: "Turno de caja: comandas, sangrías, movimientos y auditoría",
+      pt: "Turno de caixa: comandas, sangrias, movimentos e auditoria",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Comandas: ítems vendidos y a qué corresponden los valores",
+        "Venta: troco inicial del día + sangrías",
+        "Movimientos: forma de pago, pedido y observaciones de impresión",
+        "Auditoría: espacio de observaciones antes de marcar auditado"
+      ],
+      pt: [
+        "Comandas: itens vendidos e a que correspondem os valores",
+        "Venda: troco inicial do dia + sangrias",
+        "Movimentos: forma de pagamento, pedido e observações da impressão",
+        "Auditoria: espaço de observações antes de marcar auditado"
+      ],
+    },
+  },
+  {
+    at: "2026-05-14T14:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Ítems intermediarios, Usos y consumos y gráfica de MP",
+      pt: "Itens intermediários, Usos e consumos e gráfica de MP",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Pestaña Ítems intermediarios con ficha técnica propia; al vender se debitan componentes",
+        "Pestaña Usos y consumos (limpieza, vasos, etc.) con costo de última compra",
+        "Gráfica de materias primas consumidas"
+      ],
+      pt: [
+        "Aba Itens intermediários com ficha técnica própria; ao vender debitam-se componentes",
+        "Aba Usos e consumos (limpeza, copos, etc.) com custo da última compra",
+        "Gráfica de matérias-primas consumidas"
+      ],
+    },
+  },
+  {
+    at: "2026-05-12T15:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Ficha técnica: valores al crear compuesto + drag-and-drop",
+      pt: "Ficha técnica: valores ao criar composto + drag-and-drop",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Producto compuesto entra con valores estipulados al crearse",
+        "Ordenar ficha técnica con drag-and-drop",
+        "Relatorio de ventas: nomenclatura y totales según moneda vendida (R$ / $U)"
+      ],
+      pt: [
+        "Produto composto entra com valores estipulados ao criar",
+        "Ordenar ficha técnica com drag-and-drop",
+        "Relatório de vendas: nomenclatura e totais conforme moeda vendida (R$ / $U)"
+      ],
+    },
+  },
+  {
+    at: "2026-05-12T12:00:00-03:00",
+    module: "PDV",
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Pendiente: flujo de venta 100% editable desde caja",
+      pt: "Pendente: fluxo de venda 100% editável pela caixa",
+    },
+    status: "progress",
+    details: {
+      es: [
+        "Alterar el flujo de venta en caja y dejarlo totalmente editable"
+      ],
+      pt: [
+        "Alterar o fluxo de venda no caixa e deixá-lo totalmente editável"
+      ],
+    },
+  },
+  {
+    at: "2026-05-10T14:00:00-03:00",
+    module: "PDV",
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Queijo+batata como extra y maximizar selector de tiendas",
+      pt: "Queijo+batata como extra e maximizar seletor de lojas",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Variación ficha técnica queijo-ralado-batata-palha; opcionales solos, extra combinados",
+        "Producto en flujo de caja; selector de tiendas permite maximizar pantalla"
+      ],
+      pt: [
+        "Variação ficha técnica queijo-ralado-batata-palha; opcionais sozinhos, extra combinados",
+        "Produto no fluxo de caixa; seletor de lojas permite maximizar tela"
+      ],
+    },
+  },
+  {
+    at: "2026-05-06T14:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Relatorio de ventas detallado (variantes, monedas, descuentos)",
+      pt: "Relatório de vendas detalhado (variantes, moedas, descontos)",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Detalle completo de cómo se vendió el producto (sin mayo, con extra, etc.)",
+        "Valores vendidos en pesos y en reales",
+        "Edición de descuentos de venta ajustada"
+      ],
+      pt: [
+        "Detalhe completo de como o produto foi vendido (sem maionese, com extra, etc.)",
+        "Valores vendidos em pesos e em reais",
+        "Edição de descontos de venda ajustada"
+      ],
+    },
+  },
+  {
+    at: "2026-05-04T14:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Eliminar materia prima y descuento de stock al marcar listo",
+      pt: "Excluir matéria-prima e baixa de estoque ao marcar pronto",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Posibilidad de eliminar materia prima",
+        "Valores de MP del producto se descuentan tras venta cuando Kitchen marca listo"
+      ],
+      pt: [
+        "Possibilidade de excluir matéria-prima",
+        "Valores de MP do produto são baixados após venda quando Kitchen marca pronto"
+      ],
+    },
+  },
+  {
+    at: "2026-05-01T14:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Flujo de pedidos del Dashboard personalizable",
+      pt: "Fluxo de pedidos do Dashboard personalizável",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Desde SuperAdmin se define orden: coberturas, ingredientes, etc.",
+        "Flujo totalmente configurable por producto/tienda"
+      ],
+      pt: [
+        "Pelo SuperAdmin define-se a ordem: coberturas, ingredientes, etc.",
+        "Fluxo totalmente configurável por produto/loja"
+      ],
+    },
+  },
+  {
+    at: "2026-04-30T16:00:00-03:00",
+    module: { es: "Caja", pt: "Caixa" },
+    moduleHref: "propuestas/caja.html",
+    title: {
+      es: "Apertura de caja en cierre (reales) y pendientes de nomenclatura",
+      pt: "Abertura de caixa no fechamento (reais) e pendências de nomenclatura",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Cierre en reales contempla el dinero de apertura de caja",
+        "Valor en reales ya no se confunde con pesos"
+      ],
+      pt: [
+        "Fechamento em reais contempla o dinheiro de abertura de caixa",
+        "Valor em reais não se confunde mais com pesos"
+      ],
+    },
+  },
+  {
+    at: "2026-04-30T12:00:00-03:00",
+    module: { es: "Caja", pt: "Caixa" },
+    moduleHref: "propuestas/caja.html",
+    title: {
+      es: "Pendiente: nomenclatura cierre R$ / tarjetas UY-BR / ítems intermediarios avanzados",
+      pt: "Pendente: nomenclatura fechamento R$ / cartões UY-BR / itens intermediários avançados",
+    },
+    status: "progress",
+    details: {
+      es: [
+        "Cierre: nomenclaturas en R$; PIX permanece en reales",
+        "Al pagar: elegir tarjetas UY (Mercado Pago) o BR",
+        "Materia prima → ítems intermediarios (ej. Molho Branco) con costo según NF de componentes"
+      ],
+      pt: [
+        "Fechamento: nomenclaturas em R$; PIX permanece em reais",
+        "Ao pagar: escolher cartões UY (Mercado Pago) ou BR",
+        "Matéria-prima → itens intermediários (ex. Molho Branco) com custo conforme NF dos componentes"
+      ],
+    },
+  },
+  {
+    at: "2026-04-29T14:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Gastos fijos/variables: buscador, status y colores automáticos",
+      pt: "Gastos fixos/variáveis: busca, status e cores automáticas",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Buscador por mes/día en tabla de gastos",
+        "Status: PAGO / EM ABERTO / A VENCER (mayúsculas)",
+        "Colores automáticos; si vence sin pagar → Vencido en rojo",
+        "Filtro en Reporte de ventas por producto específico y cantidad"
+      ],
+      pt: [
+        "Busca por mês/dia na tabela de gastos",
+        "Status: PAGO / EM ABERTO / A VENCER (maiúsculas)",
+        "Cores automáticas; se vencer sem pagar → Vencido em vermelho",
+        "Filtro no Relatório de vendas por produto específico e quantidade"
+      ],
+    },
+  },
+  {
+    at: "2026-04-27T14:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Costo promedio ponderado de MP, UI y redondeo Dashboard",
+      pt: "Custo médio ponderado de MP, UI e arredondamento Dashboard",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Suma entradas con cantidad y costo; resta hasta agotar lote; popup al cambiar costo",
+        "Editar MP sin scrollbar horizontal; decimal en ficha técnica",
+        "Botón refrescar con animación; redondeo de valores en Dashboard"
+      ],
+      pt: [
+        "Soma entradas com quantidade e custo; baixa até esgotar lote; popup ao mudar custo",
+        "Editar MP sem scrollbar horizontal; decimal na ficha técnica",
+        "Botão atualizar com animação; arredondamento de valores no Dashboard"
+      ],
+    },
+  },
+  {
+    at: "2026-04-25T12:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Fix: materia prima no grababa en edición (producción)",
+      pt: "Fix: matéria-prima não gravava na edição (produção)",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Datos de MP se persisten correctamente al editar en producción"
+      ],
+      pt: [
+        "Dados de MP persistem corretamente ao editar em produção"
+      ],
+    },
+  },
+  {
+    at: "2026-04-24T15:00:00-03:00",
+    module: "PDV",
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Extra queijo e batata, sangría en nota, historial y DANFE",
+      pt: "Extra queijo e batata, sangria na nota, histórico e DANFE",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Producto «queijo e batata» con ingredientes de ficha; entra como extra",
+        "Sangría sale en la nota; clase puede mostrarse/ocultarse en PDV",
+        "Aba Vendas: historial del día; generar NF/DANFE tras pedido (CPF)"
+      ],
+      pt: [
+        "Produto «queijo e batata» com ingredientes da ficha; entra como extra",
+        "Sangria sai na nota; classe pode mostrar/ocultar no PDV",
+        "Aba Vendas: histórico do dia; gerar NF/DANFE após pedido (CPF)"
+      ],
+    },
+  },
+  {
+    at: "2026-04-18T12:00:00-03:00",
+    module: { es: "Caja", pt: "Caixa" },
+    moduleHref: "propuestas/caja.html",
+    title: {
+      es: "Propuesta: CNPJ por turno y filtro de movimientos con NF",
+      pt: "Proposta: CNPJ por turno e filtro de movimentos com NF",
+    },
+    status: "proposal",
+    details: {
+      es: [
+        "Switch para ver solo transacciones con nota fiscal",
+        "Al login PDV elegir CNPJ (teoría: delivery vs loja; práctica: por turno, tope 50 mil)",
+        "Pesos y reales deben cerrar con auditoría (teórico / informado / auditado)"
+      ],
+      pt: [
+        "Switch para ver só transações com nota fiscal",
+        "No login PDV escolher CNPJ (teoria: delivery vs loja; prática: por turno, teto 50 mil)",
+        "Pesos e reais devem fechar com auditoria (teórico / informado / auditado)"
+      ],
+    },
+  },
+  {
+    at: "2026-04-17T15:00:00-03:00",
+    module: { es: "Caja", pt: "Caixa" },
+    moduleHref: "propuestas/caja.html",
+    title: {
+      es: "Sangría, edición MP y auditoría",
+      pt: "Sangria, edição MP e auditoria",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Sangría implementada",
+        "Editar MP: unidad entera; misma nomenclatura unidad de compra; cards fijos",
+        "Costo variable; ajuste de auditoría"
+      ],
+      pt: [
+        "Sangria implementada",
+        "Editar MP: unidade inteira; mesma nomenclatura unidade de compra; cards fixos",
+        "Custo variável; ajuste de auditoria"
+      ],
+    },
+  },
+  {
+    at: "2026-04-17T12:00:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Temporizador de preparación por pedido",
+      pt: "Temporizador de preparo por pedido",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Timer en cada pedido enviado a cocina",
+        "Tiempo de preparación visible en SuperAdmin"
+      ],
+      pt: [
+        "Timer em cada pedido enviado à cozinha",
+        "Tempo de preparo visível no SuperAdmin"
+      ],
+    },
+  },
+  {
+    at: "2026-04-15T15:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Pesos en productos/MP, promos, sobregiro y descuentos",
+      pt: "Pesos em produtos/MP, promos, sobregiro e descontos",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Edición de productos y materia prima en pesos uruguayos",
+        "Tab PROMOS con activar/desactivar",
+        "Sobregiro = tope que el funcionario puede gastar",
+        "Filtro de descuentos de venta en Ventas por vendedor"
+      ],
+      pt: [
+        "Edição de produtos e matéria-prima em pesos uruguaios",
+        "Aba PROMOS com ativar/desativar",
+        "Sobregiro = teto que o funcionário pode gastar",
+        "Filtro de descontos de venda em Vendas por vendedor"
+      ],
+    },
+  },
+  {
+    at: "2026-04-14T16:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Contabilidad, reportes y nomenclatura en pesos",
+      pt: "Contabilidade, relatórios e nomenclatura em pesos",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Ventas por clase/producto con fecha-hora y gráfica; productos por vendedor con detalle",
+        "Vincular contabilidad y Relatorio de vendas no balcão",
+        "Siñeriz en pesos uruguayos; formato con punto cada 3 cifras",
+        "Control de cuentas con datos del sistema + ingreso manual; nombres de tabs en ventana",
+        "Hover datos con letra blanca; bonificaciones editables por usuario",
+        "Abrir caja con valor 0 permitido; imágenes redimensionadas en cards"
+      ],
+      pt: [
+        "Vendas por classe/produto com data-hora e gráfica; produtos por vendedor com detalhe",
+        "Vincular contabilidade e Relatório de vendas no balcão",
+        "Siñeriz em pesos uruguaios; formato com ponto a cada 3 cifras",
+        "Controle de contas com dados do sistema + entrada manual; nomes das abas na janela",
+        "Hover dados com letra branca; bonificações editáveis por usuário",
+        "Abrir caixa com valor 0 permitido; imagens redimensionadas nos cards"
+      ],
+    },
+  },
+  {
+    at: "2026-04-13T15:00:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Pager/mesa en cocina y revertir «listo»",
+      pt: "Pager/mesa na cozinha e reverter «pronto»",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Número de pager/mesa visible en KDS para avisar al cliente",
+        "Botón para volver un pedido marcado como listo (con confirmación)",
+        "Colores de clases alineados con PDV"
+      ],
+      pt: [
+        "Número de pager/mesa visível no KDS para avisar o cliente",
+        "Botão para voltar um pedido marcado como pronto (com confirmação)",
+        "Cores de classes alinhadas com o PDV"
+      ],
+    },
+  },
+  {
+    at: "2026-04-12T16:00:00-03:00",
+    module: "PDV",
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "PDV 15″, aba entrega, cancelación y descuentos",
+      pt: "PDV 15″, aba entrega, cancelamento e descontos",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Sin scroll; carrito y cards más compactos; adaptado a pantalla de uso",
+        "«Ítems» (no ingredientes); aba de entrega; operador elige motoboy y da salida",
+        "Notificación al cliente: pedido a camino",
+        "Cancelar con justificación (error/sin pago/troca); imprimir solo comanda completa",
+        "Observación de preparo editable; descuento cliente o manual (% / absoluto)",
+        "Ficha técnica + costo/precio de venta; crear otro pancho; idiomas en ingredientes",
+        "Pago en Pesos y Reales (no «Dinero U$»); pager obligatorio para avanzar"
+      ],
+      pt: [
+        "Sem scroll; carrinho e cards mais compactos; adaptado à tela de uso",
+        "«Itens» (não ingredientes); aba de entrega; operador escolhe motoboy e dá saída",
+        "Notificação ao cliente: pedido a caminho",
+        "Cancelar com justificativa (erro/sem pagamento/troca); imprimir só comanda completa",
+        "Observação de preparo editável; desconto cliente ou manual (% / absoluto)",
+        "Ficha técnica + custo/preço de venda; criar outro pancho; idiomas nos ingredientes",
+        "Pagamento em Pesos e Reais (não «Dinheiro U$»); pager obrigatório para avançar"
+      ],
+    },
+  },
+  {
+    at: "2026-04-11T15:00:00-03:00",
+    module: "PDV",
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Línea de tiempo del dog, coberturas y pasarela",
+      pt: "Linha do tempo do dog, coberturas e passarela",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Modal: salsicha → ingredientes → coberturas → extras (con valor)",
+        "Opción «Sin cobertura» obligatoria elegir un ítem",
+        "Pasarela: seña/mesa con número de comanda; sin botón PIX en débito",
+        "Flujo de confección usa productos de ficha técnica",
+        "Botones del PDV autorizados por SuperAdmin o contraseña de gerente",
+        "Lápiz para editar pedido; 10% funcionarios/clientes cadastrados"
+      ],
+      pt: [
+        "Modal: salsicha → ingredientes → coberturas → extras (com valor)",
+        "Opção «Sem cobertura» obrigatória escolher um item",
+        "Passarela: senha/mesa com número da comanda; sem botão PIX no débito",
+        "Fluxo de confecção usa produtos da ficha técnica",
+        "Botões do PDV autorizados pelo SuperAdmin ou senha do gerente",
+        "Lápis para editar pedido; 10% funcionários/clientes cadastrados"
+      ],
+    },
+  },
+  {
+    at: "2026-04-10T15:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Multi-tienda, bonificaciones, clientes y catálogo base",
+      pt: "Multi-loja, bonificações, clientes e catálogo base",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Traducción SuperAdmin; elegir/crear tienda al entrar (admin por loja)",
+        "Matriz / Siñeriz: producto disponible por tienda al cadastrar",
+        "Sidebar a la derecha sin scroll; pantalla completa",
+        "Clientes en sidebar; CPF opcional + RUT; bonificación editable",
+        "Bonificación colaborador con sobregiro hasta $5000; vendedor elige beneficiario",
+        "Motoboys (nombre + celular); varios pedidos al mismo motoboy",
+        "Códigos crecientes irrepetibles; cadastro: todos / estoque / mercadorías",
+        "Cajero puede entrar en varias tiendas; scroll horizontal móvil en funciones",
+        "Extras bajo ficha técnica; sacar todos los ingredientes; valores ficha corregidos"
+      ],
+      pt: [
+        "Tradução SuperAdmin; escolher/criar loja ao entrar (admin por loja)",
+        "Matriz / Siñeriz: produto disponível por loja ao cadastrar",
+        "Sidebar à direita sem scroll; tela cheia",
+        "Clientes na sidebar; CPF opcional + RUT; bonificação editável",
+        "Bonificação colaborador com sobregiro até $5000; vendedor escolhe beneficiário",
+        "Motoboys (nome + celular); vários pedidos ao mesmo motoboy",
+        "Códigos crescentes irrepetíveis; cadastro: todos / estoque / mercadorias",
+        "Caixa pode entrar em várias lojas; scroll horizontal móvel nas funções",
+        "Extras sob ficha técnica; tirar todos os ingredientes; valores ficha corrigidos"
+      ],
+    },
+  },
+  {
+    at: "2026-04-06T14:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Propuesta: filtros contables y delivery como el PDV",
+      pt: "Proposta: filtros contábeis e delivery como o PDV",
+    },
+    status: "proposal",
+    details: {
+      es: [
+        "Contabilidad → ventas por vendedor: filtrar productos vendidos con hora de venta",
+        "Delivery: mismos filtros que el PDV"
+      ],
+      pt: [
+        "Contabilidade → vendas por vendedor: filtrar produtos vendidos com hora da venda",
+        "Delivery: mesmos filtros do PDV"
+      ],
+    },
+  },
+  {
+    at: "2026-04-05T16:00:00-03:00",
+    module: { es: "Franquicias", pt: "Franquias" },
+    moduleHref: "propuestas/franquicias.html",
+    title: {
+      es: "Propuesta: sistema de franquicias",
+      pt: "Proposta: sistema de franquias",
+    },
+    status: "proposal",
+    details: {
+      es: [
+        "SuperAdmin global ve todas las franquicias",
+        "Franqueado con permisos de SuperAdmin solo de su tienda"
+      ],
+      pt: [
+        "SuperAdmin global vê todas as franquias",
+        "Franqueado com permissões de SuperAdmin só da sua loja"
+      ],
+    },
+  },
+  {
+    at: "2026-04-05T14:00:00-03:00",
+    module: "SuperAdmin",
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Propuesta: acceso contador, totem y cardápio digital",
+      pt: "Proposta: acesso contador, totem e cardápio digital",
+    },
+    status: "proposal",
+    details: {
+      es: [
+        "Acceso del contador al sistema (datos y números; costos fijos agua/luz)",
+        "Acceso al Totem en login; tabs Cardápio digital / Totem / PDV al crear producto",
+        "Tab SuperAdmin Cardápio digital + adicionais de comanda (ej. taxa de serviço)",
+        "API Google Maps en servicio de pedidos; cadastro de clientes en pantalla de pedidos"
+      ],
+      pt: [
+        "Acesso do contador ao sistema (dados e números; custos fixos água/luz)",
+        "Acesso ao Totem no login; abas Cardápio digital / Totem / PDV ao criar produto",
+        "Aba SuperAdmin Cardápio digital + adicionais de comanda (ex. taxa de serviço)",
+        "API Google Maps no serviço de pedidos; cadastro de clientes na tela de pedidos"
+      ],
+    },
+  },
+  {
+    at: "2026-04-05T12:00:00-03:00",
+    module: "PDV",
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Propuesta: emballage, stock al quitar ingredientes y UX de carrito",
+      pt: "Proposta: embalagem, estoque ao tirar ingredientes e UX do carrinho",
+    },
+    status: "proposal",
+    details: {
+      es: [
+        "Botón costo de embalagem junto a agregar ingrediente",
+        "Al sacar ingredientes, restar esa cantidad del stock",
+        "Pago solo vía cardápio digital y totem; efecto carrito desde la izquierda",
+        "Factor de conversión MP (gramatura por unidad); CMOD y markup en producto",
+        "Redondeo de valores; lacres por vendedor; limitar operadores de caja"
+      ],
+      pt: [
+        "Botão custo de embalagem junto a adicionar ingrediente",
+        "Ao tirar ingredientes, baixar essa quantidade do estoque",
+        "Pagamento só via cardápio digital e totem; efeito carrinho da esquerda",
+        "Fator de conversão MP (gramatura por unidade); CMOD e markup no produto",
+        "Arredondamento de valores; lacres por vendedor; limitar operadores de caixa"
+      ],
+    },
+  }
 ];
