@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-12T19:05:00-03:00",
+    module: { es: "Login", pt: "Login" },
+    moduleHref: "index.html",
+    title: {
+      es: "Fix: tildes y ç rotos en portugués en producción",
+      pt: "Fix: acentos e ç quebrados no português em produção",
+    },
+    status: "done",
+    details: {
+      es: [
+        "pt.json tenía el texto UTF-8 guardado mal varias veces (Administração se veía como ADMINISTRAÃ§Ã£O)",
+        "El español no se tocaba: por eso en local (idioma ES) se veía bien y en producción (PT por defecto) no",
+        "Se restauró el portugués y un test evita que vuelva a commitearse mojibake"
+      ],
+      pt: [
+        "pt.json tinha o texto UTF-8 gravado errado várias vezes (Administração aparecia como ADMINISTRAÃ§Ã£O)",
+        "O espanhol não foi afetado: por isso no local (idioma ES) via-se bem e em produção (PT padrão) não",
+        "Português restaurado e um teste evita que o mojibake volte a ser commitado"
+      ],
+    },
+  },
+  {
     at: "2026-08-12T11:43:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
