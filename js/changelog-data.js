@@ -7,6 +7,52 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-12T11:43:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Fix: no re-liquidar pedidos ya despachados en el tablero",
+      pt: "Fix: não re-liquidar pedidos já despachados no painel",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Pedidos ya liquidados/despachados muestran En ruta / Ya liquidado en lugar de Finalizar",
+        "Backend idempotente al reintentar settle (sin error El pedido ya fue liquidado)",
+        "Guardas en PDV para no abrir de nuevo el cobro de un pedido cerrado"
+      ],
+      pt: [
+        "Pedidos já liquidados/despachados mostram Em rota / Já liquidado no lugar de Finalizar",
+        "Backend idempotente ao retentar settle (sem erro El pedido ya fue liquidado)",
+        "Guards no PDV para não reabrir cobrança de pedido já fechado"
+      ],
+    },
+  },
+  {
+    at: "2026-08-12T11:20:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Tablero de pedidos estilo Anota AI en PDV y SuperAdmin",
+      pt: "Painel de pedidos estilo Anota AI no PDV e SuperAdmin",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Kanban Em análise / Em produção / Prontos para entrega con tarjetas detalladas",
+        "Modal de detalle completo al clic (cliente, entrega, pago, origen, NF, ítems, taxa)",
+        "Misma UI en botón Delivery del PDV (pestaña Pedidos) y en /superadmin/delivery",
+        "Tiempos balcão/delivery editables y auto-aceptar pedidos entrantes"
+      ],
+      pt: [
+        "Kanban Em análise / Em produção / Prontos para entrega com cartões detalhados",
+        "Modal de detalhe completo ao clicar (cliente, entrega, pagamento, origem, NF, itens, taxa)",
+        "Mesma UI no botão Delivery do PDV (aba Pedidos) e em /superadmin/delivery",
+        "Tempos balcão/delivery editáveis e aceite automático de pedidos entrantes"
+      ],
+    },
+  },
+  {
     at: "2026-08-08T15:55:00-03:00",
     module: { es: "Capacitación", pt: "Capacitação" },
     moduleHref: "propuestas/capacitacion.html",
