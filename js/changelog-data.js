@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-13T18:52:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Modal de despacho horizontal: motoboys a la izquierda, botones a la derecha",
+      pt: "Modal de despacho horizontal: motoboys à esquerda, botões à direita",
+    },
+    status: "done",
+    details: {
+      es: [
+        "La lista de motoboys queda a la izquierda y se puede scrollear completa",
+        "Dar salida y Cancelar quedan fijos a la derecha, siempre visibles"
+      ],
+      pt: [
+        "A lista de motoboys fica à esquerda e pode ser rolada por completo",
+        "Dar saída e Cancelar ficam fixos à direita, sempre visíveis"
+      ],
+    },
+  },
+  {
     at: "2026-08-13T18:50:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
