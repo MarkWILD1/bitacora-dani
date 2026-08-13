@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-13T18:10:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Fix: el descuento de materia prima queda aislado por tienda",
+      pt: "Fix: o desconto de matéria-prima fica isolado por loja",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Un pedido de Matriz no descuenta stock de Siñeriz (y al revés), aunque el ingrediente se llame igual",
+        "Frankfurter ya no toma la salchicha de la otra tienda si falta en la local",
+        "Test: pedido Matriz → pedido Siñeriz, cada uno mueve solo su materia prima"
+      ],
+      pt: [
+        "Um pedido da Matriz não desconta estoque do Siñeriz (e vice-versa), mesmo com o mesmo nome de ingrediente",
+        "Frankfurter já não pega a salsicha da outra loja se faltar na local",
+        "Teste: pedido Matriz → pedido Siñeriz, cada um move só a sua matéria-prima"
+      ],
+    },
+  },
+  {
     at: "2026-08-13T17:56:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
