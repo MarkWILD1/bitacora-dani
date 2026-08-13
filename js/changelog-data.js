@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-13T19:00:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Se quitó la columna En análisis del tablero de delivery",
+      pt: "Removeu-se a coluna Em análise do quadro de delivery",
+    },
+    status: "done",
+    details: {
+      es: [
+        "PDV (Delivery) y SuperAdmin (Pedidos) quedan en 3 columnas: producción, listos y en ruta / cobro",
+        "Los pedidos nuevos entran directo a producción, sin paso de revisión",
+        "Los tiempos de mostrador y delivery siguen editables arriba del tablero"
+      ],
+      pt: [
+        "PDV (Delivery) e SuperAdmin (Pedidos) ficam em 3 colunas: produção, prontos e em rota / cobrança",
+        "Pedidos novos entram direto em produção, sem passo de revisão",
+        "Os tempos de balcão e delivery continuam editáveis acima do quadro"
+      ],
+    },
+  },
+  {
     at: "2026-08-13T18:55:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
