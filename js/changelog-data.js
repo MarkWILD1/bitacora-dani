@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-13T18:55:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Registrar pago del retorno aunque el pedido no sea web delivery",
+      pt: "Registrar pagamento do retorno mesmo se o pedido não for web delivery",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Ya no bloquea con «Solo pedidos web delivery pueden liquidarse en el PDV»",
+        "Se puede cobrar efectivo, PIX o máquina al volver el motoboy, venga el pedido del menú o del PDV",
+        "No hace falta que el motoboy haya marcado entregue en la app"
+      ],
+      pt: [
+        "Já não bloqueia com «Solo pedidos web delivery pueden liquidarse en el PDV»",
+        "Dá para cobrar dinheiro, PIX ou máquina na volta do motoboy, venha o pedido do cardápio ou do PDV",
+        "Não precisa o motoboy ter marcado entregue no app"
+      ],
+    },
+  },
+  {
     at: "2026-08-13T18:52:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
