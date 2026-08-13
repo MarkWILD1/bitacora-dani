@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-13T19:18:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Despacho antes del cobro ya está en producción",
+      pt: "Despacho antes da cobrança já está em produção",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Merge a main (PR #37): Vercel (PDV) y Render (API) despliegan el flujo nuevo",
+        "El motoboy sale al pedido listo; el cajero cobra efectivo, PIX o máquina cuando vuelve",
+        "Tablero en 3 columnas: producción, listos y en ruta / cobro"
+      ],
+      pt: [
+        "Merge em main (PR #37): Vercel (PDV) e Render (API) publicam o fluxo novo",
+        "O motoboy sai com o pedido pronto; o caixa cobra dinheiro, PIX ou máquina na volta",
+        "Quadro em 3 colunas: produção, prontos e em rota / cobrança"
+      ],
+    },
+  },
+  {
     at: "2026-08-13T19:00:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
