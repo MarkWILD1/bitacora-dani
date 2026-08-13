@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-13T18:35:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Despacho del motoboy primero; el cobro queda para el retorno",
+      pt: "Despacho do motoboy primeiro; a cobrança fica para o retorno",
+    },
+    status: "done",
+    details: {
+      es: [
+        "El cajero despacha el pedido listo sin cobrar: el motoboy sale y el cliente ve «en camino»",
+        "Cuando el motoboy vuelve, en el PDV (columna En ruta / cobro) se registra efectivo, PIX o máquina",
+        "Retirada en mostrador sigue cobrando en el momento; PagBank se confirma en caja al retorno"
+      ],
+      pt: [
+        "O caixa despacha o pedido pronto sem cobrar: o motoboy sai e o cliente vê «a caminho»",
+        "Quando o motoboy volta, no PDV (coluna Em rota / cobrança) registra dinheiro, PIX ou máquina",
+        "Retirada no balcão continua cobrando na hora; PagBank confirma no caixa no retorno"
+      ],
+    },
+  },
+  {
     at: "2026-08-13T18:10:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
