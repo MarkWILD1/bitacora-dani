@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-13T17:56:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Fix: pedidos delivery de Matriz ya no aparecen en la cocina de Siñeriz",
+      pt: "Fix: pedidos delivery da Matriz não aparecem mais na cozinha do Siñeriz",
+    },
+    status: "done",
+    details: {
+      es: [
+        "El KDS de Siñeriz metía pedidos de Matriz cuando PagBank u otro update llegaba por WebSocket",
+        "Kitchen ahora ignora (y saca) cualquier pedido que no sea de su tienda",
+        "El backend emite new-order a la sala kitchen:matriz / kitchen:sineriz"
+      ],
+      pt: [
+        "O KDS do Siñeriz inseria pedidos da Matriz quando PagBank ou outro update chegava por WebSocket",
+        "Kitchen agora ignora (e remove) qualquer pedido que não seja da sua loja",
+        "O backend emite new-order para a sala kitchen:matriz / kitchen:sineriz"
+      ],
+    },
+  },
+  {
     at: "2026-08-12T19:05:00-03:00",
     module: { es: "Login", pt: "Login" },
     moduleHref: "index.html",
