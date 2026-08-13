@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-13T18:50:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Al despachar se elige el motoboy de la lista",
+      pt: "Ao despachar escolhe-se o motoboy da lista",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Despachar ya no sale solo: abre la lista de motoboys (nombre y celular)",
+        "El cajero elige quién lleva el pedido y confirma Dar salida",
+        "Si no hay motoboys cargados, avisa y lleva a la pestaña Motoboys"
+      ],
+      pt: [
+        "Despachar já não sai sozinho: abre a lista de motoboys (nome e celular)",
+        "O caixa escolhe quem leva o pedido e confirma Dar saída",
+        "Se não houver motoboys cadastrados, avisa e leva à aba Motoboys"
+      ],
+    },
+  },
+  {
     at: "2026-08-13T18:35:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
