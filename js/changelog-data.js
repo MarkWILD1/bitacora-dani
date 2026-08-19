@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-19T09:16:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Cancelar pedidos y login sin scroll ya están en producción",
+      pt: "Cancelar pedidos e login sem rolagem já estão em produção",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Merge a main (PR #38): Vercel (PDV) y Render (API) publican cancelar pedido y el login a pantalla completa",
+        "En el tablero de delivery se puede cancelar un pedido activo; cocina y motoboy se actualizan al instante",
+        "PagBank no se tocó en este pase: el cobro online sigue como estaba"
+      ],
+      pt: [
+        "Merge em main (PR #38): Vercel (PDV) e Render (API) publicam cancelar pedido e o login em tela cheia",
+        "No quadro de delivery dá para cancelar um pedido ativo; cozinha e motoboy atualizam na hora",
+        "PagBank não entrou neste deploy: a cobrança online continua como estava"
+      ],
+    },
+  },
+  {
     at: "2026-08-19T08:50:00-03:00",
     module: { es: "Login", pt: "Login" },
     moduleHref: "index.html",
