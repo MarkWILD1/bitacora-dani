@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-19T08:42:00-03:00",
+    module: { es: "Login", pt: "Login" },
+    moduleHref: "index.html",
+    title: {
+      es: "La pantalla de acceso cabe en el viewport, sin barra de scroll",
+      pt: "A tela de acesso cabe no viewport, sem barra de rolagem",
+    },
+    status: "done",
+    details: {
+      es: [
+        "El login ocupa exactamente la altura de la ventana (sin scroll de página)",
+        "La tarjeta se estira al espacio disponible y el logo ya no empuja el contenido hacia abajo",
+        "Botones de tipo de acceso más compactos para que entren en laptops y pantallas chicas"
+      ],
+      pt: [
+        "O login ocupa exatamente a altura da janela (sem rolagem da página)",
+        "O cartão estica no espaço disponível e o logo deixa de empurrar o conteúdo para baixo",
+        "Botões de tipo de acesso mais compactos para caber em laptops e telas menores"
+      ],
+    },
+  },
+  {
     at: "2026-08-19T08:34:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
