@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-19T08:34:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Ya se pueden cancelar pedidos desde el tablero de delivery",
+      pt: "Já é possível cancelar pedidos no quadro de delivery",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En el detalle del pedido hay un botón claro «Cancelar pedido» (PDV Delivery y SuperAdmin Pedidos)",
+        "Cocina saca el pedido al instante y el motoboy deja de verlo si ya había salido",
+        "Se pide confirmación y un motivo opcional; si estaba pagado online, avisa que el reembolso es aparte"
+      ],
+      pt: [
+        "No detalhe do pedido há um botão claro «Cancelar pedido» (PDV Delivery e SuperAdmin Pedidos)",
+        "A cozinha tira o pedido na hora e o motoboy deixa de vê-lo se já tinha saído",
+        "Pede confirmação e um motivo opcional; se estava pago online, avisa que o reembolso é à parte"
+      ],
+    },
+  },
+  {
     at: "2026-08-13T19:18:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
