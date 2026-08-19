@@ -1040,9 +1040,69 @@ a.changelog-entry__module:hover {
   color: var(--text-muted);
 }
 
-.audit-report h2.audit-report__title {
-  margin: 0 0 8px;
+.audit-report {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: #fff;
+  padding: 0;
+  overflow: hidden;
+}
+
+.audit-report + .audit-report {
+  margin-top: 16px;
+}
+
+.audit-report__toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  margin: 0;
+  padding: 16px 18px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+.audit-report__toggle:hover {
+  background: rgba(204, 2, 2, 0.04);
+}
+
+.audit-report__chevron {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--text-muted);
+  transition: transform 0.15s ease;
+}
+
+.audit-report--open .audit-report__chevron {
+  transform: rotate(90deg);
+}
+
+.audit-report__heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 14px;
+  min-width: 0;
+}
+
+.audit-report__title {
+  font-family: "Bricolage Grotesque", "Nunito", Georgia, serif;
   font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--dani-red);
+}
+
+.audit-report__body {
+  padding: 0 18px 22px;
 }
 
 .audit-report h3 {

@@ -5,6 +5,8 @@
 (function () {
   "use strict";
 
+  const openIds = new Set();
+
   function getLang() {
     if (window.BitacoraI18n && typeof window.BitacoraI18n.getLang === "function") {
       return window.BitacoraI18n.getLang();
@@ -121,10 +123,17 @@
       cells: row.map((c) => cell(c, lang)),
     }));
 
+    const stamp = escapeHtml(formatStamp(report.at, lang));
+    const bodyId = "audit-body-" + escapeHtml(report.id);
     return `
       <article class="audit-report" id="${escapeHtml(report.id)}" data-audit-id="${escapeHtml(report.id)}">
-        <p class="kicker">${escapeHtml(formatStamp(report.at, lang))}</p>
-        <h2 class="audit-report__title">${cell(report.title, lang)}</h2>
+        <button type="button" class="audit-report__toggle" aria-expanded="false" aria-controls="${bodyId}">
+          <span class="audit-report__chevron" aria-hidden="true">›</span>
+          <span class="audit-report__heading">
+            <span class="audit-report__title">${cell(report.title, lang)} · ${stamp}</span>
+          </span>
+        </button>
+        <div class="audit-report__body" id="${bodyId}" hidden>
         <p class="meta">${cell(report.period, lang)} · ${cell(report.source, lang)}</p>
 
         <div class="note note--${escapeHtml(report.verdictTone || "ok")}">
@@ -158,6 +167,7 @@
 
         <h3>${cell(report.methodTitle, lang)}</h3>
         <p>${cell(report.methodBody, lang)}</p>
+        </div>
       </article>
     `;
   }
@@ -173,17 +183,55 @@
       root.innerHTML = `<p class="empty-slot">${lang === "pt" ? "Ainda não há auditorias publicadas." : "Aún no hay auditorías publicadas."}</p>`;
       return;
     }
+    const hashId = readHashId();
+    if (hashId) openIds.add(hashId);
     root.innerHTML = all.map((report) => renderOne(report, lang)).join("");
-    focusHash();
+    bindToggles(root);
+    if (hashId) {
+      const el =
+        document.getElementById(hashId) ||
+        root.querySelector('[data-audit-id="' + hashId.replace(/"/g, "") + '"]');
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }
 
-  function focusHash() {
-    const id = decodeURIComponent((window.location.hash || "").replace(/^#/, ""));
-    if (!id) return;
+  function readHashId() {
+    return decodeURIComponent((window.location.hash || "").replace(/^#/, ""));
+  }
+
+  function applyOpenState(article) {
+    const id = article.getAttribute("data-audit-id") || "";
+    const open = openIds.has(id);
+    const btn = article.querySelector(".audit-report__toggle");
+    const body = article.querySelector(".audit-report__body");
+    if (btn) btn.setAttribute("aria-expanded", open ? "true" : "false");
+    if (body) body.hidden = !open;
+    article.classList.toggle("audit-report--open", open);
+  }
+
+  function bindToggles(root) {
+    root.querySelectorAll(".audit-report").forEach((article) => {
+      applyOpenState(article);
+      const btn = article.querySelector(".audit-report__toggle");
+      if (!btn) return;
+      btn.addEventListener("click", () => {
+        const id = article.getAttribute("data-audit-id") || "";
+        if (openIds.has(id)) openIds.delete(id);
+        else openIds.add(id);
+        applyOpenState(article);
+      });
+    });
+  }
+
+  function onHashChange() {
+    const hashId = readHashId();
+    if (!hashId) return;
+    openIds.add(hashId);
     const el =
-      document.getElementById(id) ||
-      document.querySelector('[data-audit-id="' + id.replace(/"/g, "") + '"]');
+      document.getElementById(hashId) ||
+      document.querySelector('[data-audit-id="' + hashId.replace(/"/g, "") + '"]');
     if (el) {
+      applyOpenState(el);
       el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }
@@ -191,7 +239,7 @@
   function boot() {
     render();
     document.addEventListener("bitacora:langchange", render);
-    window.addEventListener("hashchange", focusHash);
+    window.addEventListener("hashchange", onHashChange);
   }
 
   if (document.readyState === "loading") {

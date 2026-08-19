@@ -12,7 +12,7 @@
       "nav.summary": "Resumen",
       "nav.kds": "KDS - Kitchen",
       "nav.caja": "Caja",
-      "nav.auditoria": "Auditoría",
+      "nav.auditoria": "Auditorías",
       "nav.franquicias": "Franquicias",
       "nav.capacitacion": "Capacitación",
       "brand.name": "Bitácora Dani",
@@ -263,7 +263,7 @@
 
       "aud.title": "Auditoría de inventario — Dani's Hot Dog",
       "aud.desc": "Auditoría de inventario — Dani's Hot Dog",
-      "aud.bar": "Auditoría",
+      "aud.bar": "Auditorías",
       "aud.h1": "Auditoría de inventario",
       "aud.kicker": "Inventario · producción",
       "aud.meta":
@@ -282,7 +282,7 @@
       "nav.summary": "Resumo",
       "nav.kds": "KDS - Kitchen",
       "nav.caja": "Caixa",
-      "nav.auditoria": "Auditoria",
+      "nav.auditoria": "Auditorias",
       "nav.franquicias": "Franquias",
       "nav.capacitacion": "Capacitação",
       "brand.name": "Bitácora Dani",
@@ -533,7 +533,7 @@
 
       "aud.title": "Auditoria de estoque — Dani's Hot Dog",
       "aud.desc": "Auditoria de estoque — Dani's Hot Dog",
-      "aud.bar": "Auditoria",
+      "aud.bar": "Auditorias",
       "aud.h1": "Auditoria de estoque",
       "aud.kicker": "Estoque · produção",
       "aud.meta":
