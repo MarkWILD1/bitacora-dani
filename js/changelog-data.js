@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-19T08:50:00-03:00",
+    module: { es: "Login", pt: "Login" },
+    moduleHref: "index.html",
+    title: {
+      es: "Nuevo subtítulo del login: administración, gestión, PDV, cocina y delivery",
+      pt: "Novo subtítulo do login: administração, gestão, PDV, cozinha e delivery",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Reemplaza «Gestión completa para tu supertienda de hotdogs»",
+        "El texto queda en español y portugués, en mayúsculas como el resto del login"
+      ],
+      pt: [
+        "Substitui «Gestão completa para sua superloja de hotdogs»",
+        "O texto fica em espanhol e português, em maiúsculas como o resto do login"
+      ],
+    },
+  },
+  {
     at: "2026-08-19T08:42:00-03:00",
     module: { es: "Login", pt: "Login" },
     moduleHref: "index.html",
