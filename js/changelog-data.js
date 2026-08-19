@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-19T09:54:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Las secciones de edición de la landing Delivery se pueden plegar",
+      pt: "As seções de edição da landing Delivery podem ser recolhidas",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En SuperAdmin → Delivery → Landing, cada tarjeta (Header, Hero, perfil, categorías, productos, etc.) arranca cerrada",
+        "Se abre o cierra con el título; Restaurar y Guardar siguen visibles sin abrir la sección",
+        "Si hay cambios sin guardar, el borde ámbar y un punto se ven aunque esté plegada"
+      ],
+      pt: [
+        "Em SuperAdmin → Delivery → Landing, cada cartão (Header, Hero, perfil, categorias, produtos, etc.) começa fechado",
+        "Abre ou fecha pelo título; Restaurar e Salvar continuam visíveis sem abrir a seção",
+        "Se houver alterações sem salvar, a borda âmbar e um ponto aparecem mesmo recolhida"
+      ],
+    },
+  },
+  {
     at: "2026-08-19T09:16:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
