@@ -122,7 +122,7 @@
     }));
 
     return `
-      <article class="audit-report" data-audit-id="${escapeHtml(report.id)}">
+      <article class="audit-report" id="${escapeHtml(report.id)}" data-audit-id="${escapeHtml(report.id)}">
         <p class="kicker">${escapeHtml(formatStamp(report.at, lang))}</p>
         <h2 class="audit-report__title">${cell(report.title, lang)}</h2>
         <p class="meta">${cell(report.period, lang)} · ${cell(report.source, lang)}</p>
@@ -174,11 +174,24 @@
       return;
     }
     root.innerHTML = all.map((report) => renderOne(report, lang)).join("");
+    focusHash();
+  }
+
+  function focusHash() {
+    const id = decodeURIComponent((window.location.hash || "").replace(/^#/, ""));
+    if (!id) return;
+    const el =
+      document.getElementById(id) ||
+      document.querySelector('[data-audit-id="' + id.replace(/"/g, "") + '"]');
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }
 
   function boot() {
     render();
     document.addEventListener("bitacora:langchange", render);
+    window.addEventListener("hashchange", focusHash);
   }
 
   if (document.readyState === "loading") {

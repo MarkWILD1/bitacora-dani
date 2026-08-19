@@ -195,6 +195,12 @@
 
       const summary = pick(entry.summary, lang);
       const badgeLabel = t(STATUS_KEYS[status] || "badge.done", "Hecho");
+      const linkHref = resolveHref(entry.link && entry.link.href);
+      const linkLabel = pick(entry.link && entry.link.label, lang);
+      const linkHtml =
+        linkHref && linkLabel
+          ? `<p class="changelog-entry__actions"><a class="button" href="${escapeHtml(linkHref)}">${escapeHtml(linkLabel)}</a></p>`
+          : "";
 
       article.innerHTML = `
         <div class="changelog-entry__rail" aria-hidden="true">
@@ -216,6 +222,7 @@
               : ""
           }
           ${detailsHtml}
+          ${linkHtml}
         </div>
       `;
 

@@ -744,6 +744,15 @@ a.changelog-entry__module:hover {
   border-top: none;
 }
 
+.changelog-entry__actions {
+  margin: 14px 0 0;
+}
+
+.changelog-entry__actions .button {
+  font-size: 13px;
+  padding: 8px 16px;
+}
+
 .changelog-entry__details li::before {
   content: "";
   position: absolute;
