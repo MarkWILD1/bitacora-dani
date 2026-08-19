@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-19T10:06:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Los productos No disponibles ya no se muestran en delivery",
+      pt: "Os produtos Não disponíveis já não aparecem no delivery",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En SuperAdmin → Landing, al marcar un producto como No disponible deja de verse en /delivery y /delivery/pedir",
+        "Si era el único de su categoría, el chip de esa categoría también desaparece",
+        "En SuperAdmin y en el PDV el producto sigue visible para poder reactivarlo"
+      ],
+      pt: [
+        "Em SuperAdmin → Landing, ao marcar um produto como Não disponível ele some de /delivery e /delivery/pedir",
+        "Se era o único da categoria, o chip dessa categoria também desaparece",
+        "No SuperAdmin e no PDV o produto continua visível para poder reativá-lo"
+      ],
+    },
+  },
+  {
     at: "2026-08-19T09:54:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
