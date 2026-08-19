@@ -12,6 +12,7 @@
       "nav.summary": "Resumen",
       "nav.kds": "KDS - Kitchen",
       "nav.caja": "Caja",
+      "nav.auditoria": "Auditoría",
       "nav.franquicias": "Franquicias",
       "nav.capacitacion": "Capacitación",
       "brand.name": "Bitácora Dani",
@@ -259,6 +260,18 @@
       "tpl.price": "A definir",
       "tpl.lead": "Condiciones, plazos o notas comerciales.",
       "tpl.note": "<strong>Nota:</strong> Completar antes de compartir con el cliente.",
+
+      "aud.title": "Auditoría de inventario — Dani's Hot Dog",
+      "aud.desc": "Auditoría de inventario — Dani's Hot Dog",
+      "aud.bar": "Auditoría",
+      "aud.h1": "Auditoría de inventario",
+      "aud.kicker": "Inventario · producción",
+      "aud.meta":
+        "Informes de stock publicados: productos, materias primas, PDV, delivery y descartes. Solo lectura sobre producción.",
+      "aud.reportsAria": "Informes de auditoría",
+      "aud.loading": "Cargando informe…",
+      "aud.history": "Historial de auditorías",
+      "aud.historyLead": "Cada corrida nueva se apila aquí, con fecha y hora.",
     },
     pt: {
       "lang.label": "Idioma",
@@ -269,6 +282,7 @@
       "nav.summary": "Resumo",
       "nav.kds": "KDS - Kitchen",
       "nav.caja": "Caixa",
+      "nav.auditoria": "Auditoria",
       "nav.franquicias": "Franquias",
       "nav.capacitacion": "Capacitação",
       "brand.name": "Bitácora Dani",
@@ -516,6 +530,18 @@
       "tpl.price": "A definir",
       "tpl.lead": "Condições, prazos ou notas comerciais.",
       "tpl.note": "<strong>Nota:</strong> Completar antes de compartilhar com o cliente.",
+
+      "aud.title": "Auditoria de estoque — Dani's Hot Dog",
+      "aud.desc": "Auditoria de estoque — Dani's Hot Dog",
+      "aud.bar": "Auditoria",
+      "aud.h1": "Auditoria de estoque",
+      "aud.kicker": "Estoque · produção",
+      "aud.meta":
+        "Relatórios de estoque publicados: produtos, matérias-primas, PDV, delivery e descartes. Somente leitura na produção.",
+      "aud.reportsAria": "Relatórios de auditoria",
+      "aud.loading": "Carregando relatório…",
+      "aud.history": "Histórico de auditorias",
+      "aud.historyLead": "Cada nova corrida é empilhada aqui, com data e hora.",
     },
   };
 

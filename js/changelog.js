@@ -26,6 +26,7 @@
     kitchen: ["kitchen", "kds"],
     delivery: ["delivery", "del"],
     caja: ["caja"],
+    "auditoria-inventario": ["auditoria-inventario", "auditoria"],
     franquicias: ["franquicias", "franquias"],
   };
 

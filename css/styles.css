@@ -371,6 +371,11 @@ body.app {
   flex: 1;
 }
 
+html[data-page="aud"] .wrap,
+html[data-page="aud"] .site-footer {
+  max-width: 1080px;
+}
+
 body.sidebar-open .sidebar {
   transform: translateX(0);
 }
@@ -973,6 +978,116 @@ a.changelog-entry__module:hover {
 
 .note strong {
   color: var(--text);
+}
+
+.note p {
+  margin: 8px 0 0;
+}
+
+.note--ok {
+  border-left: 4px solid var(--success);
+}
+
+.note--warn {
+  border-left: 4px solid var(--dani-amber);
+  background: var(--proposal-soft);
+}
+
+.card--wide {
+  max-width: 1080px;
+}
+
+.audit-kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 8px 0 28px;
+}
+
+.audit-kpi {
+  background: var(--cream-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+}
+
+.audit-kpi--warn .audit-kpi__value {
+  color: var(--status-progress-text);
+}
+
+.audit-kpi__value {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--dani-red);
+  letter-spacing: -0.03em;
+}
+
+.audit-kpi__label {
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.audit-report h2.audit-report__title {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.audit-report h3 {
+  margin: 32px 0 12px;
+}
+
+.audit-table-wrap {
+  overflow-x: auto;
+  margin: 0 0 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.audit-table-wrap table {
+  margin: 0;
+}
+
+.audit-table-wrap th.num,
+.audit-table-wrap td.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.audit-row--ok td:first-child {
+  border-left: 3px solid var(--success);
+}
+
+.audit-row--warn td:first-child {
+  border-left: 3px solid var(--dani-amber);
+}
+
+.audit-row--alert td:first-child {
+  border-left: 3px solid var(--dani-red);
+}
+
+.audit-row--info td:first-child {
+  border-left: 3px solid var(--ink-3);
+}
+
+.audit-discard {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.audit-discard__name {
+  margin: 0;
+  font-weight: 800;
+}
+
+.audit-discard__when {
+  margin: 4px 0 6px;
+  font-size: 13px;
+  color: var(--text-muted);
 }
 
 table {

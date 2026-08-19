@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-19T10:12:00-03:00",
+    module: { es: "Auditoría", pt: "Auditoria" },
+    moduleHref: "propuestas/auditoria-inventario.html",
+    title: {
+      es: "Auditoría de inventario de las últimas 3 semanas, publicada en la bitácora",
+      pt: "Auditoria de estoque das últimas 3 semanas, publicada na bitácora",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Consulta de solo lectura a producción: altas, ventas PDV y delivery, y descartes del 29/07 al 19/08",
+        "Veredicto: en Sineriz no hubo doble descuento del sistema; el pan (1.411) y la frankfurter cierran con las fichas",
+        "Las diferencias vienen de carga operativa (stock tipeado, descarte para deshacer un alta, lote semilla de 461 kg de barbecue)",
+        "El informe completo queda en el menú Auditoría, en español y portugués"
+      ],
+      pt: [
+        "Consulta somente leitura na produção: entradas, vendas PDV e delivery, e descartes de 29/07 a 19/08",
+        "Veredito: em Sineriz não houve desconto duplo do sistema; o pão (1.411) e a frankfurter fecham com as fichas",
+        "As diferenças vêm de carga operacional (estoque digitado, descarte para desfazer uma alta, lote semente de 461 kg de barbecue)",
+        "O relatório completo fica no menu Auditoria, em espanhol e português"
+      ],
+    },
+  },
+  {
     at: "2026-08-19T10:06:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",

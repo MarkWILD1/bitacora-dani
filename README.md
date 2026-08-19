@@ -1,6 +1,6 @@
 # Hub Dani's Hot Dog — Actualizaciones y propuestas
 
-Sitio HTML estático para seguir el estado de las implementaciones del sistema Dani's Hot Dog (PDV, SuperAdmin, KDS - Kitchen, Delivery, caja) y las propuestas asociadas.
+Sitio HTML estático para seguir el estado de las implementaciones del sistema Dani's Hot Dog (PDV, SuperAdmin, KDS - Kitchen, Delivery, caja, auditoría de inventario) y las propuestas asociadas.
 
 Idioma: selector **ES / PT** en el menú lateral (preferencia guardada en el navegador).
 
@@ -39,6 +39,9 @@ Para registrar uno nuevo: agregá un objeto al **principio** de `js/changelog-da
 | `propuestas/kitchen.html` | Feed KDS - Kitchen |
 | `propuestas/delivery.html` | Feed Delivery |
 | `propuestas/caja.html` | Feed Caja y contabilidad |
+| `propuestas/auditoria-inventario.html` | Informes de auditoría de inventario |
+| `js/audit-report-data.js` | Informes publicados (apilar arriba) |
+| `js/audit-report.js` | Render ES/PT de los informes |
 | `propuestas/franquicias.html` | Propuesta — sistema de franquicias |
 | `propuestas/capacitacion.html` | Propuesta — capacitación gamificada + ZDG |
 | `propuestas/_plantilla.html` | Plantilla para nuevas propuestas |
