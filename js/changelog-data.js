@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-20T11:24:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "En producción: cobro BRL Siñeriz a caja y campana PDV",
+      pt: "Em produção: cobrança BRL Siñeriz no caixa e sino no PDV",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Merge a main (PR #39): backend Render y frontend Vercel toman el cambio",
+        "Al registrar el retorno en BRL, el valor POS entra en caja (no el total en pesos)",
+        "El PDV suena al llegar un pedido del menú digital y otra vez cuando cocina lo marca listo",
+      ],
+      pt: [
+        "Merge em main (PR #39): backend Render e frontend Vercel recebem a mudança",
+        "Ao registrar o retorno em BRL, o valor POS entra no caixa (não o total em pesos)",
+        "O PDV toca ao chegar um pedido do cardápio digital e de novo quando a cozinha marca pronto",
+      ],
+    },
+  },
+  {
     at: "2026-08-20T09:53:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
