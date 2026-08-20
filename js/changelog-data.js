@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-20T09:53:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Campana en el PDV al llegar un delivery nuevo y al quedar listo",
+      pt: "Sino no PDV ao chegar um delivery novo e ao ficar pronto",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Cuando un cliente pide por el menú digital, el PDV de esa tienda suena una campana",
+        "Vuelve a sonar cuando cocina marca el pedido listo para despachar o retirar",
+        "No suena en el cobro local del cajero ni en pedidos de otra tienda",
+      ],
+      pt: [
+        "Quando um cliente pede pelo cardápio digital, o PDV daquela loja toca um sino",
+        "Toca de novo quando a cozinha marca o pedido pronto para despachar ou retirar",
+        "Não toca no cobrança local do caixa nem em pedidos de outra loja",
+      ],
+    },
+  },
+  {
     at: "2026-08-20T09:12:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
