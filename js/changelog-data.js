@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-20T09:12:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Cobro del retorno en Siñeriz: el pago en reales ya convierte a caja",
+      pt: "Cobrança do retorno em Siñeriz: o pagamento em reais já converte para o caixa",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al registrar el pago del motoboy en BRL, el PDV muestra el equivalente en reales (redondeo POS) y ese valor entra en caja",
+        "En Ruta / Cobro muestra $U y R$ juntos, iguales al modal de registrar pago",
+        "El efectivo recibido se valida en la moneda elegida, no contra el total en pesos",
+      ],
+      pt: [
+        "Ao registrar o pagamento do motoboy em BRL, o PDV mostra o equivalente em reais (arredondamento POS) e esse valor entra no caixa",
+        "Em Rota / Cobrança mostra $U e R$ juntos, iguais ao modal de registrar pagamento",
+        "O valor recebido em dinheiro é validado na moeda escolhida, não contra o total em pesos",
+      ],
+    },
+  },
+  {
     at: "2026-08-19T10:12:00-03:00",
     module: { es: "Auditoría", pt: "Auditoria" },
     moduleHref: "propuestas/auditoria-inventario.html",
