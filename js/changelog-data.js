@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-20T22:25:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Turno de caja: conversión al cambiar pago, tarjetas del sistema y número del día",
+      pt: "Turno de caixa: conversão ao mudar pagamento, cartões do sistema e número do dia",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al cambiar pesos ↔ reales en Cambiar pago, el monto cobrado se convierte con la tasa del turno",
+        "Si elige tarjeta, aparecen las mismas banderas que ya usa el PDV (crédito y débito)",
+        "El cambio queda en la comanda; movimientos y comandas muestran el número de pedido del día",
+      ],
+      pt: [
+        "Ao trocar pesos ↔ reais em Mudar pagamento, o valor cobrado é convertido com a taxa do turno",
+        "Se escolher cartão, aparecem as mesmas bandeiras que o PDV já usa (crédito e débito)",
+        "A mudança fica na comanda; movimentos e comandas mostram o número do pedido no dia",
+      ],
+    },
+  },
+  {
     at: "2026-08-20T22:03:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
