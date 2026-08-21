@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-20T22:35:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Cancelar un pedido ya sale al instante de cocina",
+      pt: "Cancelar um pedido já some na hora da cozinha",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al cancelar desde el Historial, cocina quita el pedido en el momento (no espera a devolver el stock)",
+        "El Historial también se actualiza al toque, sin quedar con la lista vieja media minuto",
+      ],
+      pt: [
+        "Ao cancelar pelo Histórico, a cozinha tira o pedido na hora (não espera devolver o estoque)",
+        "O Histórico também atualiza na hora, sem ficar com a lista velha por meio minuto",
+      ],
+    },
+  },
+  {
     at: "2026-08-20T22:25:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
