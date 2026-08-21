@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-20T23:50:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "Robot WhatsApp tipo Anota: vincular el número de la tienda y atender por el cardápio digital",
+      pt: "Robô WhatsApp tipo Anota: vincular o número da loja e atender pelo cardápio digital",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En SuperAdmin → Delivery, el menú Robot ya abre: QR para vincular WhatsApp Business, robot activo/inactivo, inbox de atendente, plantillas y feedback",
+        "El cliente recibe el link personal de la carta; el pedido entra al tablero que ya usamos",
+        "Si hay conversación en las últimas 24 h, el robot avisa recibido, en producción, listo, en camino o cancelado",
+        "Hace falta Evolution API (docker local o VPS con disco) y las variables EVOLUTION_API_URL / EVOLUTION_API_KEY",
+      ],
+      pt: [
+        "Em SuperAdmin → Delivery, o menu Robô já abre: QR para vincular WhatsApp Business, robô ativo/inativo, inbox de atendente, templates e feedback",
+        "O cliente recebe o link pessoal do cardápio; o pedido entra no quadro que já usamos",
+        "Se houver conversa nas últimas 24 h, o robô avisa recebido, em produção, pronto, a caminho ou cancelado",
+        "É preciso Evolution API (docker local ou VPS com disco) e as variáveis EVOLUTION_API_URL / EVOLUTION_API_KEY",
+      ],
+    },
+  },
+  {
     at: "2026-08-20T23:10:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
