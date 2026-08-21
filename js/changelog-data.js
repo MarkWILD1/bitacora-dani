@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-20T22:03:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Turno de caja: filtrar formas de pago también en Comandas",
+      pt: "Turno de caixa: filtrar formas de pagamento também em Comandas",
+    },
+    status: "done",
+    details: {
+      es: [
+        "El filtro Todas / Efectivo / Tarjeta / Pix ahora aparece también en la pestaña Comandas",
+        "El listado de comandas se acota a las que tienen esa forma de pago (incluye pagos mixtos)",
+        "Los contadores y el gráfico del turno siguen mostrando el total, sin filtrar",
+      ],
+      pt: [
+        "O filtro Todas / Dinheiro / Cartão / Pix agora aparece também na aba Comandas",
+        "A lista de comandas fica só com as que têm essa forma de pagamento (inclui pagamentos mistos)",
+        "Os contadores e o gráfico do turno continuam mostrando o total, sem filtrar",
+      ],
+    },
+  },
+  {
     at: "2026-08-20T22:20:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
