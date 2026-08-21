@@ -7,6 +7,34 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-20T23:10:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Historial, stock al listo y extras de caja ya están en producción",
+      pt: "Histórico, estoque ao pronto e extras de caixa já estão em produção",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Merge a main (PR #40): Vercel (PDV) y Render (API) publican cancelar venta con retorno selectivo al stock, descuento de receta al marcar listo, y extras de turno de caja",
+        "En el Historial se puede cancelar una venta cobrada, elegir qué vuelve al stock y restar el dinero de caja; cocina quita el ticket al toque",
+        "Al marcar Pronto (cocina o delivery) se descuenta pan y materia prima de esa tienda",
+        "Turno de caja: número del día, conversión pesos↔reales, tarjetas del sistema y filtro de pago también en Comandas",
+        "En el menú público, los productos inactivos desaparecen",
+        "PagBank no entra en este deploy",
+      ],
+      pt: [
+        "Merge em main (PR #40): Vercel (PDV) e Render (API) publicam cancelar venda com retorno seletivo ao estoque, baixa da receita ao marcar pronto, e extras do turno de caixa",
+        "No Histórico dá para cancelar uma venda cobrada, escolher o que volta ao estoque e tirar o dinheiro do caixa; a cozinha some o ticket na hora",
+        "Ao marcar Pronto (cozinha ou delivery) baixa pão e matéria-prima daquela loja",
+        "Turno de caixa: número do dia, conversão pesos↔reais, bandeiras do sistema e filtro de pagamento também em Comandas",
+        "No cardápio público, produtos inativos desaparecem",
+        "PagBank não entra neste deploy",
+      ],
+    },
+  },
+  {
     at: "2026-08-20T22:35:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
