@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-20T22:20:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Historial: cancelar venta y elegir qué vuelve al stock",
+      pt: "Histórico: cancelar venda e escolher o que volta ao estoque",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Desde el Historial se puede cancelar también una venta ya completada",
+        "Cuadro para seleccionar qué ítems vuelven al stock; los no marcados van a descarte",
+        "El dinero de esa venta se resta de la caja (se quita el ingreso y deja de contar en el cierre)",
+      ],
+      pt: [
+        "Pelo Histórico também se pode cancelar uma venda já concluída",
+        "Quadro para selecionar quais itens voltam ao estoque; os não marcados vão para descarte",
+        "O dinheiro dessa venda sai do caixa (remove o ingresso e deixa de contar no fechamento)",
+      ],
+    },
+  },
+  {
     at: "2026-08-20T21:30:00-03:00",
     module: { es: "Caja", pt: "Caixa" },
     moduleHref: "propuestas/caja.html",
