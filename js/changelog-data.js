@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-20T21:30:00-03:00",
+    module: { es: "Caja", pt: "Caixa" },
+    moduleHref: "propuestas/caja.html",
+    title: {
+      es: "Stock de dogs: el pan ya se resta en cocina; delivery pronto también descuenta",
+      pt: "Estoque de dogs: o pão já baixa na cozinha; delivery pronto também desconta",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En Siñeriz se verificó en vivo: al marcar Pronto un Vira-lata se restó 1 PÃO NORMAL (y salchicha, salsas, queso)",
+        "El tablero de delivery marcaba listo sin descontar; ahora usa el mismo descuento que cocina",
+        "Si cocina ya marcó Pronto, no se vuelve a restar",
+      ],
+      pt: [
+        "Em Siñeriz foi conferido ao vivo: ao marcar Pronto um Vira-lata baixou 1 PÃO NORMAL (e salsicha, molhos, queijo)",
+        "O painel de delivery marcava pronto sem descontar; agora usa o mesmo desconto da cozinha",
+        "Se a cozinha já marcou Pronto, não desconta de novo",
+      ],
+    },
+  },
+  {
     at: "2026-08-20T11:24:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
