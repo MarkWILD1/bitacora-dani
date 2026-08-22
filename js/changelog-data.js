@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-22T01:35:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Turno de caja: filtro de bandera al elegir tarjeta",
+      pt: "Turno de caixa: filtro de bandeira ao escolher cartão",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En Filtrar forma de pago, al elegir Tarjeta aparece un segundo filtro con las banderas (crédito y débito)",
+        "El filtro vale en Comandas, Movimientos y Auditar, incluyendo pagos sin bandera",
+      ],
+      pt: [
+        "Em Filtrar forma de pagamento, ao escolher Cartão aparece um segundo filtro com as bandeiras (crédito e débito)",
+        "O filtro vale em Comandas, Movimentos e Auditar, inclusive pagamentos sem bandeira",
+      ],
+    },
+  },
+  {
     at: "2026-08-20T23:50:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
