@@ -19,10 +19,12 @@ window.BITACORA_CHANGELOG = [
       es: [
         "En Filtrar forma de pago, al elegir Tarjeta aparece un segundo filtro con las banderas (crédito y débito)",
         "El filtro vale en Comandas, Movimientos y Auditar, incluyendo pagos sin bandera",
+        "En producción (merge a main, PR #41): Vercel publica el filtro en SuperAdmin → Turno de caja",
       ],
       pt: [
         "Em Filtrar forma de pagamento, ao escolher Cartão aparece um segundo filtro com as bandeiras (crédito e débito)",
         "O filtro vale em Comandas, Movimentos e Auditar, inclusive pagamentos sem bandeira",
+        "Em produção (merge em main, PR #41): a Vercel publica o filtro em SuperAdmin → Turno de caixa",
       ],
     },
   },
