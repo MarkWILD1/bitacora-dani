@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-26T02:32:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Materia prima: entrada ya paga sin declarar valor",
+      pt: "Matéria-prima: entrada já paga sem declarar valor",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En Agregar entrada hay un check “Ya está pago (traído de otra tienda)” para mercadería que viene de matriz u otra tienda",
+        "Solo se pide la cantidad: el stock sube y hereda el costo actual, sin cambiar precios de ficha técnica",
+        "En el Histórico figura como Modificación (no Reposición), con la marca “ya pago / transferencia”",
+        "En producción (merge a main, PR #44): Render publica el backend y Vercel el frontend",
+      ],
+      pt: [
+        "Em Adicionar entrada há um check “Já está pago (trazido de outra loja)” para mercadoria que vem da matriz ou de outra loja",
+        "Só se pede a quantidade: o estoque sobe e herda o custo atual, sem mudar preços da ficha técnica",
+        "No Histórico aparece como Modificação (não Reposição), com a marca “já pago / transferência”",
+        "Em produção (merge em main, PR #44): o Render publica o backend e a Vercel o frontend",
+      ],
+    },
+  },
+  {
     at: "2026-08-26T02:17:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
