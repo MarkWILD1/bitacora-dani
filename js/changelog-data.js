@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-26T02:17:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Histórico: reposición de un producto en una sola fila",
+      pt: "Histórico: reposição de um produto em uma só linha",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Si TOMATE (u otro ítem) recibe stock y cambio de costo al mismo tiempo, ya no se parte en dos filas",
+        "La fila muestra Reposición y Modificación en secuencia, con el detalle de cada movimiento",
+        "En producción (merge a main, PR #43): Vercel publica el Histórico agrupado y las etiquetas de Ação",
+      ],
+      pt: [
+        "Se TOMATE (ou outro item) recebe estoque e mudança de custo ao mesmo tempo, já não se parte em duas linhas",
+        "A linha mostra Reposição e Modificação em sequência, com o detalhe de cada movimento",
+        "Em produção (merge em main, PR #43): a Vercel publica o Histórico agrupado e os rótulos de Ação",
+      ],
+    },
+  },
+  {
     at: "2026-08-26T02:16:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
@@ -19,10 +41,12 @@ window.BITACORA_CHANGELOG = [
       es: [
         "En el filtro Ação quedan Todos y Modificación",
         "Creación pasa a Reposición y Eliminación pasa a Descarte",
+        "En producción (merge a main, PR #43): Vercel publica las etiquetas en SuperAdmin → Histórico",
       ],
       pt: [
         "No filtro Ação ficam Todos e Modificação",
         "Criação passa a Reposição e Exclusão passa a Descarte",
+        "Em produção (merge em main, PR #43): a Vercel publica os rótulos em SuperAdmin → Histórico",
       ],
     },
   },
