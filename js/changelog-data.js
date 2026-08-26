@@ -20,11 +20,13 @@ window.BITACORA_CHANGELOG = [
         "El histórico queda para cambios de catálogo y configuración (producto, receta, usuario, etc.)",
         "Las ventas de bebidas u otros productos sin receta dejaban una fila de stock/código; eso ya se ve en Relatório de vendas",
         "Las filas viejas de ese tipo también se ocultan al consultar el histórico",
+        "En producción (merge a main, PR #42): Render publica el backend; el histórico deja de mostrar ventas de bebidas",
       ],
       pt: [
         "O histórico fica para mudanças de catálogo e configuração (produto, receita, usuário, etc.)",
         "As vendas de bebidas ou outros produtos sem receita geravam uma linha de estoque/código; isso já aparece no Relatório de vendas",
         "As linhas antigas desse tipo também se ocultam ao consultar o histórico",
+        "Em produção (merge em main, PR #42): o Render publica o backend; o histórico deixa de mostrar vendas de bebidas",
       ],
     },
   },
