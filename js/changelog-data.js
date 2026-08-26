@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-26T02:15:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Histórico de alteraciones: las ventas ya no aparecen ahí",
+      pt: "Histórico de alterações: as vendas já não aparecem aí",
+    },
+    status: "done",
+    details: {
+      es: [
+        "El histórico queda para cambios de catálogo y configuración (producto, receta, usuario, etc.)",
+        "Las ventas de bebidas u otros productos sin receta dejaban una fila de stock/código; eso ya se ve en Relatório de vendas",
+        "Las filas viejas de ese tipo también se ocultan al consultar el histórico",
+      ],
+      pt: [
+        "O histórico fica para mudanças de catálogo e configuração (produto, receita, usuário, etc.)",
+        "As vendas de bebidas ou outros produtos sem receita geravam uma linha de estoque/código; isso já aparece no Relatório de vendas",
+        "As linhas antigas desse tipo também se ocultam ao consultar o histórico",
+      ],
+    },
+  },
+  {
     at: "2026-08-22T01:35:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
