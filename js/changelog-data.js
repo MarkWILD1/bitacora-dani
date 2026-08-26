@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-26T02:46:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Histórico: columna de producto y detalle sin JSON",
+      pt: "Histórico: coluna de produto e detalhe sem JSON",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al lado de Hora aparece Producto / materia prima (p.ej. SALSICHA), para no buscarlo debajo de Entidad",
+        "Al abrir una fila ya no se ve el texto con llaves: el detalle es el mismo que en Detalles",
+        "En producción (merge a main, PR #45): Vercel publica el Histórico",
+      ],
+      pt: [
+        "Ao lado de Hora aparece Produto / matéria-prima (p.ex. SALSICHA), para não procurá-lo embaixo de Entidade",
+        "Ao abrir uma linha já não se vê o texto com chaves: o detalhe é o mesmo que em Detalhes",
+        "Em produção (merge em main, PR #45): a Vercel publica o Histórico",
+      ],
+    },
+  },
+  {
     at: "2026-08-26T02:32:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
