@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-08-26T02:16:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Histórico: Ação ahora dice Reposición y Descarte",
+      pt: "Histórico: Ação agora diz Reposição e Descarte",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En el filtro Ação quedan Todos y Modificación",
+        "Creación pasa a Reposición y Eliminación pasa a Descarte",
+      ],
+      pt: [
+        "No filtro Ação ficam Todos e Modificação",
+        "Criação passa a Reposição e Exclusão passa a Descarte",
+      ],
+    },
+  },
+  {
     at: "2026-08-26T02:15:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
