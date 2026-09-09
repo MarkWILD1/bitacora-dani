@@ -5,6 +5,219 @@
  */
 window.BITACORA_AUDIT_REPORTS = [
   {
+    id: "2026-09-09-panes",
+    at: "2026-09-09T09:40:00-03:00",
+    title: {
+      es: "Auditoría de stock de panes — 2,5 semanas",
+      pt: "Auditoria de estoque de pães — 2,5 semanas",
+    },
+    period: {
+      es: "24/08/2026 00:00 a 09/09/2026 23:59 (hora Uruguay)",
+      pt: "24/08/2026 00:00 a 09/09/2026 23:59 (horário Uruguai)",
+    },
+    source: {
+      es: "API de producción (Render) · solo lectura · sin cambios en el banco",
+      pt: "API de produção (Render) · somente leitura · sem alterações no banco",
+    },
+    verdictTone: "warn",
+    verdictTitle: {
+      es: "Veredicto: el libro de Siñeriz cierra; el número “errado” es stock negativo + suma al cargar compra",
+      pt: "Veredito: o livro de Siñeriz fecha; o número “errado” é estoque negativo + soma ao lançar a compra",
+    },
+    verdictBody: {
+      es: "En Siñeriz (la tienda que opera) PÃO NORMAL hoy es 32 UM y coincide con los lotes FIFO (22 + 10). En la ventana se vendieron 746 panes (1 por hot dog), se cargaron 1.154 y se descartaron 121. La apertura implícita el 24/08 ya era −255. El sistema deja vender sin compra y, al ingresar N panes, hace stock + N (ej. −238 + 300 = 62). El historial muestra 62, no 300. No hay doble descuento. Matriz no vendió panes en el período.",
+      pt: "Em Siñeriz (a loja que opera) PÃO NORMAL hoje é 32 UM e coincide com os lotes FIFO (22 + 10). Na janela venderam-se 746 pães (1 por hot dog), lançaram-se 1.154 e descartaram-se 121. A abertura implícita em 24/08 já era −255. O sistema deixa vender sem compra e, ao entrar N pães, faz estoque + N (ex. −238 + 300 = 62). O Histórico mostra 62, não 300. Não há desconto duplo. A Matriz não vendeu pães no período.",
+    },
+    kpis: [
+      { value: "32", label: { es: "Stock Siñeriz hoy (= FIFO)", pt: "Estoque Siñeriz hoje (= FIFO)" } },
+      { value: "746", label: { es: "Panes vendidos (ficha)", pt: "Pães vendidos (ficha)" } },
+      { value: "1.154", label: { es: "Entradas cargadas", pt: "Entradas lançadas" } },
+      { value: "−238", label: { es: "Peor saldo antes de una compra (8/09)", pt: "Pior saldo antes de uma compra (8/09)" }, tone: "warn" },
+    ],
+    findingsTitle: { es: "Qué es sistema y qué es operación", pt: "O que é sistema e o que é operação" },
+    findingsHeaders: {
+      es: ["Severidad", "Qué se ve", "Origen", "¿Error del sistema?"],
+      pt: ["Severidade", "O que se vê", "Origem", "Erro do sistema?"],
+    },
+    findings: [
+      {
+        tone: "warn",
+        cells: {
+          es: [
+            "Atención",
+            "Al cargar 300 panes el 8/09 el historial muestra −238 → 62, no 300. Otras cargas partieron de −161, −65, −12 y −4.",
+            "Se vende sin anotar la compra. El motor suma en aritmética (negativo + llegada).",
+            "No es un bug de resta. Sí es el número que el local lee como error.",
+          ],
+          pt: [
+            "Atenção",
+            "Ao lançar 300 pães em 8/09 o histórico mostra −238 → 62, não 300. Outras entradas partiram de −161, −65, −12 e −4.",
+            "Vende-se sem lançar a compra. O motor soma em aritmética (negativo + chegada).",
+            "Não é bug de baixa. É o número que o local lê como erro.",
+          ],
+        },
+      },
+      {
+        tone: "warn",
+        cells: {
+          es: [
+            "Atención",
+            "31/08: descarte de 100 UM con motivo “LEVOU PARA LOJA MATRIZ”.",
+            "Se bajó como descarte, no como transferencia. En Matriz no hay ninguna entrada de pan en la ventana; el stock de PÃO NORMAL no se tocó desde el 28/08.",
+            "No. El descarte restó exactamente 100 en Siñeriz. Esos 100 no ingresaron en Matriz.",
+          ],
+          pt: [
+            "Atenção",
+            "31/08: descarte de 100 UM com motivo “LEVOU PARA LOJA MATRIZ”.",
+            "Baixou como descarte, não como transferência. Na Matriz não há nenhuma entrada de pão na janela; o estoque de PÃO NORMAL não foi tocado desde 28/08.",
+            "Não. O descarte descontou exatamente 100 em Siñeriz. Esses 100 não entraram na Matriz.",
+          ],
+        },
+      },
+      {
+        tone: "alert",
+        cells: {
+          es: [
+            "Integridad",
+            "Matriz PÃO NORMAL: stock 47 vs lotes FIFO 50 (faltan 3 panes en el contador).",
+            "Tienda inactiva en la ventana (0 ventas). Hueco anterior al 24/08.",
+            "Sí, desajuste viejo de ledger en Matriz. No afecta Siñeriz.",
+          ],
+          pt: [
+            "Integridade",
+            "Matriz PÃO NORMAL: estoque 47 vs lotes FIFO 50 (faltam 3 pães no contador).",
+            "Loja inativa na janela (0 vendas). Buraco anterior a 24/08.",
+            "Sim, desajuste antigo de ledger na Matriz. Não afeta Siñeriz.",
+          ],
+        },
+      },
+      {
+        tone: "info",
+        cells: {
+          es: [
+            "Dato",
+            "2/09: lote semilla de 4 UM, agotado en una hora.",
+            "Típico de devolver stock al cancelar cuando no hay lotes activos (restoreFifo).",
+            "No mueve el hueco de cientos. No es doble venta.",
+          ],
+          pt: [
+            "Dado",
+            "2/09: lote semente de 4 UM, esgotado em uma hora.",
+            "Típico de devolver estoque ao cancelar quando não há lotes ativos (restoreFifo).",
+            "Não move o buraco de centenas. Não é venda dupla.",
+          ],
+        },
+      },
+      {
+        tone: "ok",
+        cells: {
+          es: [
+            "OK",
+            "Siñeriz hoy: stock 32 = remainingQty de lotes. 746 panes de ficha = 746 hot dogs con productId. 0 líneas sin producto.",
+            "FIFO y contador alineados después de 737 pedidos listos/completados.",
+            "No hay corrida stock vs lotes en la tienda operativa.",
+          ],
+          pt: [
+            "OK",
+            "Siñeriz hoje: estoque 32 = remainingQty dos lotes. 746 pães da ficha = 746 hot dogs com productId. 0 linhas sem produto.",
+            "FIFO e contador alinhados após 737 pedidos prontos/concluídos.",
+            "Não há corrida estoque vs lotes na loja operacional.",
+          ],
+        },
+      },
+    ],
+    productsTitle: {
+      es: "Hot dogs con receta de PÃO NORMAL (Siñeriz, listos + completados)",
+      pt: "Hot dogs com receita de PÃO NORMAL (Siñeriz, prontos + concluídos)",
+    },
+    productsHeaders: {
+      es: ["Producto", "Canal", "Uds.", "Stock actual", "Notas"],
+      pt: ["Produto", "Canal", "Uds.", "Estoque atual", "Notas"],
+    },
+    products: [
+      [
+        "Cimarrón, Rottweiler, Chihuahua, Bulldog, Vira-lata, Vira-lata promo",
+        { es: "PDV + delivery (737 pedidos)", pt: "PDV + delivery (737 pedidos)" },
+        "746",
+        "n/a (ficha)",
+        { es: "1 pan cada uno. Sin líneas huérfanas (todas con productId).", pt: "1 pão cada. Sem linhas órfãs (todas com productId)." },
+      ],
+    ],
+    productsNote: {
+      es: "Los hot dogs no restan stock del producto: se descuenta PÃO NORMAL. Días sin venta de pan: 31/08, 07/09 y 09/09 (hasta las 09:28). El 06/09 fue el pico (135 panes).",
+      pt: "Os hot dogs não baixam estoque do produto: desconta-se PÃO NORMAL. Dias sem venda de pão: 31/08, 07/09 e 09/09 (até 09:28). O 06/09 foi o pico (135 pães).",
+    },
+    ingredientsTitle: {
+      es: "Panes — altas, consumo teórico, descarte, saldo",
+      pt: "Pães — entradas, consumo teórico, descarte, saldo",
+    },
+    ingredientsHeaders: {
+      es: ["Insumo", "Unidad", "Altas 2,5 sem.", "Descarte", "Consumo ficha", "Stock hoy", "Lotes = stock"],
+      pt: ["Insumo", "Unidade", "Entradas 2,5 sem.", "Descarte", "Consumo ficha", "Estoque hoje", "Lotes = estoque"],
+    },
+    ingredients: [
+      ["Siñeriz PÃO NORMAL", "UM", "1.154", "121", "746", "32", { es: "Sí (apertura implícita −255)", pt: "Sim (abertura implícita −255)" }],
+      ["Matriz PÃO NORMAL", "UM", "0", "0", "0", "47", { es: "No (lotes 50, hueco −3)", pt: "Não (lotes 50, buraco −3)" }],
+      ["Matriz PÃO EXTRA", "UM", "0", "0", "0", "93", { es: "Sí", pt: "Sim" }],
+    ],
+    ingredientsNote: {
+      es: "Identidad Siñeriz: −255 + 1.154 − 746 − 121 = 32. Cinco cargas partieron de stock negativo; la del 8/09 (−238 + 300 = 62) es la más visible en el historial. Entre dos snapshots hay un desfase de 1 UM (venta o carrera al grabar).",
+      pt: "Identidade Siñeriz: −255 + 1.154 − 746 − 121 = 32. Cinco entradas partiram de estoque negativo; a de 8/09 (−238 + 300 = 62) é a mais visível no histórico. Entre dois snapshots há um desvio de 1 UM (venda ou corrida ao gravar).",
+    },
+    discardsIngTitle: {
+      es: "Descartes de pan (5 eventos, 121 UM)",
+      pt: "Descartes de pão (5 eventos, 121 UM)",
+    },
+    discardsIngHeaders: {
+      es: ["Insumo", "Cantidad", "Eventos", "Motivo típico"],
+      pt: ["Insumo", "Quantidade", "Eventos", "Motivo típico"],
+    },
+    discardsIng: [
+      ["PÃO NORMAL · 31/08", "100 UM", "1", { es: "LEVOU PARA LOJA MATRIZ (no ingresó en Matriz)", pt: "LEVOU PARA LOJA MATRIZ (não entrou na Matriz)" }],
+      ["PÃO NORMAL · 01/09", "18 UM", "1", "VENCIDO"],
+      ["PÃO NORMAL · 24/08, 29/08, 06/09", "3 UM", "3", { es: "Quebró / prueba de masa / fino y se quebró", pt: "Quebrou / teste de massa / fino e quebrou" }],
+    ],
+    discardsProdTitle: {
+      es: "Descartes de producto",
+      pt: "Descartes de produto",
+    },
+    discardsProd: [
+      {
+        name: "—",
+        when: { es: "24/08–09/09", pt: "24/08–09/09" },
+        reason: "—",
+      },
+    ],
+    invoicesNote: {
+      es: "Las compras de pan en Siñeriz se cargaron como lotes manuales o transferencia ya paga (50 + 50 + 10 UM). No se cruzaron notas fiscales en esta corrida.",
+      pt: "As compras de pão em Siñeriz foram lançadas como lotes manuais ou transferência já paga (50 + 50 + 10 UM). Não se cruzaram notas fiscais nesta corrida.",
+    },
+    deliveryTitle: {
+      es: "Cancelaciones en la ventana",
+      pt: "Cancelamentos na janela",
+    },
+    deliveryHeaders: {
+      es: ["#", "Tienda", "Estado", "Restock", "Cuándo"],
+      pt: ["#", "Loja", "Status", "Restock", "Quando"],
+    },
+    delivery: [
+      ["10597", "sineriz", "cancelled", { es: "sí · 1 Vira-lata", pt: "sim · 1 Vira-lata" }, "8/09 13:22 UY"],
+      ["10279", "sineriz", "cancelled", { es: "no (empanadas)", pt: "não (empanadas)" }, "3/09 13:28 UY"],
+      ["10232", "sineriz", "cancelled", { es: "no (donut)", pt: "não (donut)" }, "1/09 22:26 UY"],
+      ["10099", "sineriz", "cancelled", { es: "sí · 1 Salsicha Kids", pt: "sim · 1 Salsicha Kids" }, "29/08 16:56 UY"],
+      ["10230", "matriz", "cancelled", { es: "no · Dog Vira-lata", pt: "não · Dog Vira-lata" }, "1/09 22:02 UY"],
+    ],
+    deliveryNote: {
+      es: "Cinco cancelaciones en Siñeriz y dos en Matriz (se listan las de pan o las recientes). Una sola devolvió un hot dog al stock. No explican el hueco de cientos. El delivery no se partió aparte: las 746 unidades son todos los ready/completed.",
+      pt: "Cinco cancelamentos em Siñeriz e dois na Matriz (listam-se os de pão ou os recentes). Só um devolveu um hot dog ao estoque. Não explicam o buraco de centenas. O delivery não foi separado: as 746 unidades são todos os ready/completed.",
+    },
+    methodTitle: { es: "Cómo se auditó", pt: "Como foi auditado" },
+    methodBody: {
+      es: "GET de solo lectura a la API de producción. Ventas = pedidos ready/completed con instante COALESCE(readyAt, updatedAt, createdAt). Consumo = receta actual × cantidad (PÃO NORMAL = 1 UM por hot dog). Altas = lotes FIFO (manual, transfer, seed) con snapshot stockBefore/stockAfter. Descartes = ingredient_discards. Integridad = stock vs suma de remainingQty. Identidad de la ventana = apertura implícita + altas − ventas − descartes = stock actual. No se escribió nada en el banco.",
+      pt: "GET somente leitura na API de produção. Vendas = pedidos ready/completed com instante COALESCE(readyAt, updatedAt, createdAt). Consumo = receita atual × quantidade (PÃO NORMAL = 1 UM por hot dog). Entradas = lotes FIFO (manual, transfer, seed) com snapshot stockBefore/stockAfter. Descartes = ingredient_discards. Integridade = estoque vs soma de remainingQty. Identidade da janela = abertura implícita + entradas − vendas − descartes = estoque atual. Nada foi escrito no banco.",
+    },
+  },
+  {
     id: "2026-08-19-3semanas",
     at: "2026-08-19T10:03:00-03:00",
     title: {

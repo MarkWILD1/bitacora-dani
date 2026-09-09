@@ -7,6 +7,35 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-09T09:40:00-03:00",
+    module: { es: "Auditoría", pt: "Auditoria" },
+    moduleHref: "propuestas/auditoria-inventario.html",
+    title: {
+      es: "Auditoría de panes (24/08–09/09) publicada en la bitácora",
+      pt: "Auditoria de pães (24/08–09/09) publicada na bitácora",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Consulta de solo lectura a producción: entradas, ventas y descartes de PÃO NORMAL",
+        "Veredicto: en Siñeriz el libro cierra (stock 32 = lotes 32; 746 panes vendidos). El número “errado” es vender en negativo y sumar la compra (−238 + 300 = 62)",
+        "100 panes “llevados a Matriz” salieron como descarte y no ingresaron en Matriz; Matriz PÃO NORMAL sigue con hueco 47 vs 50",
+      ],
+      pt: [
+        "Consulta somente leitura na produção: entradas, vendas e descartes de PÃO NORMAL",
+        "Veredito: em Siñeriz o livro fecha (estoque 32 = lotes 32; 746 pães vendidos). O número “errado” é vender no negativo e somar a compra (−238 + 300 = 62)",
+        "100 pães “levados para a Matriz” saíram como descarte e não entraram na Matriz; Matriz PÃO NORMAL segue com buraco 47 vs 50",
+      ],
+    },
+    link: {
+      href: "propuestas/auditoria-inventario.html#2026-09-09-panes",
+      label: {
+        es: "Ver informe de auditoría",
+        pt: "Ver relatório de auditoria",
+      },
+    },
+  },
+  {
     at: "2026-08-26T02:46:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
