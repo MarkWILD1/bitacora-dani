@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-09T10:50:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Stock negativo: el lote FIFO queda con lo que hay en góndola",
+      pt: "Estoque negativo: o lote FIFO fica com o que há na gôndola",
+    },
+    status: "progress",
+    details: {
+      es: [
+        "Seguimos permitiendo vender sin compra (el contador suma: -238 + 300 = 62). Eso no es un error de resta",
+        "Al cargar la entrada, el lote ya no nace con los 300 tipeados si había deuda: queda remaining 62, igual al stock. Ahí se acababa la “diferencia” stock vs lotes",
+        "En Agregar entrada y en el Histórico se aclara: la cantidad tipeada cubre la deuda; el saldo no es lo que acaba de poner",
+        "Falta publicar backend/frontend en producción",
+      ],
+      pt: [
+        "Continuamos permitindo vender sem compra (o contador soma: -238 + 300 = 62). Isso não é erro de baixa",
+        "Ao lançar a entrada, o lote já não nasce com os 300 digitados se havia dívida: fica remaining 62, igual ao estoque. Aí acabava a “diferença” estoque vs lotes",
+        "Em Adicionar entrada e no Histórico fica claro: a quantidade digitada cobre a dívida; o saldo não é o que acabou de pôr",
+        "Falta publicar backend/frontend em produção",
+      ],
+    },
+  },
+  {
     at: "2026-09-09T09:40:00-03:00",
     module: { es: "Auditoría", pt: "Auditoria" },
     moduleHref: "propuestas/auditoria-inventario.html",
