@@ -5,6 +5,226 @@
  */
 window.BITACORA_AUDIT_REPORTS = [
   {
+    id: "2026-09-11-ezequiel-turno-tarde",
+    at: "2026-09-11T20:04:00-03:00",
+    title: {
+      es: "Auditoría de ventas — turno tarde de Ezequiel (Siñeriz)",
+      pt: "Auditoria de vendas — turno da tarde de Ezequiel (Siñeriz)",
+    },
+    period: {
+      es: "11/09/2026 · Siñeriz · desde las 15:00 (hora Uruguay) hasta el corte 20:00",
+      pt: "11/09/2026 · Siñeriz · desde as 15:00 (horário Uruguai) até o corte 20:00",
+    },
+    source: {
+      es: "PostgreSQL de producción (Render) · solo lectura · sin cambios en el banco",
+      pt: "PostgreSQL de produção (Render) · somente leitura · sem alterações no banco",
+    },
+    verdictTone: "ok",
+    verdictTitle: {
+      es: "Veredicto: las ventas de Ezequiel sí están contabilizadas; el turno no arrancó a las 15:00",
+      pt: "Veredito: as vendas de Ezequiel estão contabilizadas; o turno não começou às 15:00",
+    },
+    verdictBody: {
+      es: "Ezequiel abrió caja a las 18:15 (fondo R$ 310 + $U 3.760), no a las 15:00. Desde esa apertura hay 11 pedidos ligados a su turno (10 listos + 1 en cocina). El saldo vivo de caja solo mueve efectivo ($U 1.170 + R$ 30); tarjeta y PIX quedan en el pedido y en el cierre. De 15:00 a 16:49 las ventas de Siñeriz quedaron a nombre de Bárbara. Entre 16:49 y 18:15 no hay ningún ticket.",
+      pt: "Ezequiel abriu a caixa às 18:15 (fundo R$ 310 + $U 3.760), não às 15:00. Desde essa abertura há 11 pedidos ligados ao turno dele (10 prontos + 1 na cozinha). O saldo vivo da caixa só move dinheiro ($U 1.170 + R$ 30); cartão e PIX ficam no pedido e no fechamento. Das 15:00 às 16:49 as vendas de Siñeriz ficaram em nome da Bárbara. Entre 16:49 e 18:15 não há nenhum ticket.",
+    },
+    kpis: [
+      { value: "18:15", label: { es: "Apertura de caja de Ezequiel", pt: "Abertura de caixa de Ezequiel" } },
+      { value: "11", label: { es: "Pedidos en su turno (10730–10740)", pt: "Pedidos no turno dele (10730–10740)" } },
+      { value: "$U 1.170 + R$ 30", label: { es: "Efectivo registrado en caja", pt: "Dinheiro registrado na caixa" } },
+      { value: "0", label: { es: "Tickets en el hueco 16:49–18:15", pt: "Tickets no buraco 16:49–18:15" }, tone: "warn" },
+    ],
+    findingsTitle: { es: "Qué es sistema y qué es operación", pt: "O que é sistema e o que é operação" },
+    findingsHeaders: {
+      es: ["Severidad", "Qué se ve", "Origen", "¿Error del sistema?"],
+      pt: ["Severidade", "O que se vê", "Origem", "Erro do sistema?"],
+    },
+    findings: [
+      {
+        tone: "ok",
+        cells: {
+          es: [
+            "OK",
+            "11 pedidos de Ezequiel (10730–10740) con createdBy = ezequiel y cashSessionId de su turno abierto. Sin cancelaciones en la franja.",
+            "PostgreSQL de producción, turno 0e34a509… abierto a las 18:15 UY.",
+            "No. Las ventas de su turno están grabadas.",
+          ],
+          pt: [
+            "OK",
+            "11 pedidos de Ezequiel (10730–10740) com createdBy = ezequiel e cashSessionId do turno aberto. Sem cancelamentos na faixa.",
+            "PostgreSQL de produção, turno 0e34a509… aberto às 18:15 UY.",
+            "Não. As vendas do turno estão gravadas.",
+          ],
+        },
+      },
+      {
+        tone: "warn",
+        cells: {
+          es: [
+            "Atención",
+            "Dijo que ingresó a las 15:00. La caja se abrió a las 18:15. Primera venta 18:18 (#10730).",
+            "Apertura de sesión de caja, no el login. Hasta las 18:29 Bárbara tenía turno abierto (último ticket 16:49).",
+            "No. El sistema no atribuye ventas a quien aún no abrió caja.",
+          ],
+          pt: [
+            "Atenção",
+            "Disse que entrou às 15:00. A caixa abriu às 18:15. Primeira venda 18:18 (#10730).",
+            "Abertura de sessão de caixa, não o login. Até 18:29 a Bárbara tinha turno aberto (último ticket 16:49).",
+            "Não. O sistema não atribui vendas a quem ainda não abriu caixa.",
+          ],
+        },
+      },
+      {
+        tone: "info",
+        cells: {
+          es: [
+            "Dato",
+            "El saldo del PDV (R$ 340 + $U 4.930 teórico) solo suma efectivo. Tarjeta (#10734, #10735) y PIX (#10738–10740) no mueven ese botón.",
+            "Por diseño: income de caja solo si el pago es dinheiro. El cierre de turno y el informe de ventas sí incluyen todos los medios.",
+            "No. Si mira solo el saldo de caja, tarjeta/PIX parecen faltantes.",
+          ],
+          pt: [
+            "Dado",
+            "O saldo do PDV (R$ 340 + $U 4.930 teórico) só soma dinheiro. Cartão (#10734, #10735) e PIX (#10738–10740) não movem esse botão.",
+            "Por desenho: income de caixa só se o pagamento é dinheiro. O fechamento do turno e o relatório de vendas incluem todos os meios.",
+            "Não. Se olhar só o saldo da caixa, cartão/PIX parecem faltando.",
+          ],
+        },
+      },
+      {
+        tone: "warn",
+        cells: {
+          es: [
+            "Atención",
+            "De 15:00 a 16:49 hay 9 tickets de Siñeriz a nombre de Bárbara (10721–10729). Hueco 16:49–18:15 sin ningún pedido.",
+            "Turno de Bárbara (abierto 10:49, cerrado 18:29). Posible relevo en la misma sesión o ventas no cargadas en el hueco.",
+            "No es un bug de conteo. Si Ezequiel vendió en esa franja, o usó la sesión de Bárbara o no se cargó el ticket.",
+          ],
+          pt: [
+            "Atenção",
+            "Das 15:00 às 16:49 há 9 tickets de Siñeriz em nome da Bárbara (10721–10729). Buraco 16:49–18:15 sem nenhum pedido.",
+            "Turno da Bárbara (aberto 10:49, fechado 18:29). Possível relevo na mesma sessão ou vendas não lançadas no buraco.",
+            "Não é bug de contagem. Se Ezequiel vendeu nessa faixa, ou usou a sessão da Bárbara ou o ticket não foi lançado.",
+          ],
+        },
+      },
+    ],
+    productsTitle: {
+      es: "Pedidos de Ezequiel en el turno (hora Uruguay)",
+      pt: "Pedidos de Ezequiel no turno (horário Uruguai)",
+    },
+    productsHeaders: {
+      es: ["#", "Hora", "Ítems", "Cobro", "Estado"],
+      pt: ["#", "Hora", "Itens", "Cobrança", "Status"],
+    },
+    products: [
+      ["10730", "18:18", "2 Coca 310 ml", { es: "$U 160 efectivo", pt: "$U 160 dinheiro" }, { es: "Listo", pt: "Pronto" }],
+      ["10731", "18:36", "1 Bulldog", { es: "$U 200 efectivo", pt: "$U 200 dinheiro" }, { es: "Listo", pt: "Pronto" }],
+      ["10732", "18:38", "2 Bulldog + extra queso/papa + 1 Vira-lata", { es: "$U 580 efectivo", pt: "$U 580 dinheiro" }, { es: "Listo", pt: "Pronto" }],
+      ["10733", "18:40", "1 Donut Nutella", { es: "Bonificación $U 144", pt: "Bonificação $U 144" }, { es: "Listo (no entra a caja)", pt: "Pronto (não entra na caixa)" }],
+      ["10734", "18:47", "Vira-lata + Coca 310 ml", { es: "Tarjeta Mastercard 200", pt: "Cartão Mastercard 200" }, { es: "Listo", pt: "Pronto" }],
+      ["10735", "18:47", "1 Vira-lata", { es: "Tarjeta Visa crédito 108", pt: "Cartão Visa crédito 108" }, { es: "Listo", pt: "Pronto" }],
+      ["10736", "19:00", "Bulldog + extra queso/papa", { es: "$U 230 efectivo", pt: "$U 230 dinheiro" }, { es: "Listo", pt: "Pronto" }],
+      ["10737", "19:06", "2 Vira-lata", { es: "R$ 30 efectivo (ticket 240)", pt: "R$ 30 dinheiro (ticket 240)" }, { es: "Listo", pt: "Pronto" }],
+      ["10738", "19:19", "2 Vira-lata", "PIX 240", { es: "Listo", pt: "Pronto" }],
+      ["10739", "19:33", "2 Coca Mini + 2 Rottweiler", "PIX 480", { es: "Listo", pt: "Pronto" }],
+      ["10740", "19:54", "1 Rottweiler", "PIX 240", { es: "En cocina al corte", pt: "Na cozinha no corte" }],
+    ],
+    productsNote: {
+      es: "Todos con createdBy ezequiel y sesión de caja 0e34a509. #10737: 2 Vira-lata (240 en unidad de tienda) cobrados R$ 30 en efectivo; el movimiento de caja es R$ 30, correcto. #10740 seguía en cocina al corte (~20:00).",
+      pt: "Todos com createdBy ezequiel e sessão de caixa 0e34a509. #10737: 2 Vira-lata (240 na unidade da loja) cobrados R$ 30 em dinheiro; o movimento de caixa é R$ 30, correto. #10740 seguia na cozinha no corte (~20:00).",
+    },
+    ingredientsTitle: {
+      es: "Caja del turno de Ezequiel",
+      pt: "Caixa do turno de Ezequiel",
+    },
+    ingredientsHeaders: {
+      es: ["Concepto", "UYU", "BRL", "Tickets", "En saldo vivo", "Notas"],
+      pt: ["Conceito", "UYU", "BRL", "Tickets", "No saldo vivo", "Notas"],
+    },
+    ingredients: [
+      [{ es: "Apertura", pt: "Abertura" }, "3.760", "310", "—", { es: "Sí", pt: "Sim" }, { es: "18:15 UY", pt: "18:15 UY" }],
+      [{ es: "Efectivo ventas", pt: "Dinheiro vendas" }, "1.170", "30", "10730, 10731, 10732, 10736, 10737", { es: "Sí", pt: "Sim" }, { es: "Únicos income de caja", pt: "Únicos income de caixa" }],
+      [{ es: "Tarjeta", pt: "Cartão" }, "—", "308", "10734, 10735", { es: "No", pt: "Não" }, "Mastercard 200 + Visa 108"],
+      ["PIX", "—", "960", "10738, 10739, 10740", { es: "No", pt: "Não" }, { es: "Incluye #10740 en cocina", pt: "Inclui #10740 na cozinha" }],
+      [{ es: "Bonificación", pt: "Bonificação" }, "144", "—", "10733", { es: "No", pt: "Não" }, "Donut Nutella"],
+      [{ es: "Saldo teórico caja", pt: "Saldo teórico caixa" }, "4.930", "340", "—", { es: "Sí", pt: "Sim" }, { es: "Apertura + efectivo", pt: "Abertura + dinheiro" }],
+    ],
+    ingredientsNote: {
+      es: "El botón de caja del PDV muestra solo el saldo teórico de efectivo. Tarjeta, PIX y bonificación se ven en historial de ventas y en el cierre de turno.",
+      pt: "O botão de caixa do PDV mostra só o saldo teórico de dinheiro. Cartão, PIX e bonificação aparecem no histórico de vendas e no fechamento do turno.",
+    },
+    discardsIngTitle: {
+      es: "Franja 15:00–18:15 (antes de abrir Ezequiel)",
+      pt: "Faixa 15:00–18:15 (antes de abrir Ezequiel)",
+    },
+    discardsIngHeaders: {
+      es: ["Quién", "Tickets", "Ventana UY", "Qué pasó"],
+      pt: ["Quem", "Tickets", "Janela UY", "O que aconteceu"],
+    },
+    discardsIng: [
+      [
+        "Bárbara",
+        "10721–10729",
+        "15:02–16:49",
+        { es: "9 pedidos (incluye 3 bonificaciones). Turno abierto desde las 10:49, cerrado 18:29.", pt: "9 pedidos (inclui 3 bonificações). Turno aberto desde 10:49, fechado 18:29." },
+      ],
+      [
+        "—",
+        "0",
+        "16:49–18:15",
+        { es: "Ningún pedido en Siñeriz. Sin cancelaciones de comanda.", pt: "Nenhum pedido em Siñeriz. Sem cancelamentos de comanda." },
+      ],
+      [
+        "Ezequiel",
+        "10730+",
+        "18:15 en adelante",
+        { es: "Abre caja y empieza a vender a las 18:18.", pt: "Abre a caixa e começa a vender às 18:18." },
+      ],
+    ],
+    discardsProdTitle: {
+      es: "Cancelaciones de comanda en la tarde",
+      pt: "Cancelamentos de comanda na tarde",
+    },
+    discardsProd: [
+      {
+        name: "—",
+        when: { es: "11/09 desde las 15:00 UY · Siñeriz", pt: "11/09 desde as 15:00 UY · Siñeriz" },
+        reason: "0 · Siñeriz desde 15:00 UY",
+      },
+    ],
+    invoicesNote: {
+      es: "No aplica nota fiscal. Esta corrida es de ventas y caja, no de stock. Turno de Ezequiel sigue abierto al corte.",
+      pt: "Não se aplica nota fiscal. Esta corrida é de vendas e caixa, não de estoque. O turno de Ezequiel segue aberto no corte.",
+    },
+    deliveryTitle: {
+      es: "Línea de tiempo Siñeriz · 11/09",
+      pt: "Linha do tempo Siñeriz · 11/09",
+    },
+    deliveryHeaders: {
+      es: ["Hora UY", "Quién", "Evento", "Detalle"],
+      pt: ["Hora UY", "Quem", "Evento", "Detalhe"],
+    },
+    delivery: [
+      ["10:49", "Bárbara", { es: "Abre caja", pt: "Abre caixa" }, { es: "Turno 126c5a73…", pt: "Turno 126c5a73…" }],
+      ["15:02–16:49", "Bárbara", { es: "9 ventas", pt: "9 vendas" }, "10721–10729"],
+      ["16:49–18:15", "—", { es: "Hueco", pt: "Buraco" }, { es: "0 pedidos", pt: "0 pedidos" }],
+      ["18:15", "Ezequiel", { es: "Abre caja", pt: "Abre caixa" }, { es: "Turno 0e34a509… · R$ 310 + $U 3.760", pt: "Turno 0e34a509… · R$ 310 + $U 3.760" }],
+      ["18:18", "Ezequiel", { es: "Primera venta", pt: "Primeira venda" }, "#10730"],
+      ["18:29", "Bárbara", { es: "Cierra caja", pt: "Fecha caixa" }, { es: "Después de que Ezequiel ya vendía", pt: "Depois que Ezequiel já vendia" }],
+      ["19:54", "Ezequiel", "#10740", { es: "PIX 240 · en cocina al corte", pt: "PIX 240 · na cozinha no corte" }],
+    ],
+    deliveryNote: {
+      es: "Si el reclamo es “vendí desde las 15:00 y no cuenta”, esas ventas o están a nombre de Bárbara o no se cargaron en el hueco. Las de su turno (desde 18:15) sí cuentan.",
+      pt: "Se o reclamo é “vendi desde as 15:00 e não conta”, essas vendas ou estão em nome da Bárbara ou não foram lançadas no buraco. As do turno dele (desde 18:15) contam.",
+    },
+    methodTitle: { es: "Cómo se auditó", pt: "Como foi auditado" },
+    methodBody: {
+      es: "SELECT de solo lectura contra PostgreSQL de producción (Render). Usuarios, cash_register_sessions, orders (ítems, payments, readyAt, cashSessionId) y cash_movements del turno de Ezequiel. Horas convertidas a America/Montevideo (UTC−3). No se escribió nada en el banco. Corte ~20:00 del 11/09/2026; el turno de Ezequiel seguía abierto.",
+      pt: "SELECT somente leitura no PostgreSQL de produção (Render). Usuários, cash_register_sessions, orders (itens, payments, readyAt, cashSessionId) e cash_movements do turno de Ezequiel. Horas convertidas para America/Montevideo (UTC−3). Nada foi escrito no banco. Corte ~20:00 de 11/09/2026; o turno de Ezequiel seguia aberto.",
+    },
+  },
+  {
     id: "2026-09-09-panes",
     at: "2026-09-09T09:40:00-03:00",
     title: {

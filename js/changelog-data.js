@@ -7,6 +7,37 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-11T20:04:00-03:00",
+    module: { es: "Auditoría", pt: "Auditoria" },
+    moduleHref: "propuestas/auditoria-inventario.html",
+    title: {
+      es: "Auditoría del turno tarde de Ezequiel (Siñeriz, 11/09)",
+      pt: "Auditoria do turno da tarde de Ezequiel (Siñeriz, 11/09)",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Consulta de solo lectura a producción: sesiones de caja, pedidos y movimientos de Siñeriz desde las 15:00",
+        "Veredicto: las 11 ventas de Ezequiel (10730–10740) sí están contabilizadas; abrió caja a las 18:15, no a las 15:00",
+        "El saldo vivo de caja solo suma efectivo ($U 1.170 + R$ 30). Tarjeta y PIX no mueven ese botón; sí entran al cierre",
+        "De 15:00 a 16:49 los tickets quedaron a nombre de Bárbara; hay un hueco sin pedidos hasta las 18:15",
+      ],
+      pt: [
+        "Consulta somente leitura na produção: sessões de caixa, pedidos e movimentos de Siñeriz desde as 15:00",
+        "Veredito: as 11 vendas de Ezequiel (10730–10740) estão contabilizadas; abriu a caixa às 18:15, não às 15:00",
+        "O saldo vivo da caixa só soma dinheiro ($U 1.170 + R$ 30). Cartão e PIX não movem esse botão; entram no fechamento",
+        "Das 15:00 às 16:49 os tickets ficaram em nome da Bárbara; há um buraco sem pedidos até as 18:15",
+      ],
+    },
+    link: {
+      href: "propuestas/auditoria-inventario.html#2026-09-11-ezequiel-turno-tarde",
+      label: {
+        es: "Ver informe de auditoría",
+        pt: "Ver relatório de auditoria",
+      },
+    },
+  },
+  {
     at: "2026-09-11T19:45:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
