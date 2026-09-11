@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-11T10:10:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Histórico de alteraciones: stock anterior + cantidad ingresada",
+      pt: "Histórico de alterações: estoque anterior + quantidade adicionada",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al reponer materia prima, Detalles ya no muestra solo el costo (59,78 → 59,78): aparece la cuenta stock anterior + cantidad ingresada = stock resultante",
+        "Al abrir la fila se ven los tres valores (lo que había, lo que se sumó y el total). Si el costo no cambió, no encabeza el detalle",
+        "Incluye entradas por nota fiscal, no solo carga manual o transferencia",
+      ],
+      pt: [
+        "Ao repor matéria-prima, Detalhes já não mostra só o custo (59,78 → 59,78): aparece a conta estoque anterior + quantidade adicionada = estoque resultante",
+        "Ao abrir a linha veem-se os três valores (o que havia, o que se somou e o total). Se o custo não mudou, não encabeça o detalhe",
+        "Inclui entradas por nota fiscal, não só carga manual ou transferência",
+      ],
+    },
+  },
+  {
     at: "2026-09-09T11:45:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
