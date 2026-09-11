@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-11T19:20:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Notas fiscales: se guardan al confirmar y actualizan stock",
+      pt: "Notas fiscais: salvam ao confirmar e atualizam estoque",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al guardar una NFe cargada desde XML, la nota queda registrada (antes el envío fallaba en silencio)",
+        "Si el proveedor del XML no existía, se crea al guardar; no hace falta buscarlo a mano",
+        "Los ítems vinculados a producto o materia prima suman cantidad al stock; los sin vínculo quedan marcados para revisar",
+        "La misma chave de acesso no se puede cargar dos veces en la misma tienda",
+      ],
+      pt: [
+        "Ao salvar uma NFe carregada do XML, a nota fica registrada (antes o envio falhava em silêncio)",
+        "Se o fornecedor do XML não existia, é criado ao salvar; não precisa buscá-lo na mão",
+        "Os itens vinculados a produto ou matéria-prima somam quantidade no estoque; os sem vínculo ficam marcados para revisar",
+        "A mesma chave de acesso não pode ser carregada duas vezes na mesma loja",
+      ],
+    },
+  },
+  {
     at: "2026-09-11T10:10:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
