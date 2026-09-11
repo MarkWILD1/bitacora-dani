@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-11T19:45:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Ficha técnica: mayonesa extra sigue siendo ingrediente común",
+      pt: "Ficha técnica: maionese extra continua sendo ingrediente comum",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al poner mayonesa (u otro ítem de la ficha) como extra, ya no desaparece de Ingredientes",
+        "El dog completo sigue descontando la porción común; el extra pago suma otra porción",
+        "Si el extra no viene en el producto, se deja sin “Por defecto” y solo se resta cuando el cliente lo pide",
+      ],
+      pt: [
+        "Ao colocar maionese (ou outro item da ficha) como extra, já não some de Ingredientes",
+        "O dog completo continua baixando a porção comum; o extra pago soma outra porção",
+        "Se o extra não vem no produto, fica sem “Por padrão” e só baixa quando o cliente pede",
+      ],
+    },
+  },
+  {
     at: "2026-09-11T19:20:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
