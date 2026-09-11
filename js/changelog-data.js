@@ -20,11 +20,13 @@ window.BITACORA_CHANGELOG = [
         "Al poner mayonesa (u otro ítem de la ficha) como extra, ya no desaparece de Ingredientes",
         "El dog completo sigue descontando la porción común; el extra pago suma otra porción",
         "Si el extra no viene en el producto, se deja sin “Por defecto” y solo se resta cuando el cliente lo pide",
+        "En producción (merge a main, PR #49): Render backend + Vercel frontend (danishotdog.com)",
       ],
       pt: [
         "Ao colocar maionese (ou outro item da ficha) como extra, já não some de Ingredientes",
         "O dog completo continua baixando a porção comum; o extra pago soma outra porção",
         "Se o extra não vem no produto, fica sem “Por padrão” e só baixa quando o cliente pede",
+        "Em produção (merge em main, PR #49): Render backend + Vercel frontend (danishotdog.com)",
       ],
     },
   },
