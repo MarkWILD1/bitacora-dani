@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-11T21:55:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "En cada categoría, los productos más vendidos quedan primero",
+      pt: "Em cada categoria, os produtos mais vendidos ficam primeiro",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Dentro de cada pestaña del PDV (Hot Dogs, bebidas, etc.) las tarjetas se ordenan de más a menos vendidas, de izquierda a derecha",
+        "El ranking usa las unidades vendidas de esa tienda; las pestañas no cambian de lugar",
+        "El orden se carga al elegir la tienda y no salta con cada venta del turno",
+        "Si no hay datos de ventas, el catálogo queda como estaba",
+      ],
+      pt: [
+        "Dentro de cada aba do PDV (Hot Dogs, bebidas, etc.) os cards ordenam do mais ao menos vendido, da esquerda para a direita",
+        "O ranking usa as unidades vendidas daquela loja; as abas não mudam de lugar",
+        "A ordem carrega ao escolher a loja e não pula a cada venda do turno",
+        "Se não houver dados de vendas, o catálogo fica como estava",
+      ],
+    },
+  },
+  {
     at: "2026-09-11T21:36:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
