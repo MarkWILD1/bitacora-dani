@@ -7,6 +7,32 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-11T21:36:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Extras pueden ser gratis o con costo, y siguen en extras",
+      pt: "Extras podem ser grátis ou com custo, e continuam em extras",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Un extra a R$ 0 (pimienta) ya no salta a la ficha técnica: sigue en Extras y el POS lo muestra como Gratis",
+        "Al agregar o editar un extra se elige Gratis o Con costo; vaciar el precio no lo saca de extras",
+        "Si el cliente pide el extra, se descuenta stock igual (la cantidad de la ficha), cobre o no",
+        "Mayonesa común+extra no cambia: una porción de base y otra si piden extra",
+        "Si la pimienta quedó en “solo ficha”, hay que volver a asignarla a Extras y marcar Gratis",
+      ],
+      pt: [
+        "Um extra a R$ 0 (pimenta) já não vai para a ficha técnica: continua em Extras e o POS mostra Grátis",
+        "Ao adicionar ou editar um extra escolhe-se Grátis ou Com custo; esvaziar o preço não tira dos extras",
+        "Se o cliente pede o extra, baixa estoque igual (a quantidade da ficha), cobre ou não",
+        "Maionese comum+extra não muda: uma porção de base e outra se pedirem extra",
+        "Se a pimenta ficou em “só ficha”, tem que atribuí-la de novo a Extras e marcar Grátis",
+      ],
+    },
+  },
+  {
     at: "2026-09-11T20:04:00-03:00",
     module: { es: "Auditoría", pt: "Auditoria" },
     moduleHref: "propuestas/auditoria-inventario.html",
