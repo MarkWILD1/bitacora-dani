@@ -22,6 +22,7 @@ window.BITACORA_CHANGELOG = [
         "Si el cliente pide el extra, se descuenta stock igual (la cantidad de la ficha), cobre o no",
         "Mayonesa común+extra no cambia: una porción de base y otra si piden extra",
         "Si la pimienta quedó en “solo ficha”, hay que volver a asignarla a Extras y marcar Gratis",
+        "En producción (merge a main, PR #50): Vercel frontend (danishotdog.com) + Render backend",
       ],
       pt: [
         "Um extra a R$ 0 (pimenta) já não vai para a ficha técnica: continua em Extras e o POS mostra Grátis",
@@ -29,6 +30,7 @@ window.BITACORA_CHANGELOG = [
         "Se o cliente pede o extra, baixa estoque igual (a quantidade da ficha), cobre ou não",
         "Maionese comum+extra não muda: uma porção de base e outra se pedirem extra",
         "Se a pimenta ficou em “só ficha”, tem que atribuí-la de novo a Extras e marcar Grátis",
+        "Em produção (merge em main, PR #50): Vercel frontend (danishotdog.com) + Render backend",
       ],
     },
   },
