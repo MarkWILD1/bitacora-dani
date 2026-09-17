@@ -7,7 +7,7 @@
  */
 window.BITACORA_CHANGELOG = [
   {
-    at: "2026-09-17T07:55:00-03:00",
+    at: "2026-09-17T08:06:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
     title: {
@@ -21,12 +21,14 @@ window.BITACORA_CHANGELOG = [
         "El guardado del paso POS va en un solo envío, para no perder la inclusión común a mitad de camino",
         "En el flujo del producto se ve la etiqueta “ficha + extra”; desmarcar “Por defecto” pide confirmación, porque eso deja de restar stock",
         "Si en producción ya desapareció, marcar “Por defecto” en extras (o pasar a Ingredientes y de nuevo a Extras) la restaura",
+        "En producción (merge a main, PR #52): Vercel frontend (danishotdog.com). Backend Render sin cambio.",
       ],
       pt: [
         "Ao colocar maionese (ou outro item da ficha) em extras, fica em Ingredientes e em Extras: o dog completo baixa a porção comum; o extra pago soma outra",
         "O salvamento do passo POS vai num único envio, para não perder a inclusão comum no meio do caminho",
         "No fluxo do produto aparece o selo “ficha + extra”; desmarcar “Por padrão” pede confirmação, porque isso deixa de baixar estoque",
         "Se em produção já sumiu, marcar “Por padrão” em extras (ou passar a Ingredientes e de novo a Extras) restaura",
+        "Em produção (merge em main, PR #52): Vercel frontend (danishotdog.com). Backend Render sem alteração.",
       ],
     },
   },
