@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-17T08:31:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Prueba en producción: mayonesa en ficha y extras",
+      pt: "Teste em produção: maionese na ficha e em extras",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Se recorrió SuperAdmin y PDV en producción (PR #52 ya desplegado). No se cerró ninguna venta ni se cambió “Por defecto”",
+        "Matriz · DOG OVELHEIRO: mayonesa queda en la ficha y en extras (etiqueta ficha + extra, Por defecto marcado). En el PDV aparece marcada en Ingredientes y se ofrece como extra a R$ 3",
+        "Siñeriz · DOG CHIUAUA: el dato viejo sigue con Por defecto apagado. En extras no tiene ficha + extra; en el PDV Ingredientes solo muestra pan y batata palha — mayonesa no se resta en cada venta",
+        "El código nuevo está bien; lo que descuadra en Siñeriz se arregla marcando Por defecto en extras de ese dog (o pasando a Ingredientes y de nuevo a Extras)",
+      ],
+      pt: [
+        "Percorremos SuperAdmin e PDV em produção (PR #52 já no ar). Não fechamos nenhuma venda nem mudamos “Por padrão”",
+        "Matriz · DOG OVELHEIRO: maionese fica na ficha e em extras (selo ficha + extra, Por padrão marcado). No PDV aparece marcada em Ingredientes e é oferecida como extra a R$ 3",
+        "Siñeriz · DOG CHIUAUA: o dado antigo continua com Por padrão desligado. Em extras não tem ficha + extra; no PDV Ingredientes só mostra pão e batata palha — maionese não baixa a cada venda",
+        "O código novo está certo; o descompasso em Siñeriz se corrige marcando Por padrão em extras desse dog (ou passando a Ingredientes e de novo a Extras)",
+      ],
+    },
+  },
+  {
     at: "2026-09-17T08:06:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
