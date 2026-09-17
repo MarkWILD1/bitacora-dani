@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-17T07:55:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Mayonesa en extras sigue en la ficha y resta stock",
+      pt: "Maionese em extras continua na ficha e baixa estoque",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al poner mayonesa (u otro ítem de la ficha) en extras, queda en Ingredientes y en Extras: el dog completo resta la porción común; el extra pago suma otra",
+        "El guardado del paso POS va en un solo envío, para no perder la inclusión común a mitad de camino",
+        "En el flujo del producto se ve la etiqueta “ficha + extra”; desmarcar “Por defecto” pide confirmación, porque eso deja de restar stock",
+        "Si en producción ya desapareció, marcar “Por defecto” en extras (o pasar a Ingredientes y de nuevo a Extras) la restaura",
+      ],
+      pt: [
+        "Ao colocar maionese (ou outro item da ficha) em extras, fica em Ingredientes e em Extras: o dog completo baixa a porção comum; o extra pago soma outra",
+        "O salvamento do passo POS vai num único envio, para não perder a inclusão comum no meio do caminho",
+        "No fluxo do produto aparece o selo “ficha + extra”; desmarcar “Por padrão” pede confirmação, porque isso deixa de baixar estoque",
+        "Se em produção já sumiu, marcar “Por padrão” em extras (ou passar a Ingredientes e de novo a Extras) restaura",
+      ],
+    },
+  },
+  {
     at: "2026-09-11T21:55:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
