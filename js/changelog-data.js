@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-18T08:50:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "La nota cancelada ya no suma en la auditoría de caja",
+      pt: "A comanda cancelada não soma mais na auditoria de caixa",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Si se cancela un pedido ya cobrado (Historial o Delivery), ese monto deja de entrar en los teóricos del cierre y en los ingresos de la auditoría",
+        "La comanda sigue visible en el detalle, marcada como cancelada: los valores quedan de rastro y no cuentan en caja",
+        "Esas cancelaciones se cuentan como comandas canceladas, no como pendientes/otras",
+        "El cierre de caja del PDV usa el mismo teórico, así que tampoco incluye la nota cancelada",
+      ],
+      pt: [
+        "Se um pedido já cobrado for cancelado (Histórico ou Delivery), esse valor deixa de entrar nos teóricos do fechamento e nos recebimentos da auditoria",
+        "A comanda continua visível no detalhe, marcada como cancelada: os valores ficam de rastro e não contam no caixa",
+        "Esses cancelamentos entram como comandas canceladas, não como pendentes/outras",
+        "O fechamento de caixa do PDV usa o mesmo teórico, então também não inclui a comanda cancelada",
+      ],
+    },
+  },
+  {
     at: "2026-09-17T08:31:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
