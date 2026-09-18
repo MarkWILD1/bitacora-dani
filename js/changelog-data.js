@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-18T09:23:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "En producción: nota cancelada no suma en la auditoría",
+      pt: "Em produção: comanda cancelada não soma na auditoria",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Merge a main (PR #53). Frontend Vercel (danishotdog.com, delivery y muka) y backend Render en vivo con el commit del arreglo",
+        "En SuperAdmin → Turno de caja, una nota cancelada ya no entra en teóricos ni en ingresos; sigue visible como rastro",
+      ],
+      pt: [
+        "Merge em main (PR #53). Frontend Vercel (danishotdog.com, delivery e muka) e backend Render no ar com o commit do ajuste",
+        "No SuperAdmin → Turno de caixa, uma comanda cancelada já não entra nos teóricos nem nos recebimentos; continua visível como rastro",
+      ],
+    },
+  },
+  {
     at: "2026-09-18T08:50:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
