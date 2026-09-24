@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-24T19:15:00-03:00",
+    module: { es: "Caja", pt: "Caixa" },
+    moduleHref: "propuestas/caja.html",
+    title: {
+      es: "La apertura de caja ahora imprime su comprobante",
+      pt: "A abertura de caixa agora imprime seu comprovante",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al abrir la caja se imprime un ticket con el cambio inicial en reales y en pesos, el nombre del operador, la tienda, el turno y la fecha y hora de apertura",
+        "El ticket incluye el saldo inicial y una línea de firma del cajero, igual que los demás comprobantes de caja",
+        "Si en ese momento no hay impresora conectada, la caja igual se abre y el PDV avisa que el comprobante no salió",
+        "Los tickets de sangría y refuerzo dejaron de imprimir el saldo posterior al movimiento: quedan solo el valor retirado o ingresado y la observación",
+      ],
+      pt: [
+        "Ao abrir o caixa é impresso um ticket com o troco inicial em reais e em pesos, o nome do operador, a loja, o turno e a data e hora de abertura",
+        "O ticket inclui o saldo inicial e uma linha de assinatura do caixa, igual aos demais comprovantes de caixa",
+        "Se nesse momento não houver impressora conectada, o caixa abre do mesmo jeito e o PDV avisa que o comprovante não saiu",
+        "Os tickets de sangria e reforço deixaram de imprimir o saldo após o movimento: ficam apenas o valor retirado ou inserido e a observação",
+      ],
+    },
+  },
+  {
     at: "2026-09-18T09:23:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
