@@ -7,6 +7,24 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-25T01:15:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Nuevo delivery quedó dentro del tablero de Delivery",
+      pt: "Novo delivery ficou dentro do painel de Delivery",
+    },
+    status: "done",
+    details: {
+      es: [
+        "El botón salió de la barra superior y ahora está en el encabezado del modal de Delivery, al lado del cierre",
+      ],
+      pt: [
+        "O botão saiu da barra superior e agora está no cabeçalho do modal de Delivery, ao lado do fechar",
+      ],
+    },
+  },
+  {
     at: "2026-09-25T01:10:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
