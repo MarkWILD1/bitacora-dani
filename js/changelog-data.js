@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-25T01:10:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El delivery del mostrador se toma en la barra, con nombre, celular y dirección",
+      pt: "O delivery do balcão se toma na barra, com nome, celular e endereço",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al cobrar ya no aparece Delivery: el pedido del mostrador queda en Seña o Mesa",
+        "Nuevo delivery, al lado del tablero, pide nombre, celular y dirección y manda el carrito a cocina sin cobrar",
+        "Si el celular ya es cliente, se completan nombre y dirección. La tasa de entrega se suma igual que en la web y se cobra cuando vuelve el motoboy",
+      ],
+      pt: [
+        "Ao cobrar não aparece mais Delivery: o pedido do balcão fica em Senha ou Mesa",
+        "Novo delivery, ao lado do painel, pede nome, celular e endereço e manda o carrinho para a cozinha sem cobrar",
+        "Se o celular já é cliente, nome e endereço se completam. A taxa de entrega entra igual à web e se cobra quando o motoboy volta",
+      ],
+    },
+  },
+  {
     at: "2026-09-25T00:30:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
