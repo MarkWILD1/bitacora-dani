@@ -7,6 +7,136 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-25T00:20:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El historial muestra el pedido completo, con operador e ítems",
+      pt: "O histórico mostra o pedido completo, com operador e itens",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Cada venta del día lista todos los ítems con cantidad, precio unitario y subtotal, y el operador queda siempre visible",
+        "Al abrir el detalle se ve la personalización del hot dog (salchicha, coberturas, sin, extras y nota), el descuento y cada tramo de pago",
+      ],
+      pt: [
+        "Cada venda do dia lista todos os itens com quantidade, preço unitário e subtotal, e o operador fica sempre visível",
+        "Ao abrir o detalhe aparece a personalização do hot dog (salsicha, coberturas, sem, extras e observação), o desconto e cada parte do pagamento",
+      ],
+    },
+  },
+  {
+    at: "2026-09-25T00:05:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Instalador de la impresora actualizado a la versión 1.2",
+      pt: "Instalador da impressora atualizado para a versão 1.2",
+    },
+    status: "done",
+    details: {
+      es: [
+        "El instalador incluye el puente actual, con la nota de pago dividido (cada medio, el monto y el total)",
+        "El archivo queda en el instalador y también en la carpeta pública del sistema para descargarlo",
+      ],
+      pt: [
+        "O instalador inclui a ponte atual, com a nota de pagamento dividido (cada meio, o valor e o total)",
+        "O arquivo fica no instalador e também na pasta pública do sistema para baixá-lo",
+      ],
+    },
+  },
+  {
+    at: "2026-09-24T23:50:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "La nota de un pago dividido muestra cada pago y el total",
+      pt: "A nota de um pagamento dividido mostra cada pagamento e o total",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En un pago dividido, el ticket lista cada medio (efectivo, tarjeta o PIX) con el monto cobrado en su moneda",
+        "Si el efectivo trae vuelto, imprime lo recibido y el troco",
+        "El total del pedido sigue en la nota, junto con las cantidades de los ítems",
+        "Un pago único conserva la línea de forma de pago de siempre",
+      ],
+      pt: [
+        "Num pagamento dividido, o ticket lista cada meio (dinheiro, cartão ou PIX) com o valor cobrado na moeda dele",
+        "Se o dinheiro tiver troco, imprime o recebido e o troco",
+        "O total do pedido continua na nota, junto com as quantidades dos itens",
+        "Um pagamento único mantém a linha de forma de pagamento de sempre",
+      ],
+    },
+  },
+  {
+    at: "2026-09-24T20:40:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Clientes y promociones abre cada opción a tamaño completo",
+      pt: "Clientes e promoções abre cada opção em tamanho completo",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Debajo de la barra roja aparecen botones de bonificaciones, cortesías, clientes, promociones y novedades, y descuentos de venta",
+        "Al elegir uno, esa pantalla ocupa todo el alto y el ancho que quedan",
+        "Si hay bonificaciones por encima del tope, el número sigue visible en el botón",
+      ],
+      pt: [
+        "Abaixo da barra vermelha aparecem botões de bonificações, cortesias, clientes, promoções e novidades, e descontos de venda",
+        "Ao escolher um, essa tela ocupa toda a altura e a largura que restam",
+        "Se houver bonificações acima do limite, o número continua visível no botão",
+      ],
+    },
+  },
+  {
+    at: "2026-09-24T20:30:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Control de cuentas muestra un bloque a la vez",
+      pt: "Controle de contas mostra um bloco de cada vez",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Debajo de los botones de Administración, Control de cuentas tiene su propia fila: análisis de mercado, planeamiento, costos fijos, costos variables y facturación vs costos",
+        "Al elegir uno, ese bloque ocupa todo el alto que queda. Los demás quedan ocultos",
+        "El resto de Administración, como el reporte de ventas, sigue con su tamaño anterior",
+      ],
+      pt: [
+        "Abaixo dos botões de Administração, Controle de contas tem a própria fila: análise de mercado, planejamento, custos fixos, custos variáveis e faturamento vs custos",
+        "Ao escolher um, esse bloco ocupa toda a altura que resta. Os demais ficam ocultos",
+        "O restante de Administração, como o relatório de vendas, continua com o tamanho anterior",
+      ],
+    },
+  },
+  {
+    at: "2026-09-24T20:20:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Administración abre cada pantalla a tamaño completo",
+      pt: "Administração abre cada tela em tamanho completo",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Debajo de la barra roja aparecen botones con cada ítem de Administración: reporte de ventas, salida de materia prima, turno de caja, control de cuentas, notas fiscales, usuarios, historial, zerar stock y asistente",
+        "Al elegir uno, esa pantalla ocupa todo el alto y el ancho que quedan bajo los botones",
+        "El menú lateral sigue igual. Productos, materia prima y el resto de pestañas no cambian de tamaño",
+      ],
+      pt: [
+        "Abaixo da barra vermelha aparecem botões com cada item de Administração: relatório de vendas, saída de matéria-prima, turno de caixa, controle de contas, notas fiscais, usuários, histórico, zerar estoque e assistente",
+        "Ao escolher um, essa tela ocupa toda a altura e a largura que restam abaixo dos botões",
+        "O menu lateral continua igual. Produtos, matéria-prima e as demais abas não mudam de tamanho",
+      ],
+    },
+  },
+  {
     at: "2026-09-24T19:15:00-03:00",
     module: { es: "Caja", pt: "Caixa" },
     moduleHref: "propuestas/caja.html",
