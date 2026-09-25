@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-25T00:30:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Marcar pronto queda guardado y sigue en Pedidos prontos al refrescar",
+      pt: "Marcar pronto fica salvo e continua em Pedidos prontos ao atualizar",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Si fallaba el descuento de stock (pedidos viejos del tótem con id numérico, o un error de ficha técnica), la pantalla movía el pedido a prontos pero la base seguía en preparación y al refrescar volvía a la fila",
+        "Ahora el pedido queda pronto aunque el stock avise un error, y al abrir o refrescar cocina se cargan de nuevo los prontos del turno",
+      ],
+      pt: [
+        "Se a baixa de estoque falhava (pedidos antigos do totem com id numérico, ou um erro da ficha técnica), a tela mandava o pedido para prontos mas a base continuava em preparo e ao atualizar ele voltava para a fila",
+        "Agora o pedido fica pronto mesmo se o estoque avisar um erro, e ao abrir ou atualizar a cozinha os prontos do turno são carregados de novo",
+      ],
+    },
+  },
+  {
     at: "2026-09-25T00:20:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
