@@ -7,6 +7,46 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-26T03:05:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Administración y Clientes tienen botones debajo de la barra roja",
+      pt: "Administração e Clientes têm botões abaixo da barra vermelha",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al entrar a Relatorio, Caja, Usuarios, Clientes y las demás de esos grupos, el riel de pestañas aparece bajo la topbar",
+        "No hace falta abrir el menú lateral para saltar entre esas pantallas",
+      ],
+      pt: [
+        "Ao entrar em Relatório, Caixa, Usuários, Clientes e as demais desses grupos, o trilho de abas aparece sob a topbar",
+        "Não precisa abrir o menu lateral para pular entre essas telas",
+      ],
+    },
+  },
+  {
+    at: "2026-09-26T02:40:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "El número del pedido del día vuelve a 1 en cada tienda",
+      pt: "O número do pedido do dia volta a 1 em cada loja",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Cocina, ticket, tótem e historial muestran el correlativo del día de esa tienda, no el número global de la base",
+        "Matriz y Sineriz cuentan aparte. El historial deja el global entre paréntesis por si se filtra otro día",
+      ],
+      pt: [
+        "Cozinha, ticket, totem e histórico mostram o correlativo do dia daquela loja, não o número global da base",
+        "Matriz e Sineriz contam separado. O histórico deixa o global entre parênteses se o filtro for de outro dia",
+      ],
+    },
+  },
+  {
     at: "2026-09-25T01:15:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
