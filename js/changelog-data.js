@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-26T03:12:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Control de cuentas tiene sus 5 pantallas en botones",
+      pt: "Controle de contas tem as 5 telas em botões",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Dentro de Control de cuentas aparecen Análisis de mercado, Planeamiento, Costos fijos, Costos variables y Facturación vs costos",
+        "Se entra a una a la vez, sin scrollear las cinco juntas",
+      ],
+      pt: [
+        "Dentro de Controle de contas aparecem Análise de mercado, Planejamento, Custos fixos, Custos variáveis e Faturamento vs custos",
+        "Entra-se em uma de cada vez, sem rolar as cinco juntas",
+      ],
+    },
+  },
+  {
     at: "2026-09-26T03:05:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
