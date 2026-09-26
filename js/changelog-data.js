@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-26T03:28:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Al crear un producto se pueden cargar decimales finos (0,8 g)",
+      pt: "Ao criar um produto dá para carregar decimais finos (0,8 g)",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En Crear/Agregar Producto la cantidad admite coma y un selector de unidad: 0,8 g sobre un kilo se guarda como 0,0008 KG",
+        "La base ahora guarda 6 decimales. El producto nuevo también queda como materia prima (UN) para usarlo en otras fichas",
+      ],
+      pt: [
+        "Em Criar/Adicionar Produto a quantidade aceita vírgula e um seletor de unidade: 0,8 g sobre um quilo grava 0,0008 KG",
+        "A base agora guarda 6 decimais. O produto novo também fica como matéria prima (UN) para usar em outras fichas",
+      ],
+    },
+  },
+  {
     at: "2026-09-26T03:12:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
