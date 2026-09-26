@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-26T05:26:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Poner stock en cero de una tienda, con PDF de lo que había",
+      pt: "Zerar o estoque de uma loja, com PDF do que havia",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En Administración aparece Poner stock en cero: pide el nombre de la tienda y deja en cero materias primas, insumos y productos sin receta",
+        "Se descarga un PDF con el inventario de ese momento. Solo el superadmin puede hacerlo y no se puede deshacer",
+      ],
+      pt: [
+        "Em Administração aparece Zerar estoque: pede o nome da loja e deixa em zero matérias-primas, insumos e produtos sem receita",
+        "É baixado um PDF com o inventário daquele momento. Só o superadmin pode fazer e não dá para desfazer",
+      ],
+    },
+  },
+  {
     at: "2026-09-26T03:28:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
