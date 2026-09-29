@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-29T20:11:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Caja, cocina y administración piden entrar de nuevo",
+      pt: "Caixa, cozinha e administração pedem para entrar de novo",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Quien estaba en caja, cocina o administración tiene que identificarse otra vez. La sesión dura un turno (16 horas) y no queda abierta por semanas",
+        "Un usuario de una tienda no puede ver pedidos, caja ni usuarios de la otra. El superadmin sigue viendo las dos",
+        "El PIN del repartidor sigue siendo el mismo, pero ya no aparece escrito en la ficha. Para cambiarlo se escribe uno nuevo",
+        "El pedido por la web, el tótem y el pago con PagBank siguen sin pedir clave de staff",
+      ],
+      pt: [
+        "Quem estava no caixa, na cozinha ou na administração tem que se identificar de novo. A sessão dura um turno (16 horas) e não fica aberta por semanas",
+        "Um usuário de uma loja não pode ver pedidos, caixa nem usuários da outra. O superadmin continua vendo as duas",
+        "O PIN do entregador continua o mesmo, mas não aparece mais escrito na ficha. Para trocar, escreve-se um novo",
+        "O pedido pelo site, o totem e o pagamento com PagBank seguem sem pedir senha de staff",
+      ],
+    },
+  },
+  {
     at: "2026-09-26T05:26:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
