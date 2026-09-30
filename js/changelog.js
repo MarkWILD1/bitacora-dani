@@ -27,6 +27,7 @@
     delivery: ["delivery", "del"],
     caja: ["caja"],
     "auditoria-inventario": ["auditoria-inventario", "auditoria"],
+    pago: ["pago", "pagamento"],
     franquicias: ["franquicias", "franquias"],
   };
 

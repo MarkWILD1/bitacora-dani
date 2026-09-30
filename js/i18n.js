@@ -13,6 +13,7 @@
       "nav.kds": "KDS - Kitchen",
       "nav.caja": "Caja",
       "nav.auditoria": "Auditorías",
+      "nav.pago": "Pago",
       "nav.franquicias": "Franquicias",
       "nav.capacitacion": "Capacitación",
       "brand.name": "Bitácora Dani",
@@ -272,6 +273,20 @@
       "aud.loading": "Cargando informe…",
       "aud.history": "Historial de auditorías",
       "aud.historyLead": "Cada corrida nueva se apila aquí, con fecha y hora.",
+
+      "pago.title": "Pago — Dani's Hot Dog",
+      "pago.desc": "Pago del sistema y mantenimiento — Dani's Hot Dog",
+      "pago.bar": "Pago",
+      "pago.h1": "Pago",
+      "pago.kicker": "Cliente · desarrollador",
+      "pago.meta":
+        "Estado del pago del sistema y del mantenimiento mensual, conforme lo estipulado entre el cliente y el desarrollador/analista.",
+      "pago.systemHeading": "Pago del sistema",
+      "pago.systemBody":
+        "Completado al 100%, conforme lo estipulado entre el cliente y el desarrollador/analista.",
+      "pago.maintHeading": "Mantenimiento",
+      "pago.maintBody": "Pago mensual realizado por el mantenimiento del sistema.",
+      "pago.history": "Historial",
     },
     pt: {
       "lang.label": "Idioma",
@@ -283,6 +298,7 @@
       "nav.kds": "KDS - Kitchen",
       "nav.caja": "Caixa",
       "nav.auditoria": "Auditorias",
+      "nav.pago": "Pagamento",
       "nav.franquicias": "Franquias",
       "nav.capacitacion": "Capacitação",
       "brand.name": "Bitácora Dani",
@@ -542,6 +558,20 @@
       "aud.loading": "Carregando relatório…",
       "aud.history": "Histórico de auditorias",
       "aud.historyLead": "Cada nova corrida é empilhada aqui, com data e hora.",
+
+      "pago.title": "Pagamento — Dani's Hot Dog",
+      "pago.desc": "Pagamento do sistema e manutenção — Dani's Hot Dog",
+      "pago.bar": "Pagamento",
+      "pago.h1": "Pagamento",
+      "pago.kicker": "Cliente · desenvolvedor",
+      "pago.meta":
+        "Estado do pagamento do sistema e da manutenção mensal, conforme o estipulado entre o cliente e o desenvolvedor/analista.",
+      "pago.systemHeading": "Pagamento do sistema",
+      "pago.systemBody":
+        "Concluído em 100%, conforme o estipulado entre o cliente e o desenvolvedor/analista.",
+      "pago.maintHeading": "Manutenção",
+      "pago.maintBody": "Pagamento mensal realizado pela manutenção do sistema.",
+      "pago.history": "Histórico",
     },
   };
 

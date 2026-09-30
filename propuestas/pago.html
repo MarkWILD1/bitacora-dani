@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
-<html lang="es" data-page="del">
+<!DOCTYPE html>
+<html lang="es" data-page="pago">
 <head>
   <meta charset="UTF-8" />
   <script>(function(){try{var l=localStorage.getItem("bitacora-dani-lang");if(l==="pt"||l==="es")document.documentElement.lang=l;}catch(e){}})();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Detalle Delivery — Dani's Hot Dog" />
-  <title>Delivery — Dani's Hot Dog</title>
+  <meta name="description" content="Pago del sistema y mantenimiento — Dani's Hot Dog" />
+  <title>Pago — Dani's Hot Dog</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -70,7 +70,7 @@
               </a>
             </li>
             <li>
-              <a class="sidebar__link" href="delivery.html" aria-current="page" title="Delivery">
+              <a class="sidebar__link" href="delivery.html" title="Delivery">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M3 7h11v10H3z" /><path d="M14 10h4l3 3v4h-7v-7z" /><circle cx="7" cy="19" r="2" /><circle cx="18" cy="19" r="2" />
                 </svg>
@@ -100,7 +100,7 @@
           <p class="sidebar__group-label" data-i18n="nav.pago">Pago</p>
           <ul class="sidebar__nav">
             <li>
-              <a class="sidebar__link" href="pago.html" title="Pago" data-i18n-attr="title:nav.pago">
+              <a class="sidebar__link" href="pago.html" aria-current="page" title="Pago" data-i18n-attr="title:nav.pago">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M7 3h10v18l-2.5-1.5L12 21l-2.5-1.5L7 21V3z" />
                   <path d="M9.5 8h5M9.5 12h5" />
@@ -154,7 +154,7 @@
             <path d="M4 7h16M4 12h16M4 17h16" />
           </svg>
         </button>
-        <span class="app__bar-title" data-i18n="del.bar">Delivery</span>
+        <span class="app__bar-title" data-i18n="pago.bar">Pago</span>
       </header>
 
       <div class="wrap">
@@ -163,16 +163,21 @@
         </header>
 
         <main class="card">
-          <p class="kicker" data-i18n="index.kicker">Seguimiento operativo</p>
-          <h1 class="display" id="pageTitle" data-i18n="del.h1">Delivery</h1>
-          <p class="meta" data-i18n="module.feedMeta">
-            Los últimos cambios de este módulo aparecen arriba, apilados por fecha y hora de implementación.
+          <p class="kicker" data-i18n="pago.kicker">Cliente · desarrollador</p>
+          <h1 class="display" id="pageTitle" data-i18n="pago.h1">Pago</h1>
+          <p class="meta" data-i18n="pago.meta">
+            Estado del pago del sistema y del mantenimiento mensual, conforme lo estipulado entre el cliente y el desarrollador/analista.
           </p>
-          <div id="changelog" class="changelog" data-module="delivery" aria-live="polite" aria-label="Historial de implementaciones" data-i18n-attr="aria-label:index.changelogAria">
+
+          <h2 data-i18n="pago.systemHeading">Pago del sistema</h2>
+          <p><span class="badge badge--done">Hecho</span> <span data-i18n="pago.systemBody">Completado al 100%, conforme lo estipulado entre el cliente y el desarrollador/analista.</span></p>
+
+          <h2 data-i18n="pago.maintHeading">Mantenimiento</h2>
+          <p><span class="badge badge--done">Hecho</span> <span data-i18n="pago.maintBody">Pago mensual realizado por el mantenimiento del sistema.</span></p>
+
+          <h2 data-i18n="pago.history">Historial</h2>
+          <div id="changelog" class="changelog" data-module="pago" aria-live="polite" aria-label="Historial de implementaciones" data-i18n-attr="aria-label:index.changelogAria">
             <p class="empty-slot" data-i18n="index.changelogLoading">Cargando actualizaciones…</p>
-          </div>
-          <div class="button-row">
-            <a class="button" href="https://danishotdog.com" target="_blank" rel="noopener noreferrer" data-i18n="common.verSitioPublico">Ver sitio público</a>
           </div>
         </main>
       </div>

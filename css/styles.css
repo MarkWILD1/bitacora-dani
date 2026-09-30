@@ -265,6 +265,21 @@ body.app {
   background: var(--proposal-soft);
 }
 
+.sidebar__group--pago .sidebar__group-label {
+  color: var(--status-done-text);
+}
+
+.sidebar__group--pago .sidebar__link:hover {
+  text-decoration: none;
+  color: var(--status-done-text);
+  background: var(--status-done-bg);
+}
+
+.sidebar__group--pago .sidebar__link[aria-current="page"] {
+  color: var(--status-done-text);
+  background: var(--status-done-bg);
+}
+
 .sidebar__link svg {
   width: 20px;
   height: 20px;

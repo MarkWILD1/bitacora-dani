@@ -7,6 +7,46 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-29T22:55:00-03:00",
+    module: { es: "Pago", pt: "Pagamento" },
+    moduleHref: "propuestas/pago.html",
+    title: {
+      es: "El pago del sistema queda completado al 100%",
+      pt: "O pagamento do sistema fica concluído em 100%",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Queda registrado como pagado el 100% del sistema, conforme lo estipulado entre el cliente y el desarrollador/analista",
+        "El registro corresponde al alcance acordado del sistema Dani's Hot Dog",
+      ],
+      pt: [
+        "Fica registrado como pago 100% do sistema, conforme o estipulado entre o cliente e o desenvolvedor/analista",
+        "O registro corresponde ao alcance acordado do sistema Dani's Hot Dog",
+      ],
+    },
+  },
+  {
+    at: "2026-09-29T22:50:00-03:00",
+    module: { es: "Pago", pt: "Pagamento" },
+    moduleHref: "propuestas/pago.html",
+    title: {
+      es: "Pago mensual de mantenimiento realizado",
+      pt: "Pagamento mensal de manutenção realizado",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Queda registrado un pago mensual realizado por el mantenimiento del sistema",
+        "El mantenimiento queda aparte del pago del sistema, que ya está completado al 100%",
+      ],
+      pt: [
+        "Fica registrado um pagamento mensal realizado pela manutenção do sistema",
+        "A manutenção fica à parte do pagamento do sistema, que já está concluído em 100%",
+      ],
+    },
+  },
+  {
     at: "2026-09-29T22:25:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
