@@ -265,6 +265,13 @@ body.app {
   background: var(--proposal-soft);
 }
 
+.sidebar > .sidebar__group--pago {
+  flex-shrink: 0;
+  margin: 8px 0 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
 .sidebar__group--pago .sidebar__group-label {
   color: var(--status-done-text);
 }

@@ -80,8 +80,22 @@
     });
   });
 
+  function revealCurrentLink() {
+    const current = sidebar.querySelector('.sidebar__link[aria-current="page"]');
+    const scroller = sidebar.querySelector(".sidebar__groups");
+    if (!current || !scroller || !scroller.contains(current)) return;
+    const link = current.getBoundingClientRect();
+    const box = scroller.getBoundingClientRect();
+    if (link.top < box.top) {
+      scroller.scrollTop -= box.top - link.top;
+    } else if (link.bottom > box.bottom) {
+      scroller.scrollTop += link.bottom - box.bottom;
+    }
+  }
+
   MQ_DESKTOP.addEventListener("change", initCollapsed);
   initCollapsed();
+  revealCurrentLink();
 
   document.addEventListener("bitacora:langchange", () => {
     if (collapseBtn) {
