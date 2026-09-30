@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-29T22:25:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "El listado de usuarios ya no muestra la clave, y el PIN del repartidor queda solo cifrado",
+      pt: "A lista de usuários já não mostra a senha, e o PIN do entregador fica só cifrado",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Quien mira usuarios ya no recibe el hash de la contraseña. La clave con la que entran no cambia",
+        "Solo el superadmin puede crear, editar o borrar usuarios. El gerente sigue viendo la lista",
+        "El PIN del repartidor deja de guardarse y de mostrarse en claro. Con el que ya entra sigue sirviendo",
+        "Al editar un repartidor, el campo de PIN vacío no lo cambia",
+      ],
+      pt: [
+        "Quem olha usuários já não recebe o hash da senha. A senha com que entram não muda",
+        "Só o superadmin pode criar, editar ou apagar usuários. O gerente continua vendo a lista",
+        "O PIN do entregador deixa de ser guardado e mostrado em claro. O que já usa continua valendo",
+        "Ao editar um entregador, o campo de PIN vazio não o altera",
+      ],
+    },
+  },
+  {
     at: "2026-09-29T21:30:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
