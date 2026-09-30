@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-29T23:58:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "El alta del pedido y el estado del pago ya no muestran datos de más",
+      pt: "A criação do pedido e o estado do pagamento já não mostram dados a mais",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al pedir por la web, la respuesta trae el seguimiento. No trae pagos, documento ni dirección. Caja y cocina siguen viendo el pedido completo",
+        "Consultar si el pago ya entró devuelve solo el estado. El código PIX se muestra una vez, al crearlo",
+        "Marcar entregado confirma sin devolver el pedido. La lista del repartidor sigue con la dirección",
+      ],
+      pt: [
+        "Ao pedir pelo site, a resposta traz o acompanhamento. Não traz pagamentos, documento nem endereço. Caixa e cozinha continuam vendo o pedido completo",
+        "Consultar se o pagamento entrou devolve só o estado. O código PIX aparece uma vez, ao criá-lo",
+        "Marcar como entregue confirma sem devolver o pedido. A lista do entregador continua com o endereço",
+      ],
+    },
+  },
+  {
     at: "2026-09-29T23:45:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
