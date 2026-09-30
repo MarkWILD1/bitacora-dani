@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-29T23:45:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "El seguimiento del pedido y la búsqueda por celular ya no muestran datos de más",
+      pt: "O acompanhamento do pedido e a busca por celular já não mostram dados a mais",
+    },
+    status: "done",
+    details: {
+      es: [
+        "El seguimiento y el historial del portal muestran número, estado, ítems y si ya salió. No muestran pagos, documento ni dirección",
+        "Buscar por celular ya no trae la dirección guardada. Hay que escribirla de nuevo en el formulario",
+        "Caja, cocina y administración siguen viendo el pedido completo",
+      ],
+      pt: [
+        "O acompanhamento e o histórico do portal mostram número, estado, itens e se já saiu. Não mostram pagamentos, documento nem endereço",
+        "Buscar por celular já não traz o endereço guardado. É preciso escrevê-lo de novo no formulário",
+        "Caixa, cozinha e administração continuam vendo o pedido completo",
+      ],
+    },
+  },
+  {
     at: "2026-09-29T23:20:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
