@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-29T23:20:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "El documento del cliente y el hash de la caja local dejan de salir en las respuestas abiertas",
+      pt: "O documento do cliente e o hash da caixa local deixam de sair nas respostas abertas",
+    },
+    status: "done",
+    details: {
+      es: [
+        "El listado de clientes de delivery pide sesión. Ya no incluye documento ni dirección",
+        "Quien busca por celular sigue viendo nombre y dirección para armar el pedido. El documento guardado no vuelve",
+        "El snapshot de la caja local, con el hash de las claves, solo lo pide el instalador con su token. Una sesión de staff no alcanza",
+      ],
+      pt: [
+        "A lista de clientes de delivery pede sessão. Já não inclui documento nem endereço",
+        "Quem busca pelo celular continua vendo nome e endereço para montar o pedido. O documento guardado não volta",
+        "O snapshot da caixa local, com o hash das senhas, só o instalador pede com o token. Uma sessão de staff não basta",
+      ],
+    },
+  },
+  {
     at: "2026-09-29T22:55:00-03:00",
     module: { es: "Pago", pt: "Pagamento" },
     moduleHref: "propuestas/pago.html",
