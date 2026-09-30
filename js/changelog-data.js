@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-09-29T21:30:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Caja, cocina y administración piden sesión",
+      pt: "Caixa, cozinha e administração pedem sessão",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Esas pantallas ya no abren pedidos, caja ni usuarios si la persona no entró con su clave",
+        "El pedido por la web, el tótem, el pago con PagBank y el repartidor siguen sin clave de staff",
+        "Quien ya estaba adentro tiene que entrar otra vez. La contraseña no cambia",
+      ],
+      pt: [
+        "Essas telas já não abrem pedidos, caixa nem usuários se a pessoa não entrou com a senha",
+        "O pedido pelo site, o totem, o pagamento com PagBank e o entregador seguem sem senha de staff",
+        "Quem já estava dentro tem que entrar de novo. A senha não muda",
+      ],
+    },
+  },
+  {
     at: "2026-09-29T20:11:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
