@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-01T08:50:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "El cliente y la tienda ven al motoboy en el mapa",
+      pt: "O cliente e a loja veem o motoboy no mapa",
+    },
+    status: "done",
+    details: {
+      es: [
+        "La app del repartidor envía la ubicación. El seguimiento del pedido muestra el mapa y una hora aproximada de llegada",
+        "El tablero del superadmin muestra tienda, motoboys y pedidos. Al despachar, se sugiere el motoboy más libre cerca de la tienda. El despacho sigue siendo manual",
+        "Si no se pudo entregar, el repartidor deja un motivo y una foto opcional. El pedido vuelve a listo para asignarlo de nuevo",
+        "El aviso de WhatsApp de salida y de entrega incluye el link de seguimiento cuando el robot ya está conectado",
+      ],
+      pt: [
+        "O app do entregador envia a localização. O acompanhamento do pedido mostra o mapa e uma hora aproximada de chegada",
+        "O painel do superadmin mostra loja, motoboys e pedidos. Ao despachar, sugere o motoboy mais livre perto da loja. O despacho continua manual",
+        "Se não deu para entregar, o entregador deixa um motivo e uma foto opcional. O pedido volta para pronto para atribuir de novo",
+        "O aviso de WhatsApp de saída e de entrega inclui o link de acompanhamento quando o robô já está conectado",
+      ],
+    },
+  },
+  {
     at: "2026-09-29T23:58:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
