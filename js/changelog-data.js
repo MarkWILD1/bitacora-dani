@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-17T10:20:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Los combos tienen foto, opción a elegir y no se desarman en el carrito",
+      pt: "Os combos têm foto, opção a escolher e não se desmontam no carrinho",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En el superadmin, el combo puede llevar una foto con link de Drive. Esa foto se ve en el botón del combo del PDV",
+        "Un producto del combo se puede marcar como a elegir. En el PDV se elige entre los productos de esa categoría, por ejemplo el donut del combo café. El precio del combo no cambia",
+        "Al agregar el combo, sus productos quedan en un bloque. No se puede quitar uno suelto. Solo se saca el combo entero, con confirmación. El hot dog del combo sí se puede editar",
+      ],
+      pt: [
+        "No superadmin, o combo pode levar uma foto com link do Drive. Essa foto aparece no botão do combo do PDV",
+        "Um produto do combo pode ser marcado como a escolher. No PDV escolhe-se entre os produtos dessa categoria, por exemplo o donut do combo café. O preço do combo não muda",
+        "Ao adicionar o combo, os produtos ficam num bloco. Não dá para tirar um sozinho. Só se remove o combo inteiro, com confirmação. O hot dog do combo ainda pode ser editado",
+      ],
+    },
+  },
+  {
     at: "2026-10-01T08:50:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
