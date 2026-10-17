@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-17T15:53:00-03:00",
+    module: { es: "Caja", pt: "Caixa" },
+    moduleHref: "propuestas/caja.html",
+    title: {
+      es: "El superadmin puede entrar por terminal de caja y por el resto de los ingresos",
+      pt: "O superadmin pode entrar pelo terminal de caixa e pelos demais acessos",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Antes, al entrar por terminal de caja, el sistema pedía rol vendedor y rechazaba al superadmin",
+        "Ahora el superadmin entra por terminal de caja, gerencia, administración y cocina. Vendedor y gerente siguen limitados a su ingreso",
+        "Si entra por terminal de caja, abre el PDV. En la app de escritorio, si la tienda ya está definida, la caja abre directo en esa tienda. Si no, elige la tienda",
+      ],
+      pt: [
+        "Antes, ao entrar pelo terminal de caixa, o sistema pedia papel de vendedor e recusava o superadmin",
+        "Agora o superadmin entra pelo terminal de caixa, gerência, administração e cozinha. Vendedor e gerente continuam limitados ao seu acesso",
+        "Se entra pelo terminal de caixa, abre o PDV. No app de desktop, se a loja já está definida, o caixa abre direto nessa loja. Se não, escolhe a loja",
+      ],
+    },
+  },
+  {
     at: "2026-10-17T10:20:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
