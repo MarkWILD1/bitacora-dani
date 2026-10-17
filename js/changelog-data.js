@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-17T19:25:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Al abrir el tótem solo se elige la tienda",
+      pt: "Ao abrir o totem só se escolhe a loja",
+    },
+    status: "done",
+    details: {
+      es: [
+        "La primera vez el tótem pide Livramento o Rivera y guarda esa elección en el equipo. No pide usuario ni contraseña",
+        "Para cambiar de tienda hay un botón discreto que pide un gerente o superadmin. En pantalla completa ese botón no aparece",
+        "Al cambiar de tienda se vacía el carrito y se muestran los productos de la tienda nueva",
+      ],
+      pt: [
+        "A primeira vez o totem pede Livramento ou Rivera e guarda essa escolha no equipamento. Não pede usuário nem senha",
+        "Para trocar de loja há um botão discreto que pede um gerente ou superadmin. Em tela cheia esse botão não aparece",
+        "Ao trocar de loja o carrinho esvazia e aparecem os produtos da loja nova",
+      ],
+    },
+  },
+  {
     at: "2026-10-17T18:45:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
