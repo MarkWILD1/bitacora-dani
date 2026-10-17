@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-17T20:18:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "En el tótem el pedido es para llevar o mesa",
+      pt: "No totem o pedido é para viagem ou mesa",
+    },
+    status: "progress",
+    details: {
+      es: [
+        "Después de pagar, el tótem pregunta una sola vez: Para llevar o Mesa. Ya no pide seña, delivery ni mesa por cada producto",
+        "Para llevar pide el nombre. Mesa pide el número. Sin ese dato no deja seguir",
+        "Cocina recibe el nombre como cliente o el número como mesa. Probado en local; todavía no está publicado",
+      ],
+      pt: [
+        "Depois de pagar, o totem pergunta uma só vez: Para viagem ou Mesa. Não pede mais senha, delivery nem mesa em cada produto",
+        "Para viagem pede o nome. Mesa pede o número. Sem esse dado não deixa continuar",
+        "A cozinha recebe o nome como cliente ou o número como mesa. Testado no local; ainda não está publicado",
+      ],
+    },
+  },
+  {
     at: "2026-10-17T19:25:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
