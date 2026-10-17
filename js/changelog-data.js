@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-17T20:30:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Los pedidos del tótem se ven en Ventas de balcón",
+      pt: "Os pedidos do totem aparecem em Vendas de balcão",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En el Relatorio de Ventas, la tarjeta Tótem queda junto a los vendedores",
+        "Abre el historial de pedidos hechos en el tótem: número, hora, pago, total, ítems y cliente o mesa",
+        "El filtro de período sigue igual. No muestra caja ni salidas, porque el tótem no abre caja",
+      ],
+      pt: [
+        "No Relatório de Vendas, o cartão Totem fica junto dos vendedores",
+        "Abre o histórico dos pedidos feitos no totem: número, hora, pagamento, total, itens e cliente ou mesa",
+        "O filtro de período continua igual. Não mostra caixa nem saídas, porque o totem não abre caixa",
+      ],
+    },
+  },
+  {
     at: "2026-10-17T20:18:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
