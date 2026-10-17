@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-17T18:45:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El tótem usa la paleta del delivery y se edita desde el superadmin",
+      pt: "O totem usa a paleta do delivery e se edita no superadmin",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En Super Admin, menú Delivery, hay una pestaña Tótem por tienda",
+        "Ahí se carga la publicidad panorámica del encabezado (link de Drive) y una imagen para cada clase, categoría y combos",
+        "En el tótem, las clases y categorías quedan a la izquierda. Al tocar una, los productos de ese grupo ocupan el resto de la pantalla",
+        "El carrito es una barra ámbar abajo, como en el pedido de delivery, con cantidades, quitar y sugerencias",
+      ],
+      pt: [
+        "No Super Admin, menu Delivery, há uma aba Totem por loja",
+        "Ali se carrega a publicidade panorâmica do cabeçalho (link do Drive) e uma imagem para cada classe, categoria e combos",
+        "No totem, as classes e categorias ficam à esquerda. Ao tocar uma, os produtos desse grupo ocupam o resto da tela",
+        "O carrinho é uma barra âmbar embaixo, como no pedido de delivery, com quantidades, remover e sugestões",
+      ],
+    },
+  },
+  {
     at: "2026-10-17T15:53:00-03:00",
     module: { es: "Caja", pt: "Caixa" },
     moduleHref: "propuestas/caja.html",
