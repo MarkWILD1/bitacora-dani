@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-18T10:40:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "La pantalla de inicio del tótem muestra el póster de la marca",
+      pt: "A tela inicial do totem mostra o pôster da marca",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al esperar un cliente, el tótem muestra el póster vertical a pantalla completa, con un zoom lento, brillo y el texto para tocar y empezar",
+        "En Super Admin, menú Delivery, pestaña Tótem, cada tienda puede poner el link de Drive de esa imagen",
+        "Si el link está vacío, se usa la imagen que ya viene en el tótem",
+      ],
+      pt: [
+        "Enquanto espera um cliente, o totem mostra o pôster vertical em tela cheia, com um zoom lento, brilho e o texto para tocar e começar",
+        "No Super Admin, menu Delivery, aba Totem, cada loja pode colocar o link do Drive dessa imagem",
+        "Se o link estiver vazio, usa a imagem que já vem no totem",
+      ],
+    },
+  },
+  {
     at: "2026-10-18T10:10:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
