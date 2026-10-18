@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-18T10:46:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Tótem quedó como entrada propia, debajo de Delivery",
+      pt: "Totem ficou como entrada própria, abaixo de Delivery",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En Super Admin, Tótem ya no está dentro del menú Delivery",
+        "Aparece justo debajo de Delivery y abre la configuración del tótem de la tienda",
+      ],
+      pt: [
+        "No Super Admin, Totem não fica mais dentro do menu Delivery",
+        "Aparece logo abaixo de Delivery e abre a configuração do totem da loja",
+      ],
+    },
+  },
+  {
     at: "2026-10-18T10:40:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
@@ -18,12 +38,12 @@ window.BITACORA_CHANGELOG = [
     details: {
       es: [
         "Al esperar un cliente, el tótem muestra el póster vertical a pantalla completa, con un zoom lento, brillo y el texto para tocar y empezar",
-        "En Super Admin, menú Delivery, pestaña Tótem, cada tienda puede poner el link de Drive de esa imagen",
+        "En Super Admin, entrada Tótem (debajo de Delivery), cada tienda puede poner el link de Drive de esa imagen",
         "Si el link está vacío, se usa la imagen que ya viene en el tótem",
       ],
       pt: [
         "Enquanto espera um cliente, o totem mostra o pôster vertical em tela cheia, com um zoom lento, brilho e o texto para tocar e começar",
-        "No Super Admin, menu Delivery, aba Totem, cada loja pode colocar o link do Drive dessa imagem",
+        "No Super Admin, entrada Totem (abaixo de Delivery), cada loja pode colocar o link do Drive dessa imagem",
         "Se o link estiver vazio, usa a imagem que já vem no totem",
       ],
     },
