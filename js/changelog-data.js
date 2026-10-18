@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-18T10:10:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "La foto del producto se ve entera en el tótem y en el delivery",
+      pt: "A foto do produto aparece inteira no totem e no delivery",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En las cards del tótem y del menú de delivery, la foto ya no se recorta para llenar la caja",
+        "La imagen entra completa, con un margen y fondo crema. El tamaño de la card no cambia",
+        "El banner, las categorías del tótem y las fotos de tienda siguen igual",
+      ],
+      pt: [
+        "Nos cards do totem e do cardápio de delivery, a foto não é mais cortada para encher a caixa",
+        "A imagem entra inteira, com uma margem e fundo creme. O tamanho do card não muda",
+        "O banner, as categorias do totem e as fotos de loja continuam iguais",
+      ],
+    },
+  },
+  {
     at: "2026-10-18T09:55:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
