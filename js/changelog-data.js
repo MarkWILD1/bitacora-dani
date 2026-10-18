@@ -20,11 +20,13 @@ window.BITACORA_CHANGELOG = [
         "En las cards del tótem y del menú de delivery, la foto ya no se recorta para llenar la caja",
         "La imagen entra completa, con un margen y fondo crema. El tamaño de la card no cambia",
         "El banner, las categorías del tótem y las fotos de tienda siguen igual",
+        "Publicado el 18/10 en el tótem y en el menú de delivery",
       ],
       pt: [
         "Nos cards do totem e do cardápio de delivery, a foto não é mais cortada para encher a caixa",
         "A imagem entra inteira, com uma margem e fundo creme. O tamanho do card não muda",
         "O banner, as categorias do totem e as fotos de loja continuam iguais",
+        "Publicado em 18/10 no totem e no cardápio de delivery",
       ],
     },
   },
