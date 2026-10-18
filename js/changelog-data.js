@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-18T09:55:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Quedó publicado el tótem, los combos y el ingreso por caja",
+      pt: "Ficou publicado o totem, os combos e o acesso pelo caixa",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En producción, después de pagar el tótem pregunta una sola vez: Para llevar o Mesa. Para llevar pide el nombre y Mesa pide el número",
+        "En el Relatorio de Ventas, la tarjeta Tótem muestra esos pedidos: número, hora, pago, total, ítems y cliente o mesa. No muestra caja",
+        "Los combos tienen foto y un producto a elegir. En el PDV no se puede quitar una pieza suelta; se saca el combo entero",
+        "El superadmin entra por terminal de caja y abre el punto de venta. Vendedor y gerente siguen en su ingreso",
+      ],
+      pt: [
+        "Em produção, depois de pagar o totem pergunta uma só vez: Para viagem ou Mesa. Para viagem pede o nome e Mesa pede o número",
+        "No Relatório de Vendas, o cartão Totem mostra esses pedidos: número, hora, pagamento, total, itens e cliente ou mesa. Não mostra caixa",
+        "Os combos têm foto e um produto a escolher. No PDV não dá para tirar uma peça sozinha; tira-se o combo inteiro",
+        "O superadmin entra pelo terminal de caixa e abre o ponto de venda. Vendedor e gerente continuam no seu acesso",
+      ],
+    },
+  },
+  {
     at: "2026-10-17T20:30:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
@@ -36,17 +60,17 @@ window.BITACORA_CHANGELOG = [
       es: "En el tótem el pedido es para llevar o mesa",
       pt: "No totem o pedido é para viagem ou mesa",
     },
-    status: "progress",
+    status: "done",
     details: {
       es: [
         "Después de pagar, el tótem pregunta una sola vez: Para llevar o Mesa. Ya no pide seña, delivery ni mesa por cada producto",
         "Para llevar pide el nombre. Mesa pide el número. Sin ese dato no deja seguir",
-        "Cocina recibe el nombre como cliente o el número como mesa. Probado en local; todavía no está publicado",
+        "Cocina recibe el nombre como cliente o el número como mesa. Publicado el 18/10",
       ],
       pt: [
         "Depois de pagar, o totem pergunta uma só vez: Para viagem ou Mesa. Não pede mais senha, delivery nem mesa em cada produto",
         "Para viagem pede o nome. Mesa pede o número. Sem esse dado não deixa continuar",
-        "A cozinha recebe o nome como cliente ou o número como mesa. Testado no local; ainda não está publicado",
+        "A cozinha recebe o nome como cliente ou o número como mesa. Publicado em 18/10",
       ],
     },
   },
