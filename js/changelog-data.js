@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-18T10:52:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El tótem sigue en pantalla completa al terminar el pedido",
+      pt: "O totem continua em tela cheia ao terminar o pedido",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Si se activó la pantalla completa, el tótem la mantiene al pagar y al volver a la pantalla de inicio",
+        "El navegador no vuelve a aparecer al cerrar la compra",
+      ],
+      pt: [
+        "Se a tela cheia foi ativada, o totem a mantém ao pagar e ao voltar para a tela inicial",
+        "O navegador não volta a aparecer ao fechar a compra",
+      ],
+    },
+  },
+  {
     at: "2026-10-18T10:46:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
