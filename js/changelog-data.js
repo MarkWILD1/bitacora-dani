@@ -7,6 +7,48 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-19T22:10:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Cocina muestra Llevar y se puede marcar un producto que el cliente ya tiene",
+      pt: "A cozinha mostra Levar e dá para marcar um produto que o cliente já tem",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Los pedidos para llevar aparecen como Llevar (Levar en portugués) con el número del día, sin repetir Pager/Mesa",
+        "Un clic en un producto (por ejemplo Coca-Cola) lo pone verde para indicar que el cliente ya lo tiene; otro clic lo saca",
+        "La marca queda guardada y se ve igual en todas las pantallas de cocina",
+      ],
+      pt: [
+        "Os pedidos para levar aparecem como Levar (Llevar em espanhol) com o número do dia, sem repetir Pager/Mesa",
+        "Um clique em um produto (por exemplo Coca-Cola) fica verde para indicar que o cliente já tem; outro clique tira a marca",
+        "A marca fica salva e aparece igual em todas as telas da cozinha",
+      ],
+    },
+  },
+  {
+    at: "2026-10-19T22:08:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "En pedidos para llevar, la seña sale sola con el número de comanda",
+      pt: "Em pedidos para levar, a senha já vem com o número da comanda",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Si todos los productos van para llevar, al cobrar aparece el número de comanda del día en Seña, sin tener que teclearlo",
+        "Si hay mesa, el número se sigue pidiendo a mano",
+      ],
+      pt: [
+        "Se todos os produtos forem para levar, ao cobrar o número da comanda do dia já aparece em Senha, sem precisar digitar",
+        "Se tiver mesa, o número continua sendo pedido na mão",
+      ],
+    },
+  },
+  {
     at: "2026-10-18T10:52:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
