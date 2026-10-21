@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-20T21:19:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "El cardápio digital quedó en mantenimiento",
+      pt: "O cardápio digital ficou em manutenção",
+    },
+    status: "done",
+    details: {
+      es: [
+        "danishotdog.com muestra un cartel y no acepta pedidos nuevos del sitio",
+        "El mostrador, el tótem y la cocina siguen funcionando. Quien ya pidió puede entrar a Mi cuenta",
+        "Para volver a abrirlo: SuperAdmin, Delivery, Página Delivery, y apagar Cardápio digital em manutenção",
+      ],
+      pt: [
+        "danishotdog.com mostra um cartel e não aceita pedidos novos do site",
+        "O balcão, o totem e a cozinha continuam funcionando. Quem já pediu pode entrar em Minha conta",
+        "Para reabrir: SuperAdmin, Delivery, Página Delivery, e desligar Cardápio digital em manutenção",
+      ],
+    },
+  },
+  {
     at: "2026-10-19T22:10:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
