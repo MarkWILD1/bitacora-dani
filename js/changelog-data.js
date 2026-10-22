@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-21T23:55:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "La comanda de cocina muestra Llevar junto al número y al cliente",
+      pt: "A comanda da cozinha mostra Levar junto do número e do cliente",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En la comanda, al lado del número y del nombre, el pedido para llevar lleva el cartel Llevar",
+        "En portugués el cartel dice Levar. El delivery a domicilio sigue con el cartel Delivery",
+        "La retirada en mostrador también sale como Llevar, no como delivery",
+      ],
+      pt: [
+        "Na comanda, ao lado do número e do nome, o pedido para levar leva o cartel Levar",
+        "Em espanhol o cartel diz Llevar. O delivery em domicílio continua com o cartel Delivery",
+        "A retirada no balcão também sai como Levar, e não como delivery",
+      ],
+    },
+  },
+  {
     at: "2026-10-20T21:19:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
