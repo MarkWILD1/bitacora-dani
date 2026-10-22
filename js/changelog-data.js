@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-21T23:59:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El PDV muestra el número del próximo pedido, no el que ya se imprimió",
+      pt: "O PDV mostra o número do próximo pedido, não o que já foi impresso",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En el encabezado, Pedidos #N es el próximo pedido a lanzar",
+        "Si el último ticket fue el 9, la pantalla pasa a 10 en cuanto ese pedido se cierra",
+        "Con la comanda abierta, el número se queda en el de esa comanda",
+      ],
+      pt: [
+        "No cabeçalho, Pedidos #N é o próximo pedido a lançar",
+        "Se o último ticket foi o 9, a tela passa para 10 assim que esse pedido fecha",
+        "Com a comanda aberta, o número fica o dessa comanda",
+      ],
+    },
+  },
+  {
     at: "2026-10-21T23:55:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
