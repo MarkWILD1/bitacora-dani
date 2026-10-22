@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-22T20:10:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El nombre del combo en el carrito se lee en horizontal",
+      pt: "O nome do combo no carrinho se lê na horizontal",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En pantallas chicas el nombre del combo ya no se parte letra por letra",
+        "El precio queda junto a la etiqueta Combo, el nombre usa todo el ancho y Quitar combo va en su propia línea",
+      ],
+      pt: [
+        "Em telas pequenas o nome do combo já não se parte letra por letra",
+        "O preço fica junto da etiqueta Combo, o nome usa toda a largura e Remover combo vai na própria linha",
+      ],
+    },
+  },
+  {
     at: "2026-10-22T09:40:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
