@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-22T01:53:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "El panel de administración carga por secciones",
+      pt: "O painel de administração carrega por seções",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al entrar ya no se descarga todo el panel junto: cada pestaña llega cuando se abre",
+        "Los formularios de alta y edición, y los PDF de caja y de stock en cero, se cargan al usarlos",
+        "El archivo principal del panel bajó de 1,6 MB a 215 KB",
+      ],
+      pt: [
+        "Ao entrar já não se baixa o painel inteiro junto: cada aba chega quando se abre",
+        "Os formulários de cadastro e edição, e os PDF de caixa e de estoque em zero, carregam ao usá-los",
+        "O arquivo principal do painel caiu de 1,6 MB para 215 KB",
+      ],
+    },
+  },
+  {
     at: "2026-10-22T01:02:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
