@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-22T00:44:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El mostrador en pantallas medianas baja la barra y achica las tarjetas",
+      pt: "O balcão em telas médias baixa a barra e diminui os cartões",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Entre 1024 y 1439 px de ancho, la barra queda en dos filas: arriba usuario, tienda y pedidos; abajo reforzamiento, sangría, cerrar caja y delivery",
+        "En esas pantallas el precio del producto entra en una sola línea, con la moneda más chica que el valor",
+        "El fondo del mostrador pasa a azul noche y el rojo de las tarjetas y de la barra queda más parejo",
+      ],
+      pt: [
+        "Entre 1024 e 1439 px de largura, a barra fica em duas linhas: em cima usuário, loja e pedidos; embaixo reforço, sangria, fechar caixa e delivery",
+        "Nessas telas o preço do produto entra em uma linha só, com a moeda menor que o valor",
+        "O fundo do balcão passa a azul noite e o vermelho dos cartões e da barra fica mais parelho",
+      ],
+    },
+  },
+  {
     at: "2026-10-22T00:23:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
