@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-22T20:47:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Cada ítem del carrito puede llevar una observación a la cocina",
+      pt: "Cada item do carrinho pode levar uma observação para a cozinha",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En Editar ítem hay una pestaña Observación para hot dogs, bebidas y combos",
+        "La cocina muestra esa nota en amarillo, con la etiqueta OBS, en la tarjeta y en el detalle",
+        "La nota de preparación ya no está al final del asistente de hot dogs",
+      ],
+      pt: [
+        "Em Editar item há uma aba Observação para hot dogs, bebidas e combos",
+        "A cozinha mostra essa nota em amarelo, com a etiqueta OBS, no cartão e no detalhe",
+        "A nota de preparo já não fica no fim do assistente de hot dogs",
+      ],
+    },
+  },
+  {
     at: "2026-10-22T20:30:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
