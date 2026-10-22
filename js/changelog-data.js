@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-22T00:23:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "La cocina muestra primero el número de la comanda y el cartel en el ítem",
+      pt: "A cozinha mostra primeiro o número da comanda e o cartel no item",
+    },
+    status: "done",
+    details: {
+      es: [
+        "El número del pedido del día queda siempre primero y con el mismo formato: #1, #2, #3",
+        "En mesa, el número de la mesa va debajo del pedido. En delivery, debajo dice Delivery",
+        "En cada ítem se quitó Hot Dog, Refrigerante y Sobremesa. En ese lugar queda el cartel Levar, Mesa o Delivery",
+      ],
+      pt: [
+        "O número do pedido do dia fica sempre primeiro e no mesmo formato: #1, #2, #3",
+        "Na mesa, o número da mesa fica embaixo do pedido. No delivery, embaixo diz Delivery",
+        "Em cada item saiu Hot Dog, Refrigerante e Sobremesa. Nesse lugar fica o cartel Levar, Mesa ou Delivery",
+      ],
+    },
+  },
+  {
     at: "2026-10-22T00:15:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
