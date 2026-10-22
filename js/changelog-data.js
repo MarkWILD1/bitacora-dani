@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-22T00:15:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El delivery del mostrador pide la dirección completa y cómo va a pagar",
+      pt: "O delivery do balcão pede o endereço completo e como vai pagar",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al armar un delivery en el PDV, pide celular, nombre, pedido normal o con hora, sexo, CPF, nacimiento, e-mail y observación",
+        "En entrega a domicilio pide CEP, barrio, calle, número, complemento, ciudad y la tasa, que se puede cambiar",
+        "Si el celular ya está cargado, completa los datos y muestra desde cuándo es cliente",
+        "La forma de pago y el vuelto quedan en el ticket para el motoboy; el cobro sigue cuando vuelve",
+      ],
+      pt: [
+        "Ao montar um delivery no PDV, pede celular, nome, pedido normal ou com hora, sexo, CPF, nascimento, e-mail e observação",
+        "Na entrega pede CEP, bairro, rua, número, complemento, cidade e a taxa, que pode ser alterada",
+        "Se o celular já está cadastrado, completa os dados e mostra desde quando é cliente",
+        "A forma de pagamento e o troco ficam no ticket para o motoboy; a cobrança continua quando ele volta",
+      ],
+    },
+  },
+  {
     at: "2026-10-21T23:59:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
