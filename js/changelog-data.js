@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-22T20:25:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Cada ítem del carrito se marca Mesa o Llevar con casillas",
+      pt: "Cada item do carrinho se marca Mesa ou Levar com caixas",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En lugar del contador, cada ítem tiene dos casillas: Mesa y Llevar",
+        "Con una unidad, marcar una pasa todo el ítem a ese lado",
+        "Con varias unidades, si están las dos marcadas aparece un contador para repartir",
+      ],
+      pt: [
+        "No lugar do contador, cada item tem duas caixas: Mesa e Levar",
+        "Com uma unidade, marcar uma passa o item inteiro para esse lado",
+        "Com várias unidades, se as duas estão marcadas aparece um contador para repartir",
+      ],
+    },
+  },
+  {
     at: "2026-10-22T20:10:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
