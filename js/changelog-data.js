@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-22T09:40:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El tótem muestra dos productos por fila y la moneda de la tienda",
+      pt: "O totem mostra dois produtos por fileira e a moeda da loja",
+    },
+    status: "done",
+    details: {
+      es: [
+        "La carta del tótem queda en dos productos por fila",
+        "Al tocar un producto, la foto se acerca un momento y después entra al carrito",
+        "Siñeriz muestra pesos y Matriz muestra reales",
+        "En el carrito, Pedí también queda a media pantalla y debajo hay una fila de bebidas",
+      ],
+      pt: [
+        "O cardápio do totem fica com dois produtos por fileira",
+        "Ao tocar um produto, a foto se aproxima um instante e depois entra no carrinho",
+        "Siñeriz mostra pesos e Matriz mostra reais",
+        "No carrinho, Peça também fica no meio da tela e embaixo há uma fileira de bebidas",
+      ],
+    },
+  },
+  {
     at: "2026-10-22T01:53:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
