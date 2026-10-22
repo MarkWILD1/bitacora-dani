@@ -7,6 +7,24 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-22T20:30:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Mesa y Llevar se leen completos en el carrito",
+      pt: "Mesa e Levar se leem completos no carrinho",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Las casillas van una debajo de la otra para que el texto no se corte en tarjetas angostas",
+      ],
+      pt: [
+        "As caixas ficam uma abaixo da outra para o texto não se cortar em cartões estreitos",
+      ],
+    },
+  },
+  {
     at: "2026-10-22T20:25:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
