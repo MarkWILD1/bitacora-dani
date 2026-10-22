@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-22T01:02:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "La cocina usa la misma paleta del mostrador",
+      pt: "A cozinha usa a mesma paleta do balcão",
+    },
+    status: "done",
+    details: {
+      es: [
+        "El fondo de la cocina pasa al mismo azul noche del mostrador",
+        "La barra de arriba usa el mismo rojo en degradado",
+        "Las tarjetas, la columna de listos y la tabla usan el azul de los paneles del mostrador",
+        "El naranja sigue marcando el pedido elegido, el tiempo y el botón de listo",
+      ],
+      pt: [
+        "O fundo da cozinha passa ao mesmo azul noite do balcão",
+        "A barra de cima usa o mesmo vermelho em degradê",
+        "Os cartões, a coluna de prontos e a tabela usam o azul dos painéis do balcão",
+        "O laranja continua marcando o pedido escolhido, o tempo e o botão de pronto",
+      ],
+    },
+  },
+  {
     at: "2026-10-22T00:44:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
