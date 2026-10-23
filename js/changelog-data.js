@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-23T11:57:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "La foto del producto se puede centrar y ampliar antes de verla en los cards",
+      pt: "A foto do produto pode ser centralizada e ampliada antes de aparecer nos cards",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al pegar la imagen de un producto o combo, la vista previa muestra el card del punto de venta, el tótem y el delivery",
+        "Se arrastra la foto para centrarla y un control de tamaño la amplía; Centrar y Restablecer vuelven al encuadre original",
+        "Ese encuadre se guarda y se ve igual en el punto de venta, el tótem y el delivery",
+      ],
+      pt: [
+        "Ao colar a imagem de um produto ou combo, a prévia mostra o card do ponto de venda, o totem e o delivery",
+        "Arrasta-se a foto para centralizá-la e um controle de tamanho a amplia; Centralizar e Restabelecer voltam ao enquadramento original",
+        "Esse enquadramento é salvo e aparece igual no ponto de venda, no totem e no delivery",
+      ],
+    },
+  },
+  {
     at: "2026-10-22T20:47:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
