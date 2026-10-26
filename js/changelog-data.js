@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-26T11:46:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Cerrar el armado de un combo pide confirmación y lo saca entero",
+      pt: "Fechar a montagem de um combo pede confirmação e o tira inteiro",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Si el combo incluye un hot dog, un clic fuera del modal, Escape, la X o Cancelar pregunta si se cierra",
+        "Si se confirma, salen del carrito la bebida y el dog de ese combo. Si se rechaza, el modal sigue abierto",
+        "Un hot dog suelto se cierra como antes, sin preguntar",
+      ],
+      pt: [
+        "Se o combo inclui um hot dog, um clique fora do modal, Escape, o X ou Cancelar pergunta se fecha",
+        "Se confirmar, saem do carrinho a bebida e o dog desse combo. Se recusar, o modal continua aberto",
+        "Um hot dog avulso fecha como antes, sem perguntar",
+      ],
+    },
+  },
+  {
     at: "2026-10-26T11:22:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
