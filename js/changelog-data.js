@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-26T11:22:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "El pedido delivery se ve en dos columnas",
+      pt: "O pedido delivery aparece em duas colunas",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En una pantalla ancha, los datos del cliente quedan a la izquierda y la entrega con el pago a la derecha",
+        "En una pantalla chica las dos partes se apilan y se puede bajar para ver el resto",
+      ],
+      pt: [
+        "Numa tela larga, os dados do cliente ficam à esquerda e a entrega com o pagamento à direita",
+        "Numa tela pequena as duas partes se empilham e dá para descer para ver o resto",
+      ],
+    },
+  },
+  {
     at: "2026-10-26T11:16:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
