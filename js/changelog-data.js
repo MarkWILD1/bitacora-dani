@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-26T11:16:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "El pedido delivery tiene la opción Pago",
+      pt: "O pedido delivery tem a opção Pago",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En la forma de pago del pedido delivery aparece Pago, después de cuenta corriente",
+        "Esa opción cobra el pedido al crearlo y la conferencia indica que ya está pago",
+      ],
+      pt: [
+        "Na forma de pagamento do pedido delivery aparece Pago, depois de correntista",
+        "Essa opção cobra o pedido ao criá-lo e a conferência indica que já está pago",
+      ],
+    },
+  },
+  {
     at: "2026-10-26T11:10:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
