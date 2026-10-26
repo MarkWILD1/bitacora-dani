@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-26T11:10:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "El pedido delivery del punto de venta se cobra al crearlo",
+      pt: "O pedido delivery do ponto de venda é cobrado ao criá-lo",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En Pedido delivery, efectivo, tarjeta, Pix, voucher y cuenta corriente cobran en el momento. A cobrar sigue sin cobrar y se liquida cuando vuelve el motoboy",
+        "El efectivo entra en la caja abierta. La tasa de entrega queda dentro del total cobrado",
+        "Sale la conferencia con la dirección y el aviso de que ya está pago, y también el ticket de venta",
+      ],
+      pt: [
+        "Em Pedido delivery, dinheiro, cartão, Pix, voucher e correntista cobram na hora. A cobrar continua sem cobrar e liquida quando o motoboy volta",
+        "O dinheiro entra no caixa aberto. A taxa de entrega fica dentro do total cobrado",
+        "Sai a conferência com o endereço e o aviso de que já está pago, e também o ticket de venda",
+      ],
+    },
+  },
+  {
     at: "2026-10-23T11:57:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
