@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-26T21:28:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "En el monitor táctil de 19\" la pantalla completa no se suelta al trabajar",
+      pt: "No monitor touch de 19\" a tela cheia não sai ao trabalhar",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Login, caja, cocina, SuperAdmin y tótem comparten el mismo bloqueo: si el cajero elige pantalla completa, toques, modales y Escape no la cierran",
+        "Solo el botón de pantalla completa la suelta. Si el navegador la pierde en un toque, vuelve a entrar en ese mismo gesto",
+        "En 1280×1024 la caja deja de achicar la cabecera: los botones de caja, categorías, páginas y cobro quedan a tamaño de dedo",
+      ],
+      pt: [
+        "Login, caixa, cozinha, SuperAdmin e totem usam o mesmo bloqueio: se o operador escolhe tela cheia, toques, modais e Escape não a fecham",
+        "Só o botão de tela cheia a solta. Se o navegador a perde num toque, volta a entrar nesse mesmo gesto",
+        "Em 1280×1024 a caixa deixa de encolher o cabeçalho: os botões de caixa, categorias, páginas e pagamento ficam no tamanho do dedo",
+      ],
+    },
+  },
+  {
     at: "2026-10-26T21:10:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
