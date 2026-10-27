@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-26T21:10:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "El descarte de empanadas sigue restando aunque el stock ya sea negativo",
+      pt: "O descarte de empanadas continua descontando mesmo com estoque negativo",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En Productos, un descarte de empanadas (u otro producto sin receta) ya no frena el stock en 0",
+        "Si el stock estaba en −7 y se descartan 2, queda en −9. La venta y la carga por fecha siguen sumando sobre ese número",
+        "El aviso de faltante sigue apareciendo cuando no hay stock positivo para cubrir el descarte",
+      ],
+      pt: [
+        "Em Produtos, um descarte de empanadas (ou outro produto sem receita) não trava mais o estoque em 0",
+        "Se o estoque estava em −7 e se descartam 2, fica em −9. A venda e a entrada por data continuam somando sobre esse número",
+        "O aviso de falta continua aparecendo quando não há estoque positivo para cobrir o descarte",
+      ],
+    },
+  },
+  {
     at: "2026-10-26T11:46:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
