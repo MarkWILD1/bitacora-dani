@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-10-27T21:25:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "La auditoría de caja muestra la observación al cancelar un pedido",
+      pt: "A auditoria do caixa mostra a observação ao cancelar um pedido",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En el detalle del turno, un pedido cancelado muestra el motivo y la nota que se escribió al cancelarlo, junto con quién y cuándo",
+        "Las comandas anuladas en el PDV antes de cobrar también aparecen con su motivo y la observación de preparación, si la había",
+      ],
+      pt: [
+        "No detalhe do turno, um pedido cancelado mostra o motivo e a nota escritos no cancelamento, junto com quem e quando",
+        "As comandas anuladas no PDV antes de cobrar também aparecem com o motivo e a observação de preparo, se havia",
+      ],
+    },
+  },
+  {
     at: "2026-10-26T21:28:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
