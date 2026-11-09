@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-09T07:15:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Una comanda con muchos ítems se lee en columnas, sin filas estiradas",
+      pt: "Uma comanda com muitos itens se lê em colunas, sem linhas esticadas",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Cuando la comanda no entra en tarjetas, cocina deja de partir la pantalla en una fila por ítem",
+        "El número, Levar y el tiempo van una sola vez en el encabezado; salchicha, coberturas y la nota se leen completas en cada ítem",
+      ],
+      pt: [
+        "Quando a comanda não cabe nos cartões, a cozinha deixa de dividir a tela em uma linha por item",
+        "O número, Levar e o tempo ficam uma vez só no cabeçalho; salsicha, coberturas e a nota aparecem inteiras em cada item",
+      ],
+    },
+  },
+  {
     at: "2026-10-27T21:25:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
