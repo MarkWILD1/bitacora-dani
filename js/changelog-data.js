@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-09T22:50:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "El reporte de ventas abre con el día y deja de recargar todo el historial",
+      pt: "O relatório de vendas abre com o dia e deixa de recarregar todo o histórico",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al entrar, el reporte muestra las ventas de hoy enseguida. El total general se completa después, una sola vez",
+        "Una venta nueva actualiza el día en pantalla. El historial completo ya no se vuelve a bajar cada 15 segundos",
+      ],
+      pt: [
+        "Ao entrar, o relatório mostra as vendas de hoje na hora. O total geral completa depois, uma vez só",
+        "Uma venda nova atualiza o dia na tela. O histórico completo não volta a ser baixado a cada 15 segundos",
+      ],
+    },
+  },
+  {
     at: "2026-11-09T07:15:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
