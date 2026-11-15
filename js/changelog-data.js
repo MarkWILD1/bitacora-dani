@@ -7,6 +7,32 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-15T07:30:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Cartelería digital en el SuperAdmin: las pantallas siguen si se cierra el celular",
+      pt: "Cartazes digitais no SuperAdmin: as telas continuam se o celular for fechado",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En SuperAdmin, pestaña Pantallas, cada local tiene siete pantallas. Ahí se cargan los videos, se arman las listas y se da play, pausa o stop a una pantalla o a todas",
+        "Hay tres formas de mostrar: cada pantalla con su video, el mismo video en todas al mismo tiempo, o un video ancho partido en las siete",
+        "El distribuidor HDMI se configura desde la misma pestaña. Sin el equipo conectado queda en simulación y la imagen sigue",
+        "Cerrar el navegador no corta las pantallas. Si se reinicia el programa en la PC del local, vuelve la reproducción que estaba en marcha",
+        "Los videos quedan en esa PC. En la página de internet la pestaña muestra el estado y no acepta archivos",
+      ],
+      pt: [
+        "No SuperAdmin, aba Telas, cada loja tem sete telas. Ali se carregam os vídeos, se montam as listas e se dá play, pausa ou stop numa tela ou em todas",
+        "Há três formas de mostrar: cada tela com o seu vídeo, o mesmo vídeo em todas ao mesmo tempo, ou um vídeo largo partido nas sete",
+        "O distribuidor HDMI se configura na mesma aba. Sem o equipamento ligado fica em simulação e a imagem continua",
+        "Fechar o navegador não corta as telas. Se o programa reinicia no PC da loja, volta a reprodução que estava em andamento",
+        "Os vídeos ficam nesse PC. No site a aba mostra o estado e não aceita arquivos",
+      ],
+    },
+  },
+  {
     at: "2026-11-09T22:50:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
