@@ -16,6 +16,7 @@
       "nav.pago": "Pago",
       "nav.franquicias": "Franquicias",
       "nav.capacitacion": "Capacitación",
+      "nav.pantallas": "Pantallas",
       "brand.name": "Bitácora Dani",
       "brand.footer": "Hub de seguimiento de implementaciones del sistema Dani's Hot Dog.",
       "aria.closeMenu": "Cerrar menú",
@@ -248,6 +249,16 @@
       "cap.note":
         "<strong>Siguiente paso:</strong> definir roles de acceso, banco de preguntas por proceso y cómo se vincula el resultado ZDG al plan de carrera de cada colaborador.",
 
+      "pantallas.title": "Pantallas — Dani's Hot Dog",
+      "pantallas.desc": "Propuesta de cartelería digital — Dani's Hot Dog",
+      "pantallas.bar": "Pantallas",
+      "pantallas.h1": "Cartelería digital",
+      "pantallas.meta": "Pantallas del local manejadas desde el SuperAdmin. La imagen corre en la PC de la tienda y sigue si se cierra el celular.",
+      "pantallas.estado": "— propuesta, con presupuesto cerrado.",
+      "pantallas.price": "R$ 5.500",
+      "pantallas.priceLead": "Presupuesto de la cartelería digital, en reales.",
+      "pantallas.note": "<strong>Nota:</strong> los videos quedan en la PC del local. En el sitio público la pestaña muestra el estado y no acepta archivos. No está publicado en producción.",
+
       "tpl.title": "Propuesta — Dani's Hot Dog",
       "tpl.desc": "Propuesta — Dani's Hot Dog",
       "tpl.bar": "Nueva propuesta",
@@ -301,6 +312,7 @@
       "nav.pago": "Pagamento",
       "nav.franquicias": "Franquias",
       "nav.capacitacion": "Capacitação",
+      "nav.pantallas": "Telas",
       "brand.name": "Bitácora Dani",
       "brand.footer": "Hub de acompanhamento das implementações do sistema Dani's Hot Dog.",
       "aria.closeMenu": "Fechar menu",
@@ -481,6 +493,16 @@
       "caja.i7": "NF + estoque + código de fornecedor",
       "caja.note":
         "<strong>Pendente operacional:</strong> nomenclatura final de alguns totais do fechamento e cartões UY vs BR no gateway — ver TODOs abertos do sistema.",
+
+      "pantallas.title": "Telas — Dani's Hot Dog",
+      "pantallas.desc": "Proposta de cartazes digitais — Dani's Hot Dog",
+      "pantallas.bar": "Telas",
+      "pantallas.h1": "Cartazes digitais",
+      "pantallas.meta": "Telas da loja comandadas pelo SuperAdmin. A imagem roda no PC da loja e continua se o celular for fechado.",
+      "pantallas.estado": "— proposta, com orçamento fechado.",
+      "pantallas.price": "R$ 5.500",
+      "pantallas.priceLead": "Orçamento dos cartazes digitais, em reais.",
+      "pantallas.note": "<strong>Nota:</strong> os vídeos ficam no PC da loja. No site a aba mostra o estado e não aceita arquivos. Não está publicado em produção.",
 
       "fran.title": "Franquias — Dani's Hot Dog",
       "fran.desc": "Proposta Franquias — Dani's Hot Dog",
