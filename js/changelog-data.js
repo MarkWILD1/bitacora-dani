@@ -11,6 +11,26 @@ window.BITACORA_CHANGELOG = [
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
     title: {
+      es: "La cocina ya no muestra la leyenda de teclas en el encabezado",
+      pt: "A cozinha não mostra mais a legenda das teclas no cabeçalho",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Salió del encabezado el texto de la bump bar y del teclado numérico",
+        "El aviso de Num Lock apagado y el número de página siguen apareciendo solo cuando hacen falta",
+      ],
+      pt: [
+        "Saiu do cabeçalho o texto da bump bar e do teclado numérico",
+        "O aviso de Num Lock desligado e o número da página continuam aparecendo só quando fazem falta",
+      ],
+    },
+  },
+  {
+    at: "2026-11-19T11:30:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
       es: "La bump bar KB9000 funciona en la pantalla de cocina",
       pt: "A bump bar KB9000 funciona na tela da cozinha",
     },
