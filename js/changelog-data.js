@@ -7,6 +7,32 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-19T11:30:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "La bump bar KB9000 funciona en la pantalla de cocina",
+      pt: "A bump bar KB9000 funciona na tela da cozinha",
+    },
+    status: "done",
+    details: {
+      es: [
+        "BUMP marca listo el pedido elegido, o el primero de la página si no hay ninguno",
+        "Las teclas 1 a 10 eligen el puesto. Ese número se ve en la comanda",
+        "Las flechas cambian de pedido, PAGE pasa a los siguientes 4, RECALL recupera el último listo y SUM muestra el total por producto",
+        "REDRAW limpia la selección y vuelve a cargar los pedidos",
+        "El teclado numérico Exbom sigue funcionando en la misma pantalla",
+      ],
+      pt: [
+        "BUMP marca pronto o pedido escolhido, ou o primeiro da página se não houver nenhum",
+        "As teclas 1 a 10 escolhem a posição. Esse número aparece na comanda",
+        "As setas mudam de pedido, PAGE passa para os próximos 4, RECALL recupera o último pronto e SUM mostra o total por produto",
+        "REDRAW limpa a seleção e volta a carregar os pedidos",
+        "O teclado numérico Exbom continua funcionando na mesma tela",
+      ],
+    },
+  },
+  {
     at: "2026-11-19T11:05:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
