@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-19T11:05:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "El teclado numérico Exbom funciona como bump bar en cocina",
+      pt: "O teclado numérico Exbom funciona como bump bar na cozinha",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En cocina, el numérico USB marca el pedido listo con Enter o +, lo recupera con −, y se mueve con * y /",
+        "El punto borra el último dígito. Si Num Lock está apagado, el encabezado avisa",
+        "Las letras del teclado de la notebook no disparan esas acciones",
+      ],
+      pt: [
+        "Na cozinha, o numérico USB marca o pedido pronto com Enter ou +, recupera com −, e navega com * e /",
+        "O ponto apaga o último dígito. Se o Num Lock estiver desligado, o cabeçalho avisa",
+        "As letras do teclado do notebook não disparam essas ações",
+      ],
+    },
+  },
+  {
     at: "2026-11-15T23:17:00-03:00",
     module: { es: "Pago", pt: "Pagamento" },
     moduleHref: "propuestas/pago.html",
