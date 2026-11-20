@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-20T13:32:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "La card del tótem vuelve a un tamaño normal",
+      pt: "O card do totem volta a um tamanho normal",
+    },
+    status: "done",
+    details: {
+      es: [
+        "La foto del tótem había crecido hasta ocupar toda la columna. Quedó otra vez en una altura fija, con el nombre y el precio debajo",
+        "Si el producto no tiene foto cargada, el recuadro muestra Imagem centrado",
+      ],
+      pt: [
+        "A foto do totem tinha crescido até ocupar a coluna inteira. Voltou a uma altura fixa, com o nome e o preço embaixo",
+        "Se o produto não tem foto carregada, o quadro mostra Imagem no centro",
+      ],
+    },
+  },
+  {
     at: "2026-11-20T11:45:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
