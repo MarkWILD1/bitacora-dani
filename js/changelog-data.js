@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-20T11:45:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "La foto del producto coincide con la previsualización",
+      pt: "A foto do produto coincide com a pré-visualização",
+    },
+    status: "done",
+    details: {
+      es: [
+        "POS, POS compacto, tótem y delivery mostraban la foto en un recuadro distinto al de la previsualización, y el zoom no caía en el mismo lugar",
+        "Cada vista usa ahora la misma proporción que su previsualización. En el tótem el nombre y el precio siguen debajo de la foto",
+      ],
+      pt: [
+        "PDV, PDV compacto, totem e delivery mostravam a foto num quadro diferente do da pré-visualização, e o zoom não caía no mesmo lugar",
+        "Cada vista usa agora a mesma proporção da sua pré-visualização. No totem o nome e o preço continuam abaixo da foto",
+      ],
+    },
+  },
+  {
     at: "2026-11-20T11:12:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
