@@ -14,15 +14,17 @@ window.BITACORA_CHANGELOG = [
       es: "La card del tótem vuelve a un tamaño normal",
       pt: "O card do totem volta a um tamanho normal",
     },
-    status: "done",
+    status: "progress",
     details: {
       es: [
         "La foto del tótem había crecido hasta ocupar toda la columna. Quedó otra vez en una altura fija, con el nombre y el precio debajo",
         "Si el producto no tiene foto cargada, el recuadro muestra Imagem centrado",
+        "Guardado para publicar. Todavía no está en el tótem de las tiendas",
       ],
       pt: [
         "A foto do totem tinha crescido até ocupar a coluna inteira. Voltou a uma altura fixa, com o nome e o preço embaixo",
         "Se o produto não tem foto carregada, o quadro mostra Imagem no centro",
+        "Guardado para publicar. Ainda não está no totem das lojas",
       ],
     },
   },
@@ -34,15 +36,17 @@ window.BITACORA_CHANGELOG = [
       es: "La foto del producto coincide con la previsualización",
       pt: "A foto do produto coincide com a pré-visualização",
     },
-    status: "done",
+    status: "progress",
     details: {
       es: [
         "POS, POS compacto, tótem y delivery mostraban la foto en un recuadro distinto al de la previsualización, y el zoom no caía en el mismo lugar",
         "Cada vista usa ahora la misma proporción que su previsualización. En el tótem el nombre y el precio siguen debajo de la foto",
+        "Guardado para publicar. Todavía no está en las tiendas",
       ],
       pt: [
         "PDV, PDV compacto, totem e delivery mostravam a foto num quadro diferente do da pré-visualização, e o zoom não caía no mesmo lugar",
         "Cada vista usa agora a mesma proporção da sua pré-visualização. No totem o nome e o preço continuam abaixo da foto",
+        "Guardado para publicar. Ainda não está nas lojas",
       ],
     },
   },
@@ -54,15 +58,17 @@ window.BITACORA_CHANGELOG = [
       es: "En el tótem la foto ya no tapa el nombre ni el precio",
       pt: "No totem a foto já não cobre o nome nem o preço",
     },
-    status: "done",
+    status: "progress",
     details: {
       es: [
         "En jugos Del Valle, milks y algunas rosquillas la foto ampliada salía del cuadro y cubría el nombre y el valor",
         "La foto queda recortada dentro de la card. El nombre y el precio se leen enteros",
+        "Guardado para publicar. Todavía no está en el tótem de las tiendas",
       ],
       pt: [
         "Em sucos Del Valle, milks e algumas rosquinhas a foto ampliada saía do quadro e cobria o nome e o valor",
         "A foto fica cortada dentro do card. O nome e o preço se leem inteiros",
+        "Guardado para publicar. Ainda não está no totem das lojas",
       ],
     },
   },
@@ -74,15 +80,17 @@ window.BITACORA_CHANGELOG = [
       es: "Cada vista del producto puede tener su propia foto",
       pt: "Cada vista do produto pode ter a sua própria foto",
     },
-    status: "done",
+    status: "progress",
     details: {
       es: [
         "En productos y combos, POS, POS compacto, tótem y delivery aceptan un enlace de foto propio",
         "Si esa vista queda vacía, se muestra la foto principal",
+        "Guardado para publicar. Todavía no está en las tiendas",
       ],
       pt: [
         "Em produtos e combos, PDV, PDV compacto, totem e delivery aceitam um link de foto próprio",
         "Se essa vista ficar vazia, aparece a foto principal",
+        "Guardado para publicar. Ainda não está nas lojas",
       ],
     },
   },
@@ -94,17 +102,19 @@ window.BITACORA_CHANGELOG = [
       es: "La foto del producto se encuadra aparte en POS, tótem y delivery",
       pt: "A foto do produto se enquadra à parte no PDV, totem e delivery",
     },
-    status: "done",
+    status: "progress",
     details: {
       es: [
         "En productos y combos, cada vista (POS, POS compacto, tótem y delivery) se centra y se amplía por separado",
         "El encuadre que ya estaba guardado se sigue viendo igual en las cuatro hasta que se ajuste una",
         "Centrar y restablecer afectan solo la vista seleccionada",
+        "Guardado para publicar. Todavía no está en las tiendas",
       ],
       pt: [
         "Em produtos e combos, cada vista (PDV, PDV compacto, totem e delivery) se centraliza e se amplia por separado",
         "O enquadramento já salvo continua igual nas quatro até que uma seja ajustada",
         "Centralizar e restaurar afetam só a vista selecionada",
+        "Guardado para publicar. Ainda não está nas lojas",
       ],
     },
   },
