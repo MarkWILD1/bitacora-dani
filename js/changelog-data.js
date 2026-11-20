@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-20T11:12:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "En el tótem la foto ya no tapa el nombre ni el precio",
+      pt: "No totem a foto já não cobre o nome nem o preço",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En jugos Del Valle, milks y algunas rosquillas la foto ampliada salía del cuadro y cubría el nombre y el valor",
+        "La foto queda recortada dentro de la card. El nombre y el precio se leen enteros",
+      ],
+      pt: [
+        "Em sucos Del Valle, milks e algumas rosquinhas a foto ampliada saía do quadro e cobria o nome e o valor",
+        "A foto fica cortada dentro do card. O nome e o preço se leem inteiros",
+      ],
+    },
+  },
+  {
     at: "2026-11-20T10:36:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
