@@ -7,6 +7,26 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-20T10:36:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Cada vista del producto puede tener su propia foto",
+      pt: "Cada vista do produto pode ter a sua própria foto",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En productos y combos, POS, POS compacto, tótem y delivery aceptan un enlace de foto propio",
+        "Si esa vista queda vacía, se muestra la foto principal",
+      ],
+      pt: [
+        "Em produtos e combos, PDV, PDV compacto, totem e delivery aceitam um link de foto próprio",
+        "Se essa vista ficar vazia, aparece a foto principal",
+      ],
+    },
+  },
+  {
     at: "2026-11-20T10:17:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
