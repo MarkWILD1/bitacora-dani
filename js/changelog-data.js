@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-20T10:17:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "La foto del producto se encuadra aparte en POS, tótem y delivery",
+      pt: "A foto do produto se enquadra à parte no PDV, totem e delivery",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En productos y combos, cada vista (POS, POS compacto, tótem y delivery) se centra y se amplía por separado",
+        "El encuadre que ya estaba guardado se sigue viendo igual en las cuatro hasta que se ajuste una",
+        "Centrar y restablecer afectan solo la vista seleccionada",
+      ],
+      pt: [
+        "Em produtos e combos, cada vista (PDV, PDV compacto, totem e delivery) se centraliza e se amplia por separado",
+        "O enquadramento já salvo continua igual nas quatro até que uma seja ajustada",
+        "Centralizar e restaurar afetam só a vista selecionada",
+      ],
+    },
+  },
+  {
     at: "2026-11-19T11:30:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
