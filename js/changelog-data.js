@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-21T23:50:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Las clases dejan de repetirse y cada cabina tiene su orden y sus productos",
+      pt: "As classes deixam de repetir e cada cabine tem sua ordem e seus produtos",
+    },
+    status: "progress",
+    details: {
+      es: [
+        "En Clases, PDV, tótem y delivery aparece una sola ficha por grupo. Renombrar una clase guarda el nombre y no vuelve a crear la categoría vieja",
+        "En Clases se elige PDV, Tótem o Delivery y se sube o baja el orden de esa cabina",
+        "Cada producto se puede activar o apagar solo en PDV, solo en el tótem o solo en delivery",
+        "Guardado para publicar. Todavía no está en las tiendas",
+      ],
+      pt: [
+        "Em Classes, PDV, totem e delivery aparece uma ficha só por grupo. Renomear uma classe grava o nome e não recria a categoria antiga",
+        "Em Classes se escolhe PDV, Totem ou Delivery e sobe ou desce a ordem dessa cabine",
+        "Cada produto pode ser ativado ou desligado só no PDV, só no totem ou só no delivery",
+        "Guardado para publicar. Ainda não está nas lojas",
+      ],
+    },
+  },
+  {
     at: "2026-11-21T23:15:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
