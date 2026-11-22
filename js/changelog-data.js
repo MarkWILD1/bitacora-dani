@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-22T01:05:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Pantalla de cocina solo para helados",
+      pt: "Tela de cozinha só para sorvetes",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En /kitchen-helados la cocina ve únicamente sorvetes y Dani's Soft",
+        "Un pedido con hot dog y helado muestra solo el helado en esa pantalla. La cocina principal sigue viendo el pedido completo",
+        "Marcar listo ahí saca el ticket de esa pantalla y no avisa que el pedido entero está pronto",
+        "Desde el encabezado se pasa de Cocina a Helados. Guardado en el código local. Todavía no está publicado en las tiendas",
+      ],
+      pt: [
+        "Em /kitchen-helados a cozinha vê só sorvetes e Dani's Soft",
+        "Um pedido com hot dog e sorvete mostra só o sorvete nessa tela. A cozinha principal continua vendo o pedido completo",
+        "Marcar pronto aí tira o ticket dessa tela e não avisa que o pedido inteiro está pronto",
+        "No cabeçalho se passa de Cozinha para Sorvetes. Guardado no código local. Ainda não está publicado nas lojas",
+      ],
+    },
+  },
+  {
     at: "2026-11-22T00:55:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
