@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-22T01:15:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "El login tiene un acceso directo al KDS de helados",
+      pt: "O login tem um acesso direto ao KDS de sorvetes",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En la pantalla de ingreso, al lado de KDS, aparece KDS Helados",
+        "Pide el mismo usuario y contraseña que la cocina y abre /kitchen-helados",
+        "Guardado en el código local. Todavía no está publicado en las tiendas",
+      ],
+      pt: [
+        "Na tela de entrada, ao lado de KDS, aparece KDS Sorvetes",
+        "Pede o mesmo usuário e senha da cozinha e abre /kitchen-helados",
+        "Guardado no código local. Ainda não está publicado nas lojas",
+      ],
+    },
+  },
+  {
     at: "2026-11-22T01:05:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
