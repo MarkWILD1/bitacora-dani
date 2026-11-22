@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-22T01:22:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Se quitó el cartel SELECCIONADO de la barra de la cocina",
+      pt: "Saiu o aviso SELECIONADO da barra da cozinha",
+    },
+    status: "done",
+    details: {
+      es: [
+        "La barra de arriba de Cocina y de Helados ya no muestra el botón verde SELECCIONADO",
+        "Elegir un pedido sigue marcándolo en la pantalla y en la bump bar",
+        "Guardado en el código local. Todavía no está publicado en las tiendas",
+      ],
+      pt: [
+        "A barra de cima da Cozinha e de Sorvetes não mostra mais o botão verde SELECIONADO",
+        "Escolher um pedido continua marcando ele na tela e na bump bar",
+        "Guardado no código local. Ainda não está publicado nas lojas",
+      ],
+    },
+  },
+  {
     at: "2026-11-22T01:15:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
