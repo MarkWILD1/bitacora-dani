@@ -7,6 +7,34 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-22T00:24:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "El delivery del día pasa al PDV: tienda, tasa, pago y programado",
+      pt: "O delivery do dia passa ao PDV: loja, taxa, pagamento e programado",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En el PDV, el botón de delivery abre la operación completa: tablero, mapa, historial y programados. El admin se queda con cashback y el robot de WhatsApp",
+        "Cada tienda se abre o se cierra desde el PDV. Con la tienda cerrada, el pedido público no entra; el cajero sí puede seguir cargando",
+        "La tasa sale de la ciudad (Livramento o Rivera, u otra con la tasa de respaldo) y el retiro en mostrador sigue en cero",
+        "Al cargar un delivery, el efectivo elige reales o pesos y la tarjeta abre la bandera",
+        "Un pedido programado queda en Programados y recién entra a cocina, ticket y tablero 15 minutos antes",
+        "Guardado en el código local. Todavía no está publicado en las tiendas",
+      ],
+      pt: [
+        "No PDV, o botão de delivery abre a operação completa: quadro, mapa, histórico e programados. O admin fica com cashback e o robô de WhatsApp",
+        "Cada loja abre ou fecha no PDV. Com a loja fechada, o pedido público não entra; o caixa pode continuar lançando",
+        "A taxa sai da cidade (Livramento ou Rivera, ou outra com a taxa de respaldo) e a retirada no balcão continua em zero",
+        "Ao lançar um delivery, o dinheiro escolhe reais ou pesos e o cartão abre a bandeira",
+        "Um pedido programado fica em Programados e só entra na cozinha, no ticket e no quadro 15 minutos antes",
+        "Guardado no código local. Ainda não está publicado nas lojas",
+      ],
+    },
+  },
+  {
     at: "2026-11-21T23:50:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
