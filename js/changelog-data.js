@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-21T23:15:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Kids, milks y helados pueden llevar adicionales",
+      pt: "Kids, milks e sorvetes podem levar adicionais",
+    },
+    status: "progress",
+    details: {
+      es: [
+        "En la ficha técnica de salchicha kids, milks y helados aparece el paso Extras para cargar el adicional y su precio",
+        "En el PDV y en el pedido online, si el producto tiene adicionales, se pregunta solo eso. No aparece el tipo de salchicha",
+        "La salchicha kids ya tiene ketchup, mayonesa, papa paja y queso rallado. Milks y helados quedan listos para cargarlos en SuperAdmin",
+        "Cocina muestra la línea EXTRA. Guardado para publicar. Todavía no está en las tiendas",
+      ],
+      pt: [
+        "Na ficha técnica de salsicha kids, milks e sorvetes aparece o passo Extras para carregar o adicional e o preço",
+        "No PDV e no pedido online, se o produto tem adicionais, pergunta só isso. Não aparece o tipo de salsicha",
+        "A salsicha kids já tem ketchup, maionese, batata palha e queijo ralado. Milks e sorvetes ficam prontos para carregar no SuperAdmin",
+        "A cozinha mostra a linha EXTRA. Guardado para publicar. Ainda não está nas lojas",
+      ],
+    },
+  },
+  {
     at: "2026-11-20T13:32:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
