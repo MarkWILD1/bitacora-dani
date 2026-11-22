@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-22T00:55:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "La barra del PDV abre y cierra el delivery",
+      pt: "A barra do PDV abre e fecha o delivery",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al lado del botón Delivery, el cajero ve Loja aberta o Loja fechada de la tienda en la que está",
+        "El botón de adentro de la gestión de delivery muestra el mismo estado",
+        "Guardado en el código local. Todavía no está publicado en las tiendas",
+      ],
+      pt: [
+        "Ao lado do botão Delivery, o caixa vê Loja aberta ou Loja fechada da loja em que está",
+        "O botão de dentro da gestão de delivery mostra o mesmo estado",
+        "Guardado no código local. Ainda não está publicado nas lojas",
+      ],
+    },
+  },
+  {
     at: "2026-11-22T00:24:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
