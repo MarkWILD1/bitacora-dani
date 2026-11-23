@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-23T18:16:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "El KDS de helados muestra milks, açaís y helados",
+      pt: "O KDS de sorvetes mostra milks, açaís e sorvetes",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En /kitchen-helados entran MILK DANI'S, DANI'S AÇAÍ, SORVETES y DANI'S SOFT",
+        "Kids, hot dogs y bebidas siguen solo en la cocina principal",
+        "Un pedido mixto muestra en esa pantalla nada más que esas líneas. El açaí imprime los extras igual que el milk y el helado",
+        "Guardado en el código local. Todavía no está publicado en las tiendas",
+      ],
+      pt: [
+        "Em /kitchen-helados entram MILK DANI'S, DANI'S AÇAÍ, SORVETES e DANI'S SOFT",
+        "Kids, hot dogs e bebidas continuam só na cozinha principal",
+        "Um pedido misto mostra nessa tela só essas linhas. O açaí imprime os extras igual ao milk e ao sorvete",
+        "Guardado no código local. Ainda não está publicado nas lojas",
+      ],
+    },
+  },
+  {
     at: "2026-11-23T17:50:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
