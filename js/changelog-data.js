@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-23T19:10:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "La comanda del KDS lista salchicha, ingredientes y cobertura en ese orden",
+      pt: "O pedido do KDS lista salsicha, ingredientes e cobertura nessa ordem",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Cada ítem sale como 1 - PRODUCTO y, debajo, una línea por dato",
+        "El orden es salchicha, después lo que se quitó de ingredientes, después la cobertura y al final el extra con +",
+        "Milks, açaís y helados siguen mostrando solo el extra",
+        "Guardado en el código local. Todavía no está publicado en las tiendas",
+      ],
+      pt: [
+        "Cada item sai como 1 - PRODUTO e, embaixo, uma linha por dado",
+        "A ordem é salsicha, depois o que saiu dos ingredientes, depois a cobertura e no fim o extra com +",
+        "Milks, açaís e sorvetes continuam mostrando só o extra",
+        "Guardado no código local. Ainda não está publicado nas lojas",
+      ],
+    },
+  },
+  {
     at: "2026-11-23T18:16:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
