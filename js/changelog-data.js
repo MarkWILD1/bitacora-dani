@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-23T17:50:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Las comandas cortas dejan de estirarse en la pantalla de cocina",
+      pt: "Os pedidos curtos deixam de esticar na tela da cozinha",
+    },
+    status: "progress",
+    details: {
+      es: [
+        "Con pocos ítems, cada pedido ocupaba media pantalla y dejaba un bloque vacío debajo de los nombres",
+        "Ahora la banda mide el alto de sus ítems. El espacio libre queda abajo, no adentro de la comanda",
+        "Está en el pull request. La cocina de la tienda cambia cuando entre a main",
+      ],
+      pt: [
+        "Com poucos itens, cada pedido ocupava metade da tela e deixava um bloco vazio embaixo dos nomes",
+        "Agora a faixa mede a altura dos itens. O espaço livre fica embaixo, não dentro do pedido",
+        "Está no pull request. A cozinha da loja muda quando entrar na main",
+      ],
+    },
+  },
+  {
     at: "2026-11-22T01:22:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
