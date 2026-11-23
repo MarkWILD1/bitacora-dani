@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-23T19:26:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "El KDS nuevo ya está en las tiendas",
+      pt: "O KDS novo já está nas lojas",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Helados muestra milks, açaís y helados",
+        "Cada ítem lista salchicha, ingredientes y cobertura, en ese orden",
+        "La tarjeta muestra solo el temporizador naranja",
+        "Publicado en danisdogsystem.com",
+      ],
+      pt: [
+        "Sorvetes mostra milks, açaís e sorvetes",
+        "Cada item lista salsicha, ingredientes e cobertura, nessa ordem",
+        "O cartão mostra só o temporizador laranja",
+        "Publicado em danisdogsystem.com",
+      ],
+    },
+  },
+  {
     at: "2026-11-23T19:16:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
