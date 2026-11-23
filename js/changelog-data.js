@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-23T19:16:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "La tarjeta del KDS muestra solo el temporizador",
+      pt: "O cartão do KDS mostra só o temporizador",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Salió el tiempo en gris (los minutos desde que entró el pedido)",
+        "Queda el temporizador naranja, en la tarjeta, en los listos y en la cola",
+        "Guardado en el código local. Todavía no está publicado en las tiendas",
+      ],
+      pt: [
+        "Saiu o tempo em cinza (os minutos desde que o pedido entrou)",
+        "Fica o temporizador laranja, no cartão, nos prontos e na fila",
+        "Guardado no código local. Ainda não está publicado nas lojas",
+      ],
+    },
+  },
+  {
     at: "2026-11-23T19:10:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
