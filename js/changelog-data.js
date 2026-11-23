@@ -7,6 +7,72 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-23T20:24:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "El delivery a domicilio se cobra cuando vuelve el motoboy",
+      pt: "O delivery em casa se cobra quando o motoboy volta",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Si al crearlo eligen efectivo, tarjeta, PIX o voucher, el pedido guarda esa forma y no queda liquidado",
+        "La baja abre con esa forma ya elegida, para confirmar el cobro al regreso",
+        "Un pedido ya pago, o la retirada en mostrador, se sigue cobrando al crearlo",
+      ],
+      pt: [
+        "Se na criação escolhem dinheiro, cartão, PIX ou voucher, o pedido guarda essa forma e não fica liquidado",
+        "A baixa abre com essa forma já escolhida, para confirmar a cobrança na volta",
+        "Um pedido já pago, ou a retirada no balcão, continua cobrando na criação",
+      ],
+    },
+  },
+  {
+    at: "2026-11-23T20:23:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El faltante de la tarjeta se ve antes de la bandera, y cada caja entra en una sola computadora",
+      pt: "O que falta do cartão aparece antes da bandeira, e cada caixa entra em um só computador",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En la comanda dividida, al elegir tarjeta primero se pide el valor que falta y después el tipo y la bandera",
+        "Ese valor queda a la vista mientras se elige la bandera",
+        "Cada usuario, menos el admin, puede estar en una sola computadora. Si entra en otra, la anterior se cierra",
+      ],
+      pt: [
+        "Na comanda dividida, ao escolher cartão primeiro se pede o valor que falta e depois o tipo e a bandeira",
+        "Esse valor fica à vista enquanto se escolhe a bandeira",
+        "Cada usuário, menos o admin, pode estar em um só computador. Se entra em outro, o anterior se fecha",
+      ],
+    },
+  },
+  {
+    at: "2026-11-23T20:22:00-03:00",
+    module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "La cocina ya no inicia preparación y confirma antes de marcar pronto",
+      pt: "A cozinha não inicia mais a preparação e confirma antes de marcar pronto",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Salió el botón Iniciar preparación. El pedido pasa a pronto directo",
+        "Antes de marcarlo pide confirmación. Cancelar lo deja en la pantalla",
+        "Queijo ralado y batata palha salen como cobertura aunque la ficha los tenga como ingredientes. Sin queijo se lee aparte, y ya no dice sem cobertura si el dog las lleva",
+      ],
+      pt: [
+        "Saiu o botão Iniciar preparação. O pedido vai para pronto direto",
+        "Antes de marcar pede confirmação. Cancelar deixa o pedido na tela",
+        "Queijo ralado e batata palha saem como cobertura mesmo quando a ficha os tem como ingredientes. Sem queijo se lê à parte, e já não diz sem cobertura se o dog as leva",
+      ],
+    },
+  },
+  {
     at: "2026-11-23T19:26:00-03:00",
     module: { es: "KDS - Kitchen", pt: "KDS - Kitchen" },
     moduleHref: "propuestas/kitchen.html",
