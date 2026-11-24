@@ -7,6 +7,112 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-23T22:56:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Las pantallas del local se manejan desde SuperAdmin",
+      pt: "As telas da loja se controlam no SuperAdmin",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En SuperAdmin aparece Pantallas: listas, videos y el estado de cada salida",
+        "La reproducción sigue en la computadora del local. Cerrar la página no la detiene",
+        "Desde la nube se ve el estado. La carga del video corre en el local",
+      ],
+      pt: [
+        "No SuperAdmin aparece Telas: listas, vídeos e o estado de cada saída",
+        "A reprodução continua no computador da loja. Fechar a página não a interrompe",
+        "Na nuvem se vê o estado. O envio do vídeo roda na loja",
+      ],
+    },
+  },
+  {
+    at: "2026-11-23T22:55:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "El robot de WhatsApp ya está en el menú",
+      pt: "O robô de WhatsApp já está no menu",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En Delivery aparece Robot WhatsApp: QR, mensajes, atendente y feedback",
+        "Avisa recibido, en preparación, pronto, en camino, entregado y cancelado cuando el cliente escribió en las últimas 24 horas",
+        "Hasta cargar Evolution API en el servidor, la pantalla avisa que todavía no está configurada",
+      ],
+      pt: [
+        "Em Delivery aparece Robô WhatsApp: QR, mensagens, atendente e feedback",
+        "Avisa recebido, em preparo, pronto, a caminho, entregue e cancelado quando o cliente escreveu nas últimas 24 horas",
+        "Até carregar a Evolution API no servidor, a tela avisa que ainda não está configurada",
+      ],
+    },
+  },
+  {
+    at: "2026-11-23T22:54:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "Cada cabina puede mostrar, ordenar y encuadrar el catálogo por su cuenta",
+      pt: "Cada canal pode mostrar, ordenar e enquadrar o catálogo por conta própria",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En la configuración del tótem, Catálogo por cabina prende o apaga un producto en PDV, tótem o delivery",
+        "El orden de las clases se mueve aparte en cada cabina",
+        "La foto se encuadra y se puede cambiar para POS, POS compacto, tótem y delivery",
+      ],
+      pt: [
+        "Na configuração do totem, Catálogo por cabina liga ou desliga um produto no PDV, totem ou delivery",
+        "A ordem das classes se move separado em cada canal",
+        "A foto se enquadra e pode mudar para POS, POS compacto, totem e delivery",
+      ],
+    },
+  },
+  {
+    at: "2026-11-23T22:53:00-03:00",
+    module: { es: "KDS", pt: "KDS" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "El login tiene un acceso directo al KDS de helados",
+      pt: "A entrada tem um acesso direto ao KDS de sorvetes",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al lado de KDS aparece KDS Helados",
+        "Entra con el mismo usuario de cocina y abre la pantalla de helados",
+      ],
+      pt: [
+        "Ao lado de KDS aparece KDS Sorvetes",
+        "Entra com o mesmo usuário da cozinha e abre a tela de sorvetes",
+      ],
+    },
+  },
+  {
+    at: "2026-11-23T22:52:00-03:00",
+    module: { es: "KDS", pt: "KDS" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Una comanda corta ya no se estira para llenar la pantalla",
+      pt: "Uma comanda curta não se estica mais para encher a tela",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En la vista de bandas, la comanda arranca del alto de sus ítems",
+        "Si no entran todas, se achican y el interior se desplaza",
+      ],
+      pt: [
+        "Na vista de bandas, a comanda começa da altura dos itens",
+        "Se não cabem todas, elas encolhem e o interior rola",
+      ],
+    },
+  },
+  {
     at: "2026-11-23T20:24:00-03:00",
     module: { es: "Delivery", pt: "Delivery" },
     moduleHref: "propuestas/delivery.html",
