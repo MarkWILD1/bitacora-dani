@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-24T12:23:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El carrito y la cocina muestran la cobertura que se eligió",
+      pt: "O carrinho e a cozinha mostram a cobertura que foi escolhida",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En el Vira-Lata, batata, queso y sem cobertura son una elección. El ticket muestra la que quedó marcada",
+        "Ya no aparece Sem batata al lado de batata, ni Sem queso cuando el queso no venía en el dog",
+        "Si se elige sem cobertura, sale una sola línea. Si el queso venía y se sacó, sigue diciendo Sem queso",
+        "La cocina usa el mismo texto. El nombre Vira-Lata no se parte en el guion",
+      ],
+      pt: [
+        "No Vira-Lata, batata, queijo e sem cobertura são uma escolha. O ticket mostra a que ficou marcada",
+        "Não aparece mais Sem batata ao lado de batata, nem Sem queijo quando o queijo não vinha no dog",
+        "Se escolhem sem cobertura, sai uma linha só. Se o queijo vinha e foi tirado, continua Sem queijo",
+        "A cozinha usa o mesmo texto. O nome Vira-Lata não se parte no hífen",
+      ],
+    },
+  },
+  {
     at: "2026-11-23T22:56:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
