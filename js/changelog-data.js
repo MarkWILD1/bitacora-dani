@@ -7,6 +7,120 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-24T22:20:00-03:00",
+    module: { es: "Impresora", pt: "Impressora" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Cancelar un pedido enviado imprime la nota",
+      pt: "Cancelar um pedido enviado imprime a nota",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Al anular un pedido que ya salió a cocina, la impresora de la tienda imprime la nota de cancelación",
+        "Si el puente no está conectado, el PDV avisa en lugar de fallar en silencio",
+        "En la pantalla de tienda del tótem hay un enlace para instalar la impresora",
+      ],
+      pt: [
+        "Ao anular um pedido que já foi para a cozinha, a impressora da loja imprime a nota de cancelamento",
+        "Se a ponte não está conectada, o PDV avisa em vez de falhar em silêncio",
+        "Na tela de loja do totem há um link para instalar a impressora",
+      ],
+    },
+  },
+  {
+    at: "2026-11-24T22:19:00-03:00",
+    module: { es: "Tótem", pt: "Totem" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El tótem cobra con tarjeta o PIX y la comanda sale después",
+      pt: "O totem cobra com cartão ou PIX e a comanda sai depois",
+    },
+    status: "done",
+    details: {
+      es: [
+        "No ofrece dinero. Cocina y comanda esperan a que PagBank confirme el pago",
+        "Cancelar antes de pagar pide confirmación en pantalla y anula el pedido si todavía no se cobró",
+        "Después del pago, el estorno queda en el cajero",
+        "La imagen inicial tiene control de tamaño y los títulos usan la fuente de la marca",
+      ],
+      pt: [
+        "Não oferece dinheiro. Cozinha e comanda esperam o PagBank confirmar o pagamento",
+        "Cancelar antes de pagar pede confirmação na tela e anula o pedido se ainda não foi cobrado",
+        "Depois do pagamento, o estorno fica no caixa",
+        "A imagem inicial tem controle de tamanho e os títulos usam a fonte da marca",
+      ],
+    },
+  },
+  {
+    at: "2026-11-24T22:18:00-03:00",
+    module: { es: "KDS", pt: "KDS" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Pedidos prontos solo del día, en la pantalla que haya",
+      pt: "Pedidos prontos só do dia, na tela que houver",
+    },
+    status: "done",
+    details: {
+      es: [
+        "La columna de prontos cuenta solo los pedidos listos creados en el día local",
+        "Al completar o cancelar, salen de esa lista",
+        "La barra y la columna de prontos se acomodan al ancho y al alto de la pantalla",
+      ],
+      pt: [
+        "A coluna de prontos conta só os pedidos prontos criados no dia local",
+        "Ao concluir ou cancelar, saem dessa lista",
+        "A barra e a coluna de prontos se ajustam à largura e à altura da tela",
+      ],
+    },
+  },
+  {
+    at: "2026-11-24T22:17:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Cada combo queda separado y el adicional se cobra",
+      pt: "Cada combo fica separado e o adicional é cobrado",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Dos combos no juntan los hot dogs en una sola línea. Quitar uno no borra el otro",
+        "El adicional del dog o del gelado se suma al precio del combo",
+        "Un gelado suelto también suma sus adicionais al precio",
+      ],
+      pt: [
+        "Dois combos não juntam os hot dogs numa linha só. Tirar um não apaga o outro",
+        "O adicional do dog ou do gelado soma no preço do combo",
+        "Um gelado avulso também soma os adicionais no preço",
+      ],
+    },
+  },
+  {
+    at: "2026-11-24T22:16:00-03:00",
+    module: { es: "Delivery", pt: "Delivery" },
+    moduleHref: "propuestas/delivery.html",
+    title: {
+      es: "La baja de delivery y las 100 regiones de entrega",
+      pt: "A baixa do delivery e as 100 regiões de entrega",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Un delivery solo figura liquidado cuando el cajero registra la baja. Un pago cargado al crear no bloquea el botón",
+        "Al liquidarlo sale del tablero, también si seguía en listo",
+        "Rivera y Santana do Livramento se eligen a un toque. Cada región de la planilla tiene su propia tasa",
+        "El pedido del día se carga en el delivery del PDV",
+      ],
+      pt: [
+        "Um delivery só fica liquidado quando o caixa registra a baixa. Um pagamento carregado ao criar não bloqueia o botão",
+        "Ao liquidar, sai do quadro, também se ainda estava pronto",
+        "Rivera e Santana do Livramento se escolhem num toque. Cada região da planilha tem a própria taxa",
+        "O pedido do dia se lança no delivery do PDV",
+      ],
+    },
+  },
+  {
     at: "2026-11-24T12:23:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
