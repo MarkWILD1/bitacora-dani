@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-25T12:15:00-03:00",
+    module: { es: "KDS", pt: "KDS" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "Pedidos prontos deja de sumar los de ayer",
+      pt: "Pedidos prontos deixa de somar os de ontem",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En cocina, PEDIDOS PRONTOS muestra y cuenta solo los pedidos creados hoy en esa tienda",
+        "El día cambia a la medianoche de Uruguay. Los de ayer siguen en el historial y salen de esa columna",
+        "El número Pedidos del encabezado no cambia: ya era el conteo del día",
+      ],
+      pt: [
+        "Na cozinha, PEDIDOS PRONTOS mostra e conta só os pedidos criados hoje nessa loja",
+        "O dia muda à meia-noite do Uruguai. Os de ontem continuam no histórico e saem dessa coluna",
+        "O número Pedidos do cabeçalho não muda: já era a contagem do dia",
+      ],
+    },
+  },
+  {
     at: "2026-11-24T22:45:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
