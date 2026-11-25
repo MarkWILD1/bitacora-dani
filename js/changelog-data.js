@@ -7,6 +7,72 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-25T12:50:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "El tótem deja ver el tamaño de la imagen y del título al moverlos",
+      pt: "O totem mostra o tamanho da imagem e do título ao mexer",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En la configuración del tótem, junto a la vista previa, hay un control para agrandar la imagen del centro y otro para el título",
+        "El cambio se ve en la vista previa mientras se mueve. Para el tótem de la sucursal hay que publicar",
+        "El título de la bienvenida usa la fuente Pearl Jean Regular",
+      ],
+      pt: [
+        "Na configuração do totem, ao lado da prévia, há um controle para aumentar a imagem do centro e outro para o título",
+        "A mudança aparece na prévia enquanto se mexe. No totem da loja é preciso publicar",
+        "O título da boas-vindas usa a fonte Pearl Jean Regular",
+      ],
+    },
+  },
+  {
+    at: "2026-11-25T12:48:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "Las clases duplicadas del PDV quedan en un solo botón",
+      pt: "As classes duplicadas do PDV ficam em um só botão",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Si una clase estaba cargada más de una vez, o le faltaban productos de su categoría, el PDV mostraba dos botones con el mismo nombre",
+        "Borrar o guardar desde el superadmin ahora deja una sola ficha y no crea otra copia",
+        "El modal de edición de la clase tiene botón Eliminar",
+      ],
+      pt: [
+        "Se uma classe estava carregada mais de uma vez, ou faltavam produtos da categoria, o PDV mostrava dois botões com o mesmo nome",
+        "Apagar ou salvar no superadmin agora deixa uma só ficha e não cria outra cópia",
+        "O modal de edição da classe tem botão Excluir",
+      ],
+    },
+  },
+  {
+    at: "2026-11-25T12:42:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El combo se quita y se suma entero",
+      pt: "O combo se tira e se soma inteiro",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En el tótem y en el PDV, los productos de un combo se mueven juntos",
+        "Bajar la cantidad o quitar el combo saca todos sus productos. No se puede dejar uno solo",
+        "El contador sigue sumando cada producto: un combo de dos cuenta como dos",
+      ],
+      pt: [
+        "No totem e no PDV, os produtos de um combo se movem juntos",
+        "Baixar a quantidade ou tirar o combo tira todos os produtos. Não dá para deixar um só",
+        "O contador continua somando cada produto: um combo de dois conta como dois",
+      ],
+    },
+  },
+  {
     at: "2026-11-25T12:15:00-03:00",
     module: { es: "KDS", pt: "KDS" },
     moduleHref: "propuestas/kitchen.html",
