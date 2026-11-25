@@ -17,12 +17,12 @@ window.BITACORA_CHANGELOG = [
     status: "done",
     details: {
       es: [
-        "En SuperAdmin, pestaña Tótem, las campañas, las categorías, las secciones y las tarjetas se reordenan arrastrando el asa",
+        "En SuperAdmin, pestaña Tótem, las campañas, las categorías, las secciones y las tarjetas se reordenan arrastrando el título de la fila, desde los seis puntos",
         "Siguen los botones Subir y Bajar",
         "El orden nuevo queda en el borrador. Para verlo en el tótem de la sucursal hay que publicar",
       ],
       pt: [
-        "No SuperAdmin, aba Totem, as campanhas, as categorias, as seções e os cartões se reordenam arrastando a alça",
+        "No SuperAdmin, aba Totem, as campanhas, as categorias, as seções e os cartões se reordenam arrastando o título da linha, a partir dos seis pontos",
         "Os botões Subir e Descer continuam",
         "A ordem nova fica no rascunho. Para vê-la no totem da filial é preciso publicar",
       ],
