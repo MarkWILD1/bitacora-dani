@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-25T12:52:00-03:00",
+    module: { es: "PDV", pt: "PDV" },
+    moduleHref: "propuestas/pdv.html",
+    title: {
+      es: "El ticket muestra la bandera de la tarjeta",
+      pt: "O cupom mostra a bandeira do cartão",
+    },
+    status: "done",
+    details: {
+      es: [
+        "Si el pago es con tarjeta, el comprobante imprime el nombre de la bandera (Visa Crédito, Master Crédito, Maestro) en lugar de solo Tarjeta",
+        "En un pago dividido, cada parte con tarjeta también muestra esa bandera",
+        "Sale en la impresora de la tienda cuando se actualiza el puente de impresión de esa computadora",
+      ],
+      pt: [
+        "Se o pagamento é no cartão, o comprovante imprime o nome da bandeira (Visa Crédito, Master Crédito, Maestro) em vez de só Cartão",
+        "Num pagamento dividido, cada parte no cartão também mostra essa bandeira",
+        "Sai na impressora da loja quando se atualiza a ponte de impressão desse computador",
+      ],
+    },
+  },
+  {
     at: "2026-11-25T12:50:00-03:00",
     module: { es: "SuperAdmin", pt: "SuperAdmin" },
     moduleHref: "propuestas/superadmin.html",
