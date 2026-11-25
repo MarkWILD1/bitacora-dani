@@ -7,6 +7,30 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-25T17:30:00-03:00",
+    module: { es: "KDS", pt: "KDS" },
+    moduleHref: "propuestas/kitchen.html",
+    title: {
+      es: "La cocina recorre el pedido, marca la bebida de la fila y saca el helado pronto",
+      pt: "A cozinha percorre o pedido, marca a bebida da fila e tira o sorvete pronto",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En la cocina, cada pedido se puede recorrer entero: los ítems hacen scroll y el botón de pronto queda a la vista",
+        "Al tocar un pedido de la fila de abajo aparecen sus ítems y se puede marcar la bebida que el cliente ya retiró",
+        "Cuando helados marca pronto, esos helados, milks y açaís salen de la cocina principal. Si el pedido era solo de esa estación, el pedido entero pasa a pronto. Deshacer lo devuelve",
+        "Entra al publicar la pantalla de cocina y el servidor",
+      ],
+      pt: [
+        "Na cozinha, cada pedido pode ser percorrido inteiro: os itens rolam e o botão de pronto fica à vista",
+        "Ao tocar um pedido da fila de baixo aparecem os itens e dá para marcar a bebida que o cliente já retirou",
+        "Quando sorvetes marca pronto, esses sorvetes, milks e açaís saem da cozinha principal. Se o pedido era só dessa estação, o pedido inteiro fica pronto. Desfazer devolve",
+        "Entra ao publicar a tela da cozinha e o servidor",
+      ],
+    },
+  },
+  {
     at: "2026-11-25T12:52:00-03:00",
     module: { es: "PDV", pt: "PDV" },
     moduleHref: "propuestas/pdv.html",
