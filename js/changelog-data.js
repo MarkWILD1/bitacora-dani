@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-24T22:45:00-03:00",
+    module: { es: "SuperAdmin", pt: "SuperAdmin" },
+    moduleHref: "propuestas/superadmin.html",
+    title: {
+      es: "El editor del tótem se ordena arrastrando",
+      pt: "O editor do totem se ordena arrastando",
+    },
+    status: "done",
+    details: {
+      es: [
+        "En SuperAdmin, pestaña Tótem, las campañas, las categorías, las secciones y las tarjetas se reordenan arrastrando el asa",
+        "Siguen los botones Subir y Bajar",
+        "El orden nuevo queda en el borrador. Para verlo en el tótem de la sucursal hay que publicar",
+      ],
+      pt: [
+        "No SuperAdmin, aba Totem, as campanhas, as categorias, as seções e os cartões se reordenam arrastando a alça",
+        "Os botões Subir e Descer continuam",
+        "A ordem nova fica no rascunho. Para vê-la no totem da filial é preciso publicar",
+      ],
+    },
+  },
+  {
     at: "2026-11-24T22:21:00-03:00",
     module: { es: "Pruebas", pt: "Testes" },
     moduleHref: "index.html",
