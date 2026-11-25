@@ -7,6 +7,28 @@
  */
 window.BITACORA_CHANGELOG = [
   {
+    at: "2026-11-24T22:21:00-03:00",
+    module: { es: "Pruebas", pt: "Testes" },
+    moduleHref: "index.html",
+    title: {
+      es: "Empezaron las pruebas de lo entregado el 24-11",
+      pt: "Começaram os testes do que foi entregue em 24-11",
+    },
+    status: "progress",
+    details: {
+      es: [
+        "Las pruebas automáticas cubren delivery, PDV, cocina, tótem e impresora",
+        "Revisan la baja del delivery, las regiones con su precio, los combos con adicionales, los prontos del día, el cobro del tótem y la nota de cancelación",
+        "Sigue pendiente la prueba en la tienda y la conexión con PagBank",
+      ],
+      pt: [
+        "Os testes automáticos cobrem delivery, PDV, cozinha, totem e impressora",
+        "Conferem a baixa do delivery, as regiões com o preço, os combos com adicionais, os prontos do dia, a cobrança do totem e a nota de cancelamento",
+        "Falta o teste na loja e a conexão com o PagBank",
+      ],
+    },
+  },
+  {
     at: "2026-11-24T22:20:00-03:00",
     module: { es: "Impresora", pt: "Impressora" },
     moduleHref: "propuestas/pdv.html",
