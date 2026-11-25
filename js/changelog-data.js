@@ -41,12 +41,12 @@ window.BITACORA_CHANGELOG = [
       es: [
         "En la configuración del tótem, junto a la vista previa, hay un control para agrandar la imagen del centro y otro para el título",
         "El cambio se ve en la vista previa mientras se mueve. Para el tótem de la sucursal hay que publicar",
-        "El título de la bienvenida usa la fuente Pearl Jean Regular",
+        "Solo el título de la primera pantalla usa Pearl Jean Regular. El resto del tótem no cambia",
       ],
       pt: [
         "Na configuração do totem, ao lado da prévia, há um controle para aumentar a imagem do centro e outro para o título",
         "A mudança aparece na prévia enquanto se mexe. No totem da loja é preciso publicar",
-        "O título da boas-vindas usa a fonte Pearl Jean Regular",
+        "Só o título da primeira tela usa Pearl Jean Regular. O resto do totem não muda",
       ],
     },
   },
